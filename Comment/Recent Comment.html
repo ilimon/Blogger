@@ -1,0 +1,40 @@
+<span class='notif-code'>
+<a class='single btnNotif' href='javascript:void(0);'><i class="fad fa-bell"></i><span class='cmCounts indicator'>1</span></a>
+</span>
+<div class='blog_notif section' id='blog_notif' name='Notifikasi'>
+<h3 class='title'>
+<b>Comments</b> Timeline
+<a class='blog_notifClose' href='javascript:void(0);'>&#215;</a>
+</h3>
+<div id='rCommWidget'></div>
+<script type='text/javascript'>
+                    //<![CDATA[
+                    var titleBlog = $('title').text();
+                    var cm_config = {
+                      home_page: '//' + window.location.hostname,
+                      max_result: 8,
+                      t_w: 60,
+                      t_h: 60,
+                      summary: 140,
+                      ct_id: 'rCommWidget',
+                      new_cm: ' New Comment!',
+                      interval: 5000,
+                      alert: function(total, label) {
+                        $('.btnNotif span').html('<b>'+total+'</b>');
+                        $('.btnNotif span').addClass('show');
+                        $('title').text('(ð¬ '+total+' ) '+titleBlog);
+                      }
+                    };
+                    $(document).on('click','.btnNotif',function(){
+                      $(this).find('span').removeClass('show');
+                      $('.blog_notif').toggleClass('open');
+                      $('title').text(titleBlog);
+                      $('.closeMenuCategory').trigger('click');
+                    });
+                    $(document).on('click','.blog_notifClose',function(){
+                      $('.blog_notif').removeClass('open');
+                    });
+                    //]]>
+                  </script>
+<script src='https://jasadesign-bdg.github.io/Blogger/recentComments2019Blogger.js'></script>
+<div class='clear'></div></div>
