@@ -1,12 +1,1 @@
-<svg
-              :class="selected === 1 ? 'text-indigo-400' : 'text-gray-500'"
-              class="h-6 w-6 transition-all ease-out transition-medium"
-              viewBox="0 0 24 24"
-              fill="#ffffff"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M11.617 1.076a1 1 0 011.09.217l5.657 5.657a9 9 0 11-13.113.41A1 1 0 017 8.022v2.292a2 2 0 104 0V2a1 1 0 01.617-.924zM13 4.414v5.9A4 4 0 015.212 11.6 7 7 0 1016.95 8.364L13 4.414z"
-              />
-            </svg>
+<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M16,2v10l-3-2l-3,2V2H6C4.895,2,4,2.895,4,4v15c1,0,0.895-2,2-2h14V2H16z"/><path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" d="M20,17H7c-1.105,0-2,0.895-2,2s0.895,2,2,2h13"/></svg>
