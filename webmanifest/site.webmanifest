@@ -1,0 +1,19 @@
+{
+    "name": "LimonSeo Feed",
+    "short_name": "LimonSeo",
+    "icons": [
+        {
+            "src": "https://1.bp.blogspot.com/-pC5Vsa7c0xs/YAW882nAmII/AAAAAAAAAdo/dW_x3lvzcMYeFfgxnn098ffdR3gkCxD6wCLcBGAsYHQ/s0/20210118_224231.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://1.bp.blogspot.com/-pC5Vsa7c0xs/YAW882nAmII/AAAAAAAAAdo/dW_x3lvzcMYeFfgxnn098ffdR3gkCxD6wCLcBGAsYHQ/s0/20210118_224231.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
