@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<!-- ==================================================== Name : Blogger Template Version : 1.0.0 Creator : Kang Rian (c) 2021 Website : //kangrian.net ==================================================== --><html dir='ltr' lang='id'>
+
+
+  <!--<head>
+<link href='https://www.blogger.com/static/v1/widgets/1529571102-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+-->
+  <head>
+
+  <script async='true' defer='true' src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<!-- == AHC == -->
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='#ffffff' name='theme-color'/>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<link href='https://www.kangrian.net/favicon.ico' rel='icon'/>
+<meta content='Kang Rian' property='og:site_name'/>
+<title>
+Kang Rian
+</title>
+<meta content='Kang Rian' itemprop='name'/>
+<meta content='Kang Rian' name='twitter:title'/>
+<meta content='Kang Rian' name='twitter:image:alt'/>
+<meta content='Kang Rian' property='og:image:alt'/>
+<meta content='Kang Rian' property='og:title'/>
+<meta content='Kang Rian' name='keywords'/>
+<meta content='Kang Rian' property='article:tag'/>
+<meta content='Digital Creator, Bandung - Indonesia' name='description'/>
+<meta content='Digital Creator, Bandung - Indonesia' name='twitter:description'/>
+<meta content='Digital Creator, Bandung - Indonesia' itemprop='description'/>
+<link href='https://www.kangrian.net/' rel='canonical'/>
+<link href='https://www.kangrian.net/' hreflang='x-default' rel='alternate'/>
+<meta content='https://www.kangrian.net/' property='og:url'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='article' property='og:type'/>
+<meta content='@username' name='twitter:site'/>
+<meta content='@username' name='twitter:creator'/>
+<meta content='0LTvUuASxNgZMyBbJ-Cf8PuvYC3_OO6iLJxfTXQ8f8s' name='google-site-verification'/>
+<meta content='CFD64403EA573827C68A8A88B34308B7' name='msvalidate.01'/>
+<meta content='index, follow' name='robots'/>
+<meta content='index, follow' name='googlebot'/>
+<link href='https://www.kangrian.net/feeds/posts/default' rel='alternate' title='Kang Rian - Atom' type='application/atom+xml'/>
+<link href='https://www.kangrian.net/feeds/posts/default?alt=rss' rel='alternate' title='Kang Rian - RSS' type='application/rss+xml'/>
+<link href='https://www.blogger.com/feeds/754786223723890500/posts/default' rel='service.post' title='Kang Rian - Atom' type='application/atom+xml'/>
+<link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link href='https://www.kangrian.net/' rel='openid.delegate'/>
+<!-- == / AHC == -->
+<include expiration='7d' path='*.css'></include>
+<include expiration='7d' path='*.js'></include>
+<include expiration='3d' path='*.gif'></include>
+<include expiration='3d' path='*.jpeg'></include>
+<include expiration='3d' path='*.jpg'></include>
+<include expiration='3d' path='*.png'></include>
+<include expiration='3d' path='*.webp'></include>
+<include expiration='3d' path='*.ico'></include>
+<meta content='sat, 02 jun 2021 00:00:00 GMT' http-equiv='expires'/>
+<meta content='public' http-equiv='Cache-control'/>
+<link href='//ajax.googleapis.com' rel='dns-prefetch'/>
+<link href='//www.google-analytics.com' rel='dns-prefetch'/>
+<link href='//www.googletagservices.com' rel='dns-prefetch'/>
+<link href='//resources.blogblog.com' rel='dns-prefetch'/>
+<link href='//www.blogger.com' rel='dns-prefetch'/>
+<link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//lh3.googleusercontent.com' rel='dns-prefetch'/>
+<link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
+<link href='//www.youtube.com' rel='dns-prefetch'/>
+<link href='//img.youtube.com' rel='dns-prefetch'/>
+<link href='//github.com' rel='dns-prefetch'/>
+<link href='//cdn.rawgit.com' rel='dns-prefetch'/>
+<link href='//cdn.jsdelivr.net' rel='dns-prefetch'/>
+<link href='//dummyimage.com' rel='dns-prefetch'/>
+
+  <style type="text/css"><!-- /*<style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');}</style>
+<style id='template-skin-1' type='text/css'><!--
+*/
+--></style>
+<style id='page-skin-1' type='text/css'><!--
+:root {
+--key: #434343;
+--black: #232323;
+--white: #ffffff;
+--silver: #f6f6f6;
+--gray: #838383;
+--border: rgba(0 0 0 / 7.5%);
+--radius: 8px;
+--radius2: 16px;
+--lebar: 768px;
+--header_height: 80px;
+--footer_height: 100px;
+--card_shadow : 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+/* main.css */
+html.dark {
+--key: #fff;
+--black: #aaa;
+--white: #232323;
+--silver: #1e1e1e;
+--gray: #666;
+--border: rgba(0 0 0 / 30%);
+--card_shadow: 0 10px 15px -3px rgb(0 0 0 / 15%), 0 4px 6px -2px rgb(0 0 0 / 15%);
+}
+/* global.css */
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; reset &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+*, *:before, *:after { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; -webkit-font-smoothing: subpixel-antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: 100%; box-sizing: border-box; word-wrap: break-word; outline: 0; padding: 0; margin: 0; }
+@media only screen and (max-width: 768px) {
+* { cursor: default !important; }
+}
+@media only screen and (min-width: 1024px) {
+*::-webkit-scrollbar { width: 5px; }
+*::-webkit-scrollbar-track { background: var(--white); }
+*::-webkit-scrollbar-thumb { background: var(--key); }
+}
+::-moz-selection { background: var(--border); }
+::selection { background: var(--border); }
+svg { display: block; max-width: 100%; height: auto; margin: auto; }
+img, iframe { display: block; margin: auto; max-width: 100%; height: auto; border: 0; }
+img, iframe { transition: opacity .5s; }
+img[data-src], iframe[data-src] { opacity: 0; }
+.video { min-width:200px; display: block; padding-top: 56.25%; position: relative; background: #000; overflow: hidden; border-radius: var(--radius);max-width:100%; }
+.video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.pop-content .video { margin: -20px -20px; padding-top: calc(56.25% + 25px); border-radius: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+a { text-decoration: none; color: var(--gray); }
+a:hover { color: var(--key); }
+b { font-weight: 600; }
+hr { border: 0; border-bottom: 1px solid var(--border); }
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; loading &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+@keyframes spinner {
+to { transform: rotate(360deg); }
+}
+.loading { position: relative; min-height: 40px; }
+.loading:before { content: ''; background: var(--white); opacity: .9; position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; }
+.loading:after { content: ''; box-sizing: border-box; position: absolute; z-index: 2; top: 50%; left: 50%; width: 30px; height: 30px; margin-top: -15px; margin-left: -15px; border-radius: 50%; border: 1px solid var(--border); border-top-color: var(--key); animation: spinner .6s linear infinite; }
+body.loading:before { position: fixed; z-index: 9999; }
+body.loading:after { position: fixed; z-index: 10000; width: 40px; height: 40px; margin-top: -20px; margin-left: -20px; }
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; layout &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+.wrapper { width: var(--lebar); max-width: calc(100% - 40px); margin: auto; }
+body { background: var(--white); color: var(--black); min-height: 100vh; font-size: 18px; line-height: 1.8; }
+@media only screen and (max-width: 1440px) {
+body { font-size: 16px; line-height: 1.6; }
+}
+#header { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: center; height: var(--header_height); background: var(--white); transition: box-shadow .1s; }
+#header.shadow { box-shadow: var(--card_shadow); }
+#header-widget { position: relative; display: grid; grid-template-columns: auto 1fr auto; grid-gap: 20px; }
+#header-widget .widget { display: flex; align-items: center; justify-content: center; }
+#header-widget .widget.Header { justify-content: left; }
+#header-widget #logo a { display: block; }
+#header-widget #logo img { max-height: 40px; }
+#header-widget #logo hgroup { display:none; }
+#header-widget #search { width: 100%; margin: auto; }
+#header-widget #search .search-form { position: relative; }
+#header-widget #search .search-form form { position: relative; }
+#header-widget #search .search-form form [type=submit] { background: transparent; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); padding: 0; border: 0; }
+#header-widget #search .search-form form input { background: var(--silver); color: var(--black); display: block; width: 100%; border: 1px solid transparent; padding: 10px 20px; padding-left: 54px; border-radius: 100px; font-size: 90%; }
+#header-widget #search .search-form form input:focus { background: transparent; border: 1px solid var(--border); }
+#header-widget #search .search-form form nav ul { background: var(--white); box-shadow: var(--card_shadow); border-radius: var(--radius); position: absolute; top: 100%; width: 100%; right: 0; max-height: 50vh; overflow-y: auto; visibility: hidden; opacity: 0; transition: .1s; transform-origin: top center; }
+#header-widget #search .search-form form nav ul li, #header-widget #search .search-form form nav ul li a { display: block; }
+#header-widget #search .search-form form nav ul li a { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; padding: 20px; border-bottom: 1px solid var(--border); font-size: 90%; }
+#header-widget #search .search-form form nav ul li a>* { display: flex; align-items: center; }
+#header-widget #search .search-form form nav ul li:last-of-type a { border-bottom: 0; }
+#header-widget #search .search-form form nav ul li a small { padding-left: 20px; line-height: 1; border-left: 1px solid var(--border); font-weight: 600; }
+#header-widget #search .search-form form input:focus~nav ul, #header-widget #search .search-form form nav ul:hover { visibility: visible; opacity: 1; }
+#header-widget #pop-komentar .all { display: grid; grid-template-columns: 1fr auto; padding: 20px; text-align: center; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 20px; color: var(--gray); }
+#header-widget #pop-komentar .all svg { fill: var(--key); stroke: var(--key); }
+#featured-post { position: relative; margin-bottom: 80px; }
+#featured-post .img { display: block; }
+#featured-post .img img { display: block; width: 100%; border-radius: var(--radius); }
+#featured-post .text { position: absolute; bottom: -40px; left: 40px; width: calc(100% - 80px); padding: 40px; box-shadow: var(--card_shadow); border-radius: var(--radius); overflow: hidden; }
+#featured-post .text:before { content: ''; background: var(--white); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .95; }
+#featured-post .text>* { position: relative; }
+#featured-post .text small { color: var(--gray); display: block; margin-bottom: 5px; }
+#featured-post .text h3 { font-size: 150%; line-height: 1.4; color: var(--black); transition: .1s; }
+#featured-post:hover .text h3 { color: var(--key); }
+@media only screen and (max-width: 768px) {
+#featured-post { margin: -20px -20px 80px; }
+#featured-post .img img { border-radius: 0; }
+#featured-post .text { padding: 20px; left: 20px; width: calc(100% - 40px); }
+#featured-post .text h3 { font-size: 100%; }
+}
+#main { min-height:calc(100vh - var(--header_height) - var(--footer_height));display: flex; padding: 20px 0 40px; }
+#main header.page-title { position: sticky; top: calc(var(--header_height) - 1px); z-index: 99; margin: 0 -20px; display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; padding: 15px 20px; border-radius: 0 0 var(--radius2) var(--radius2); box-shadow: var(--card_shadow); overflow: hidden; background:var(--white); }
+#main header.page-title>* { display: flex; align-items: center; min-width: 0; }
+#main header.page-title h2 { display: inline-block; letter-spacing: 1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#main header.page-title h3 { font-size:90%; }
+#main .is_single article a.bagikan { position: relative; z-index: 1; display: flex; width: 50px; height: 50px; border-radius: 50px; margin-top: -65px; margin-right: 20px; margin-left: 20px; box-shadow: var(--card_shadow); background: var(--white); align-items: center; justify-content: center; float: right; }
+#main .is_single #pop-bagikan .grid-preview { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; padding: 20px; }
+#main .is_single #pop-bagikan .grid-preview img { border-radius: var(--radius); box-shadow: var(--card_shadow); }
+#main .is_single #pop-bagikan .grid-preview .info { display: flex; align-items: center; }
+#main .is_single #pop-bagikan .grid-preview .info .wrap { width: 100%; }
+#main .is_single #pop-bagikan .grid-preview .info .wrap h4 { font-weight: 600; }
+#main .is_single #pop-bagikan .grid-preview .info .wrap small { display: block; color: var(--gray); }
+#main .is_single article #pop-bagikan .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+#main .is_single article #pop-bagikan .grid>* { text-align: center; }
+#main .is_single article #pop-bagikan .grid i { display: flex; width: 50px; height: 50px; border-radius: 50px; box-shadow: var(--card_shadow); margin: auto; align-items: center; justify-content: center; transition: .1s; }
+#main .is_single article #pop-bagikan .grid a:active i { box-shadow: none; }
+#main .is_single article #pop-bagikan .grid i.whatsapp svg { fill: #0DC143; }
+#main .is_single article #pop-bagikan .grid i.telegram svg { fill: #2199CB; }
+#main .is_single article #pop-bagikan .grid i.facebook svg { fill: #1B74E4; }
+#main .is_single article #pop-bagikan .grid i.twitter svg { fill: #1d9bf0; }
+#main .is_single article #pop-bagikan .grid .copy { padding: 20px; grid-column: 1/5; display: grid; grid-template-columns: 1fr auto; border-top: 1px solid var(--border); margin: 20px -20px -20px; border-radius: 0; }
+#main .is_single article #pop-bagikan .grid .copy input, #main .is_single article #pop-bagikan .grid .copy button { width: 100%; border: 0; padding: 10px 20px; background: transparent; border-radius: 100px; }
+#main .is_single article #pop-bagikan .grid .copy input { text-overflow: ellipsis; color: var(--black); }
+#main .is_single article #pop-bagikan .grid .copy button { border: 1px solid var(--key); color: var(--key); cursor: pointer; background: transparent; }
+#main .is_single article h1 { font-weight: 600; font-size: 200%; line-height: 1.2; }
+#main .is_single article .attr-sticky { position: sticky; z-index: 99; top: calc(var(--header_height) - 1px); display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; font-size: 80%; background: var(--white); margin: 20px -20px 0; padding: 20px; box-shadow: var(--card_shadow); border-radius: 0 0 var(--radius2) var(--radius2); }
+#main .is_single article .attr-sticky>span { display: flex; align-items: center; }
+#main .is_single article .attr-sticky a { color: var(--key); }
+#main .is_single article .attr-sticky img { display: inline-block; vertical-align: middle; width: 32px; height: 32px; border-radius: 32px; margin-right: 10px; box-shadow: 0 0 0 1px var(--border); }
+#main .is_single article figure.cover { display: block; border-radius: var(--radius); overflow: hidden; margin-bottom: 40px; }
+#main .is_single article figure.cover img { width: 100%; }
+@media only screen and (max-width: 768px) {
+#main .is_single article figure.cover { margin: -20px -20px 40px; border-radius: 0; }
+}
+#main .is_single article .breadcrumb { display: block; margin-bottom: 5px; color: var(--gray); font-size: 80%; }
+#main .is_single article .breadcrumb ol, #main .is_single article .breadcrumb ol li { display: inline; }
+#main .is_single article .breadcrumb .pager { display: inline-block; margin: 5px; opacity: .5; }
+#main .is_single article .update { display: block; padding: 15px 20px; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 40px; font-size: 80%; }
+#main .is_single article .post-body { margin-top: 40px; font-size: 90%; }
+#main .is_single article .post-body table.field { display: none; }
+#main .is_single article .post-body a { color: var(--key); margin: auto !important; text-decoration: underline; }
+#main .is_single article .post-body .tr-caption-container { color: var(--gray); }
+#main .is_single article .post-body img { display: block; margin: 10px auto; border-radius: var(--radius); box-shadow: var(--card_shadow); border: 1px solid var(--border); }
+#main .is_single article .post-body blockquote { background: var(--silver); padding: 30px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 105%; margin-top: 20px; }
+#main .is_single article .post-body blockquote mark { display: inline-block; background: var(--key); color: var(--white); border-radius: 2px; padding: 0 2px; }
+#main .is_single article .post-body code { font-family: monospace, monospace; }
+#main .is_single article .post-body pre { overflow: hidden; box-shadow: inset 0 0 0 1px var(--black), 0 0 0 1px var(--black); border-radius: var(--radius); font-size: 90%; margin: 10px 0; }
+#main .is_single article .post-body pre code { display: block; max-width: 100%; overflow-x: auto; padding: 20px; }
+#main .is_single article .post-body pre header { display: block; background: var(--black); color: var(--white); padding: 10px 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+#main .is_single article .post-body pre code mark { display: inline-block; background: var(--key); color: var(--white); border-radius: 2px; padding: 0 2px; }
+#main .is_single article .post-body h2 { font-size: 200%; font-weight: 600; border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 10px; margin: 20px 0; }
+#main .is_single article .post-body h3 { font-size: 150%; font-weight: 600; margin-top: 20px; }
+#main .is_single article .post-body ol, #main .is_single article .post-body ul { margin-left: 2em; padding: 20px 0; }
+#main .is_single article .post-body ol li, #main .is_single article .post-body ul li { padding: 10px 0; }
+#main .is_single article .post-body .table { border: 1px solid var(--border); max-width: 100%; overflow-x: auto; border-radius: var(--radius); margin-top: 20px; }
+#main .is_single article .post-body .table table { width: 100%; border-collapse: collapse; }
+#main .is_single article .post-body .table table thead th { border-bottom: 1px solid var(--border); }
+#main .is_single article .post-body .table table th, #main .is_single article .post-body table td { padding: 10px; text-align: center; vertical-align: middle; }
+#main .is_single article .post-body .table table tbody tr:nth-child(odd) td { background: var(--silver); }
+#main .is_single article .post-body .btn { cursor:pointer; text-decoration: none !important; display: inline-block; vertical-align: middle; padding: 10px 24px; border-radius: var(--radius); border: 1px solid var(--border); color: var(--key); box-shadow: inset 0 -2px 0 0 rgba(0 0 0 / 10%); }
+#main .is_single article .post-body .btn:active { box-shadow: none; }
+#main .is_single article .post-body .btn.cta { background: var(--key); border: 1px solid var(--key); color: var(--white); }
+#main .is_single article .post-body .btn.cta i.icon { color: #fff !important; }
+#main .is_single article .post-body .btn.block { display: block; text-align: center; }
+#main .is_single article .post-body .btn-group { display: flex; }
+#main .is_single article .post-body .btn-group .btn { width: 100%; margin-right: 20px !important; }
+#main .is_single article .post-body .btn-group .btn:last-of-type { margin-right: 0 !important; }
+#main .is_single article #comments { margin-top: 40px; }
+#main .is_single article #comments .comments-title { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; border: 1px solid var(--border); padding: 20px; border-radius: var(--radius); font-size: 90%; }
+#main .is_single article #comments a.comments-add { text-decoration: none !important; display: block; padding: 20px; border: 1px solid var(--border); text-align: center; border-radius: var(--radius); margin-top: 40px; font-size: 90%; }
+#main .is_single article #comments iframe.comment-form { display: block; border: none; width: 100%; height: 364px; }
+#main .is_single article #comments .comment-actions, #main .is_single article #comments .comment-replies, #main .is_single article #comments .continue, #main .is_single article #comments .loadmore { display: none; }
+#main .is_single article #comments #comments-block { display: grid; grid-gap: 40px; margin-top: 40px; }
+#main .is_single article #comments #comments-block .comment { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; }
+#main .is_single article #comments #comments-block .comment .avatar-image-container { border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 60px; }
+#main .is_single article #comments #comments-block .comment .avatar-image-container img { border-radius: 50px; width: 50px; height: 50px; object-fit: cover; }
+#main .is_single article #comments #comments-block .comment .comment-block { direction: ltr; display: block; }
+#main .is_single article #comments #comments-block .comment .comment-author { line-height: 1; }
+#main .is_single article #comments #comments-block .comment .comment-author .datetime { display: block; direction: ltr; line-height: 1; margin-top: 10px; margin-bottom: 10px; font-size: 80%; opacity: .8; }
+#main .is_single article #comments #comments-block .comment .comment-author .user { font-style: normal; font-weight: 600; }
+#main .is_single article #comments #comments-block .comment .comment-author .user a { color: var(--black); }
+#main .is_single article #comments #comments-block .comment .comment-author .icon.blog-author:before { content: 'check_circle'; font-family: 'Material Icons'; display: inline-block; margin-top: -5px; margin-left: 5px; vertical-align: middle; color: var(--key); font-size: 24px; height: 24px; width: 24px; overflow: hidden; }
+#main .is_single article #comments #comments-block .comment .comment-text { word-break:break-word; direction: ltr; margin-top: 10px; padding: 20px; border-radius: 0 var(--radius2) var(--radius2) var(--radius2); border: 1px solid var(--border); box-shadow: var(--card_shadow); line-height: 1.5; display: inline-block; transition: .1s; }
+#main .is_single article #comments #comments-block .comment .comment-text pre code { display: block; font-size: 90%; max-width: 55vw; overflow-x: auto; padding: 20px; border: 1px solid var(--black); border-radius: var(--radius); }
+#main .is_single article #comments #comments-block .comment .comment-text .comment-timestamp { font-size: 80%; opacity: .5; }
+#main .is_single article #comments #comments-block .comment.focus .comment-text { border-color: var(--key); }
+#main .is_single article #comments #comments-block .comment:nth-child(even) { direction: rtl; text-align: right; }
+#main .is_single article #comments #comments-block .comment:nth-child(even) .comment-author { text-align: right; }
+#main .is_single article #comments #comments-block .comment:nth-child(even) .comment-text { border-radius: var(--radius2) 0 var(--radius2) var(--radius2); text-align: left; }
+#main .is_single article #blog-pager { margin-top: 40px; border-top: 2px dashed var(--border); padding-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; }
+@media only screen and (max-width: 768px) {
+#main .is_single article #blog-pager { grid-template-columns: 1fr; }
+}
+#main .is_single article #blog-pager a { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; border-radius: var(--radius); box-shadow: var(--card_shadow); font-size: 90%; padding: 20px; }
+#main .is_single article #blog-pager a .flex { display: flex; align-items: center; }
+#main .is_single article #blog-pager a .flex.right { justify-content: end; }
+#main .is_single article #blog-pager a:active { box-shadow: none; }
+#main .is_single article #blog-pager a:nth-child(2) { text-align: right; direction: rtl; }
+#main .is_single article #blog-pager a:nth-child(2)>* { direction: ltr; }
+#main .is_single article #blog-pager a figure { display: block; min-width: 60px; }
+#main .is_single article #blog-pager a figure img { border-radius: var(--radius); width: 100%; }
+#main .is_single article #blog-pager a small { color: var(--gray); }
+#main .is_single article #blog-pager a h3 { line-height: 1.4; }
+#main .is_single article #related { margin-top: 40px; }
+#main .is_single article #related .header { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; }
+@media only screen and (max-width: 768px) {
+#main .is_single article #related .is_loop { display: flex; grid-gap: 20px; overflow-x: auto; margin: 0 -20px -20px; padding: 0 20px 20px; }
+#main .is_single article #related .is_loop article { min-width: 70vw; }
+}
+#main .is_loop { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; margin: 40px 0 }
+@media only screen and (max-width: 768px) {
+#main .is_loop { grid-template-columns: 1fr; }
+}
+#main .is_loop article { display: flex; flex-direction: column; box-shadow: var(--card_shadow); border-radius: var(--radius); overflow: hidden; position: relative; transition: .1s; padding: 20px; }
+#main .is_loop article:active { box-shadow: none; }
+#main .is_loop article figure.cover { position: relative; display: block; border-radius: 0 0 var(--radius) var(--radius); overflow: hidden; margin: -20px -20px 20px; }
+#main .is_loop article figure.cover img { width: 100%; }
+#main .is_loop article figure.cover .label { display: inline-block; position: absolute; top: 20px; right: 0; background: var(--key); color: var(--white); border-radius: 100px 0 0 100px; padding: 10px 15px; font-size: 60%; line-height: 1; font-weight: 600; }
+#main .is_loop article a { transition: .1s; color: var(--black); }
+#main .is_loop article a:hover { color: var(--key); }
+#main .is_loop article h2 { line-height: 1.2; font-size: 90%; font-weight: 600; margin-bottom: 20px; }
+#main .is_loop article .attr { margin-top: auto; display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; font-size: 80%; color: var(--gray); }
+#main .is_loop article .attr img { display: inline-block; vertical-align: middle; width: 24px; height: 24px; border-radius: 24px; margin: 0 5px; box-shadow: 0 0 0 1px var(--border); }
+#main .loadmore-btn { margin-top: 40px; display: block; padding: 20px; text-align: center; border-radius: var(--radius); border: 1px solid var(--border); font-size: 90%; letter-spacing: 1px; overflow: hidden; }
+#main .loadmore-btn.loading { text-indent: -9999px; }
+#footer { display:flex;height:var(--footer_height);align-items:center;border-top: 1px solid var(--border); font-size: 90%; line-height: 1.5; }
+#footer #footer-widget { color: var(--gray); }
+#footer #footer-widget .LinkList { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; }
+#footer #footer-widget .LinkList>* { display: flex; align-items: center; }
+#footer #footer-widget h3 { margin-bottom: 20px; font-size: 120%; }
+#footer #footer-widget ul { display: block; margin-bottom: 5px; }
+#footer #footer-widget ul li, #footer #footer-widget ul li a { display: inline-block; }
+#footer #footer-widget ul li a { margin-right: 10px; }
+#footer #footer-widget ul li:last-of-type a { margin-right: 0; }
+#footer #footer-widget a[href*='#'] { margin-left: 10px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50px; box-shadow: var(--card_shadow); }
+#footer #footer-widget a[href*='#']:active { box-shadow: none; }
+#footer #footer-widget a[href*='#']:first-of-type { margin-left: 0; }
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; icon &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+i.icon { font-weight: normal; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; vertical-align: middle; direction: ltr; -webkit-font-smoothing: antialiased; }
+i.icon svg { display: block; width: 24px; height: 24px; fill: var(--gray); }
+*:hover > i.icon svg { fill: var(--black); }
+i.icon.left { margin-right: 10px; }
+i.icon.right { margin-left: 10px; }
+small i.icon svg { width: 20px; height: 20px; }
+small i.icon.left { margin-right: 5px; }
+small i.icon.right { margin-left: 5px; }
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; pop &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+[target*="pop-"] { cursor: pointer; }
+[id*="pop-"] { display: none; }
+.pop { position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; padding: 40px 0; background: rgba(0 0 0 / 50%); display: flex; text-align: left; font-size: 1rem; font-weight: 400; text-transform: none; transition: transform, margin .1s; visibility: hidden; opacity: 0; }
+.pop.open { visibility: visible; opacity: 1; }
+body.pop-open { overflow-y: hidden; }
+.pop .pop-wrap { display: block; margin: auto; background: var(--white); box-shadow: var(--long_shadow); border-radius: var(--radius); overflow: hidden; width: 500px; max-width: calc(100% - 40px); transition: .1s; transform-origin: bottom center; transform: scale(.9); }
+.pop.open .pop-wrap { transform: scale(1); }
+.pop .pop-wrap .pop-header { border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; }
+.pop .pop-wrap .pop-header .pop-title { display: flex; padding: 20px; overflow: hidden; }
+.pop .pop-wrap .pop-header .pop-title h3 { display: block; margin: auto 0; max-width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-size: 100%; font-weight: 600; }
+.pop .pop-wrap .pop-header .pop-title h3 .pop-back { display: inline-block; vertical-align: middle; margin-right: 10px; width: 20px; height: 20px; }
+.pop .pop-wrap .pop-header .pop-title h3 .pop-back svg { fill: var(--gray); }
+.pop .pop-wrap .pop-header .pop-close { display: flex; background: transparent; border: 0; font-size: 200%; line-height: 1; cursor: pointer; padding: 0 20px; opacity: .5; }
+.pop .pop-wrap .pop-header .pop-close:hover { opacity: 1; }
+.pop .pop-wrap .pop-header .pop-close:active { transform: scale(.9); }
+.pop .pop-wrap .pop-header .pop-close svg { display: block; margin: auto; width: 24px; height: 24px; fill: var(--black); stroke: var(--black); }
+.pop.open .pop-wrap .pop-content { display: block; }
+.pop .pop-wrap .pop-content { padding: 20px; line-height: 1.5; }
+.pop .pop-wrap .pop-content hr { width: calc(100% + 40px); margin: 0 -20px; }
+@media only screen and (max-width: 768px) {
+.pop { padding: 0; }
+.pop .pop-wrap { margin-bottom: 0; max-width: 100%; width: 100% !important; border-radius: var(--radius) var(--radius) 0 0; transform: none; }
+.pop .pop-wrap .pop-content { max-height: 80vh; overflow-y: auto; }
+}
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; komentar &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+[data-komentar] { display: grid; grid-gap: 20px; font-size: 90%; }
+[data-komentar] .item { position: relative; display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; border-bottom: 1px solid var(--border); padding-bottom: 20px; }
+[data-komentar] .item:last-of-type { padding-bottom: 0; border-bottom: 0; }
+[data-komentar] .item img { margin:0!important; border-radius: 60px !important; border: 1px solid var(--border); width: 60px; height: 60px; object-fit: cover; }
+[data-komentar] .item small { display: block; font-size: 80%; color: var(--gray); }
+[data-komentar] .item a { text-decoration: none !important; }
+[data-komentar] .item a:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; lightbox &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608; */
+.lightbox { cursor: zoom-in; }
+#lightbox { transition: .1s; opacity: 0; visibility: hidden; cursor: zoom-out; display: flex; align-items: center; justify-content: center; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; text-align: center; }
+#lightbox:before { content: ''; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--white); opacity: .8; }
+#lightbox.open { visibility: visible; opacity: 1; }
+#lightbox img { transform: scale(0); transition: .2s; display: block; width: auto; height: auto; max-width: calc(100vw - 40px); max-height: calc(100vh - 40px); border-radius: var(--radius); }
+#lightbox img.open { transform: scale(1); }
+
+--></style>
+<script>
+    //<![CDATA[
+  function darkmode_head() {
+            if (localStorage.getItem("darkmode") == 1) {
+                document.getElementsByTagName('html')[0].setAttribute('class','dark');
+            }
+   setTimeout(function(){
+                var $theme_color = getComputedStyle(document.head).getPropertyValue('--white');
+                document.querySelector('[name="apple-mobile-web-app-status-bar-style"]').setAttribute( 'content', $theme_color );
+                document.querySelector('[name="msapplication-navbutton-color"]').setAttribute( 'content', $theme_color );
+                document.querySelector('[name="theme-color"]').setAttribute( 'content', $theme_color );
+   }, 1);
+        }
+  darkmode_head();
+    //]]>
+  </script>
+
+  <!--<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>-->
+  </head>
+
+  <body id='top' itemscope='' itemtype='https://schema.org/WebPage'>
+<div class='config section' id='config' name='#config'><div class='widget HTML' data-version='3' id='HTML1'>
+<script>
+            const $_config = {
+            "page" : {
+            "title": "Kang Rian",
+            "name": "",
+            },
+            "url" : {
+            "canonical": "https://www.kangrian.net/",
+            "home": "https://www.kangrian.net/",
+            },
+            };
+            //<![CDATA[
+              console.log($_config);
+            //]]>
+          </script>
+</div></div>
+<header id='header'>
+<div class='wrapper'>
+<div class='header-widget section' id='header-widget' name='#header-widget'><div class='widget Header' data-version='2' id='Header1'>
+<div id='logo'>
+<a href='https://www.kangrian.net/' title='Kang Rian'>
+<img alt='Kang Rian' data-src='https://lh3.googleusercontent.com/-QUTJuckOGQw/Yazw2hUZUjI/AAAAAAAAAgk/IUP2mZ3TwQ4Egj3i8jmK8uq7b-hf0ECqACNcBGAsYHQ/w100-h100-p-k-no-nu/logo.png' height='40' width='40'/>
+<hgroup>
+<h1>
+Kang Rian
+</h1>
+<h2>
+Digital Creator, Bandung - Indonesia
+</h2>
+</hgroup>
+</a>
+</div>
+</div><div class='widget Label' data-version='2' id='Label1'>
+<div id='search'>
+<div class='search-form' itemscope='' itemtype='https://schema.org/WebSite'>
+<meta content='https://www.kangrian.net/' itemprop='url'/>
+<form action='/search' itemprop='potentialAction' itemscope='' itemtype='https://schema.org/SearchAction' method='get' role='search'>
+<meta content='https://www.kangrian.net/search?q={q}' itemprop='target'/>
+<button type='submit'>
+<i class='icon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z'></path></svg></i>
+</button>
+<input autocomplete='off' class='text' itemprop='query-input' name='q' placeholder='Cari di Kang Rian..' required='' type='search' value=''/>
+<input name='max-results' type='hidden' value='4'/>
+<nav itemscope='' itemtype='http://schema.org/SiteNavigationElement'>
+<ul>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/Blogger?max-results=4' itemprop='url'>
+<span itemprop='name'>
+Blogger
+</span>
+<small>5</small>
+</a>
+</li>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/JavaScript?max-results=4' itemprop='url'>
+<span itemprop='name'>
+JavaScript
+</span>
+<small>1</small>
+</a>
+</li>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/jQuery?max-results=4' itemprop='url'>
+<span itemprop='name'>
+jQuery
+</span>
+<small>1</small>
+</a>
+</li>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/Source%20Code?max-results=4' itemprop='url'>
+<span itemprop='name'>
+Source Code
+</span>
+<small>1</small>
+</a>
+</li>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/Template?max-results=4' itemprop='url'>
+<span itemprop='name'>
+Template
+</span>
+<small>1</small>
+</a>
+</li>
+<li>
+<a class='label-name' href='https://www.kangrian.net/search/label/Tutorial?max-results=4' itemprop='url'>
+<span itemprop='name'>
+Tutorial
+</span>
+<small>4</small>
+</a>
+</li>
+</ul>
+</nav>
+</form>
+</div>
+</div>
+</div><div class='widget HTML' data-version='3' id='HTML2'>
+<a target='pop-komentar'>
+<i class='icon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M289.7 403c-6.1 0-11.4 4.2-12.7 10.2-1 4.5-2.7 8.2-5 10.9-1.3 1.5-5.1 5.9-16.1 5.9-11 0-14.8-4.5-16.1-5.9-2.3-2.7-4-6.4-5-10.9-1.3-6-6.6-10.2-12.7-10.2-8.4 0-14.5 7.8-12.7 15.9 5 22.3 21 37.1 46.5 37.1s41.5-14.7 46.5-37.1c1.8-8.1-4.4-15.9-12.7-15.9zM412 352.2c-15.4-20.3-45.7-32.2-45.7-123.1 0-93.3-41.2-130.8-79.6-139.8-3.6-.9-6.2-2.1-6.2-5.9v-2.9c0-13.3-10.8-24.6-24-24.6h-.6c-13.2 0-24 11.3-24 24.6v2.9c0 3.7-2.6 5-6.2 5.9-38.5 9.1-79.6 46.5-79.6 139.8 0 90.9-30.3 102.7-45.7 123.1-9.9 13.1-.5 31.8 15.9 31.8h280.1c16.1 0 25.4-18.8 15.6-31.8zm-39 5.8H139.8c-3.8 0-5.8-4.4-3.3-7.3 7-8 14.7-18.5 21-33.4 9.6-22.6 14.3-51.5 14.3-88.2 0-37.3 7-66.5 20.9-86.8 12.4-18.2 27.9-25.1 38.7-27.6 8.4-2 14.4-5.8 18.6-10.5 3.2-3.6 8.7-3.8 11.9-.2 5.1 5.7 12 9.1 18.8 10.7 10.8 2.5 26.3 9.4 38.7 27.6 13.9 20.3 20.9 49.5 20.9 86.8 0 36.7 4.7 65.6 14.3 88.2 6.5 15.2 14.4 25.9 21.5 33.9 2.2 2.7.4 6.8-3.1 6.8z'></path></svg></i>
+</a>
+<div data-pop-title='Notifikasi Komentar' id='pop-komentar'>
+<div data-komentar='4'></div>
+<a class='all' href='/p/comments.html'>
+                  Lihat Semua
+                  <i class='icon right'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'></path></svg></i>
+</a>
+</div>
+</div></div>
+</div>
+</header>
+<main id='main'>
+<div class='wrapper'>
+<div class='index section' id='index' name='#index'><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
+<div id='featured-post'>
+<a class='img' href='https://www.kangrian.net/2021/12/cara-install-template-blogger-terbaru.html'>
+<img data-src='https://blogger.googleusercontent.com/img/a/AVvXsEjQh14VQOiS3X4GBHrja1_IwRvSBgBiBZ8APW47PRnJ3qDHjeqmuv3_jHm_RrPTIOkVJ7GECdaepbRNl39haMV1oF8XrD-FgEY2TQ6kdqhljCcuBY4qcA2YlG8HEu7PL01F1MltceAwfs322Z2lsXViTZZhLad4tLmgYHI9W9pzlGTdHT0VScrasvPh=w400-h200-p-k-no-nu' height='200' width='400'/>
+</a>
+<div class='text'>
+<small>
+<i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M317.5 210.3c1.7-1.8 1.8-4.7 0-6.5l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4l-66.5 69.1 26.4 27.1 66.3-68.7zM123.8 253.1c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 13.4-13.8-76.5-78.6z'></path><path d='M414.7 182.4l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4L250.7 304.1l-50.1-51.6c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 151-156.1c1.7-1.7 1.7-4.6 0-6.4z'></path></svg></i>
+Artikel Pilihan
+</small>
+<a href='https://www.kangrian.net/2021/12/cara-install-template-blogger-terbaru.html'>
+<h3>
+Cara Install Template Blogger Terbaru 2021
+</h3>
+</a>
+</div>
+</div>
+</div><div class='widget Blog' data-version='3' id='Blog1'>
+<header class='page-title'>
+<div class='left'>
+<h2>
+
+                            Terbaru . .
+                          
+</h2>
+</div>
+<div class='right'>
+<a class='btn' target='pop-langganan'>
+						Berlangganan?
+                      </a>
+</div>
+</header>
+<div class='is_loop'>
+<article id='p-6697785244634459461' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
+<meta content='https://www.kangrian.net/' itemprop='url'/>
+<meta content='Pada postingan kali ini saya akan menjelaskan tentang  Cara Install &amp; Setting  pada  SimStore™ - Blogger Template  secara lengkap &amp; ...' itemprop='description'/>
+<meta content='2021-12-26T23:18:00+07:00' itemprop='datePublished'/>
+<meta content='2021-12-30T15:51:38+07:00' itemprop='dateModified'/>
+<figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+<a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
+<img alt='Cara Install & Setting : SimStore™ - Blogger Template' data-src='https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp=w400-h200-p-k-no-nu' height='200' width='400'/>
+<meta content='https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp=w400-h200-p-k-no-nu' itemprop='url contentUrl'/>
+</a>
+<meta content='400' itemprop='width'/>
+<meta content='200' itemprop='height'/>
+<figcaption itemprop='caption' style='display:none;'>Cara Install & Setting : SimStore&#8482; - Blogger Template</figcaption>
+<a class='label' href='https://www.kangrian.net/search/label/Blogger?max-results=4' rel='tag'>
+Blogger
+</a>
+</figure>
+<a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
+<h2 itemprop='name headline'>
+Cara Install & Setting : SimStore&#8482; - Blogger Template
+</h2>
+</a>
+<div class='attr'>
+<span class='left'>
+<span class='wrap'>
+                          Oleh.
+                          <span itemprop='author' itemscope='' itemtype='http://schema.org/Person'>
+<a href='https://www.blogger.com/profile/04561992165094851363' itemprop='url' target='_popwin'>
+<b itemprop='name'>Kang Rian</b>
+</a>
+</span>
+                          &nbsp;
+                          <time class='waktu' datetime='2021-12-26T23:18:00+07:00' title='12/26/2021 11:18:00 PM'>12/26/2021 11:18:00 PM</time>
+</span>
+</span>
+<span class='right'>
+<span class='wrap'>
+<a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
+<i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
+2
+</a>
+</span>
+</span>
+</div>
+</article>
+<article id='p-333841375986918233' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
+<meta content='https://www.kangrian.net/' itemprop='url'/>
+<meta content='                                            Gambar Utama                             Mungkin teman-teman yang sering main socmed sering meli...' itemprop='description'/>
+<meta content='2021-12-11T12:47:00+07:00' itemprop='datePublished'/>
+<meta content='2021-12-13T14:10:20+07:00' itemprop='dateModified'/>
+<figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+<a href='https://www.kangrian.net/2021/12/mengubah-timestamp-menjadi-time-ago.html'>
+<img alt='Mengubah Timestamp menjadi Time Ago dengan jQuery' data-src='https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F=w400-h200-p-k-no-nu' height='200' width='400'/>
+<meta content='https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F=w400-h200-p-k-no-nu' itemprop='url contentUrl'/>
+</a>
+<meta content='400' itemprop='width'/>
+<meta content='200' itemprop='height'/>
+<figcaption itemprop='caption' style='display:none;'>Mengubah Timestamp menjadi Time Ago dengan jQuery</figcaption>
+<a class='label' href='https://www.kangrian.net/search/label/Blogger?max-results=4' rel='tag'>
+Blogger
+</a>
+</figure>
+<a href='https://www.kangrian.net/2021/12/mengubah-timestamp-menjadi-time-ago.html'>
+<h2 itemprop='name headline'>
+Mengubah Timestamp menjadi Time Ago dengan jQuery
+</h2>
+</a>
+<div class='attr'>
+<span class='left'>
+<span class='wrap'>
+                          Oleh.
+                          <span itemprop='author' itemscope='' itemtype='http://schema.org/Person'>
+<a href='https://www.blogger.com/profile/04561992165094851363' itemprop='url' target='_popwin'>
+<b itemprop='name'>Kang Rian</b>
+</a>
+</span>
+                          &nbsp;
+                          <time class='waktu' datetime='2021-12-11T12:47:00+07:00' title='12/11/2021 12:47:00 PM'>12/11/2021 12:47:00 PM</time>
+</span>
+</span>
+<span class='right'>
+<span class='wrap'>
+<a href='https://www.kangrian.net/2021/12/mengubah-timestamp-menjadi-time-ago.html'>
+<i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
+1
+</a>
+</span>
+</span>
+</div>
+</article>
+</div>
+<div class='loadmore' id='blog-pager'>
+<a class='loadmore-btn' href='https://www.kangrian.net/search?updated-max=2021-12-11T12:47:00%2B07:00&max-results=2'>
+<i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z'></path></svg></i>
+                        Lainnya
+                      </a>
+</div>
+</div></div>
+</div>
+</main>
+<footer id='footer'>
+<div class='wrapper'>
+<div class='footer-widget section' id='footer-widget' name='#footer-widget'><div class='widget LinkList' data-version='2' id='LinkList2'>
+<div class='left'>
+<div class='wrap'>
+<ul>
+<li><a href='/p/about.html'>About</a></li>
+<li><a href='/p/disclaimer.html'>Disclaimer</a></li>
+</ul>
+<small>
+                    &#0169;2021 - <b>Kang Rian</b>
+</small>
+</div>
+</div>
+<div class='right'>
+<a href='#darkmode' title='Mode Gelap / Terang'>
+<i class='icon dark'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M195 125c0-26.3 5.3-51.3 14.9-74.1C118.7 73 51 155.1 51 253c0 114.8 93.2 208 208 208 97.9 0 180-67.7 202.1-158.9-22.8 9.6-47.9 14.9-74.1 14.9-106 0-192-86-192-192z'></path></svg></i>
+<i class='icon light' style='display:none;'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M277.3 32h-42.7v64h42.7V32zm129.1 43.7L368 114.1l29.9 29.9 38.4-38.4-29.9-29.9zm-300.8 0l-29.9 29.9 38.4 38.4 29.9-29.9-38.4-38.4zM256 128c-70.4 0-128 57.6-128 128s57.6 128 128 128 128-57.6 128-128-57.6-128-128-128zm224 106.7h-64v42.7h64v-42.7zm-384 0H32v42.7h64v-42.7zM397.9 368L368 397.9l38.4 38.4 29.9-29.9-38.4-38.4zm-283.8 0l-38.4 38.4 29.9 29.9 38.4-38.4-29.9-29.9zm163.2 48h-42.7v64h42.7v-64z'></path></svg></i>
+</a>
+<a href='#top' title='Kembali ke Atas'>
+<i class='icon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z'></path></svg></i>
+</a>
+</div>
+</div></div>
+</div>
+</footer>
+<!-- conditional <b:if cond='data:view.isHomepage'/> <b:if cond='data:view.isMultipleItems'/> <b:if cond='data:view.isSingleItem'/> <b:if cond='data:view.isPost'/> <b:if cond='data:view.isPage'/> <b:if cond='data:view.isLabelSearch'/> <b:if cond='data:view.isSearch and !data:view.isLabelSearch'/> <b:if cond='data:view.isSearch'/> <b:if cond='data:view.isArchive'/> <b:if cond='data:view.isError'/> <b:if cond='data:view.isPreview'/> <b:if cond='data:view.url == "<URL POST atau PAGE/>"'/> <b:if cond='data:view.isLayoutMode'/> <b:if cond='data:view.isPost or data:view.isMultipleItems'/> <b:if cond='data:view.isPost'/> -->
+<script type='text/javascript'>
+          //<![CDATA[
+              $_config['url']['view'] = 'home';
+          //]]>
+        </script>
+<script>
+      //<![CDATA[
+
+/* global.js */
+
+window.onload = function() {
+ darkmode();
+ shortcode();
+ etc();
+ pop();
+ lazyload();
+ popwin();
+ timeago();
+ lightbox();
+};
+
+function darkmode() {
+    if (localStorage.getItem("darkmode") == 1) {
+        $('a[href="#darkmode"] i').toggle();
+    }
+    $('a[href="#darkmode"]').on('click', function(e) {
+        e.preventDefault();
+        $("html").toggleClass("dark");
+        $('i', this).toggle();
+        if (localStorage.getItem("darkmode") == 1) {
+            localStorage.setItem("darkmode", 0);
+        } else {
+            localStorage.setItem("darkmode", 1);
+        }
+        darkmode_head();
+    });
+}
+
+function popwin() {
+    $(document).on('click', '[target="_popwin"]', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        var url = $(this).attr('href'),
+            width = $(this).attr('data-popwin-width'),
+            height = $(this).attr('data-popwin-height');
+        var w = 960;
+        if (width) {
+            w = width;
+        }
+        var h = 540;
+        if (height) {
+            h = height;
+        }
+        var left = Number((screen.width / 2) - (w / 2)),
+            tops = Number((screen.height / 2) - (h / 2)),
+            popupWindow = window.open(url, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=1, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
+
+        popupWindow.focus();
+    });
+}
+
+function shortcode() {
+    $('.post-body').each(function() {
+        $(this).html(
+            $(this).html()
+            .replace(/\[youtube\]/g, '<div class="video"><iframe allowfullscreen="true" data-shortcode="youtube" data-src="').replace(/\[\/youtube\]/g, '"></iframe></div>')
+            .replace(/\[code\]/g, '<pre data-shortcode="code"><code>').replace(/\[\/code\]/g, '</code></pre>')
+            .replace(/\[img\]/g, '<img style="display:block;width:100%;border-radius:10px;" data-shortcode="img" src="').replace(/\[\/img\]/g, '" alt="image"/>')
+            .replace(/\[url\]/g, '<a data-shortcode="url" href="').replace(/\[\/url\]/g, '" target="_blank" rel="nofollow external">Lihat Tautan</a>')
+        );
+    });
+    $('[data-shortcode]').each(function() {
+        var $shortcode = $(this).attr('data-shortcode');
+        if ($shortcode == 'img') {
+            var $img_url = $(this).attr('src');
+            $(this).wrap('<a class="lightbox" href="' + $img_url + '"></a>');
+        }
+        if ($shortcode == 'youtube') {
+            var $data_src = $(this).attr('data-src');
+            var youtube_id = $data_src.split('/')[3];
+            if ($data_src.indexOf('https://www.youtube.com/watch?v=') >= 0) {
+                youtube_id = get_url_parameter('v', $data_src);
+            }
+            $(this).attr('data-src','https://www.youtube.com/embed/'+youtube_id+'?autoplay=1&rel=0');
+        }
+    });
+}
+
+function etc() {
+    $(window).on('beforeunload', function() {
+        $('body').addClass('loading');
+        setTimeout(function() {
+            $('body').removeClass('loading');
+        }, 2000);
+    });
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 0) {
+            $('#header').addClass('shadow');
+        } else {
+            $('#header').removeClass('shadow');
+        }
+    });
+
+    if ($('[data-related]').length) {
+        $('[data-related]').each(function() {
+            var $related = $(this);
+            var $url = $(this).attr('data-related');
+            $related.addClass('loading');
+            $related.load($url + ' .is_loop', function() {
+
+                var $loop = $(this).html();
+                $related.html($loop);
+
+                var $article_id = $related.closest('article').attr('id');
+                if ($article_id) {
+                    if ($related.find('article#' + $article_id).length) {
+                        $related.find('article#' + $article_id).remove();
+                    } else {
+                        $related.find('article:last-of-type').remove();
+                    }
+                }
+
+                lazyload();
+                timeago();
+
+
+                $related.removeClass('loading');
+
+            });
+        });
+    }
+    if ($('[data-komentar]').length) {
+        $('[data-komentar]').each(function() {
+            var $this = $(this);
+            var $data_komentar = $this.attr('data-komentar');
+            $this.addClass('loading');
+            $.getJSON($_config['url']['home'] + 'feeds/comments/default?alt=json&max-results=' + $data_komentar, function(data) {
+
+                var html = '';
+                $.each(data.feed.entry, function(key, value) {
+                    html += '<div class="item">';
+                    html += '<div class="left">';
+                    html += '<img data-src="' + value.author[0].gd$image.src.replace(value.author[0].gd$image.src.split('/')[7], 'w60-h60-c') + '"/>';
+                    html += '</div>';
+                    html += '<div class="right">';
+                    html += '<b>' + value.author[0].name.$t + '</b> mengomentari ';
+
+                    if (value["thr$in-reply-to"].href.includes('/p/')) {
+                        html += 'halaman <a href="' + value.link[2].href + '">' + titleCase(value["thr$in-reply-to"].href.split('/')[4].replace('.html', '').replace(/-/g, ' ')) + '..</a>';
+                    } else {
+                        html += 'postingan <a href="' + value.link[2].href + '">' + titleCase(value["thr$in-reply-to"].href.split('/')[5].replace('.html', '').replace(/-/g, ' ')) + '..</a>';
+                    }
+                    html += '<br/>';
+                    html += '<small><time datetime="' + value.published.$t + '"></time></small>';
+                    html += '</div>';
+                    html += '</div>';
+                });
+                $this.html(html);
+                lazyload();
+                timeago();
+                $this.removeClass('loading');
+            });
+        });
+    }
+    $('#pop-bagikan .copy button').on('click', function(e) {
+        var $this = $(this);
+        $this.siblings('input').select();
+        document.execCommand('copy');
+        $this.text('Disalin!');
+        setTimeout(function() {
+            $this.text('Salin');
+        }, 2000);
+    });
+
+    if (window.location.hash) {
+        if ($(window.location.hash).length) {
+            var $header_sticky = $('#header').outerHeight();
+            var $attr_sticky = $('.is_single article .attr-sticky').outerHeight();
+            $("html, body").stop().animate({ scrollTop: $(window.location.hash).offset().top - $header_sticky - $attr_sticky - 20 }, 500);
+            $(window.location.hash).addClass('focus');
+            setTimeout(function() {
+                $(window.location.hash).removeClass('focus');
+            }, 2000);
+        }
+    }
+    $(document).on('click', 'a[href*="#"]', function(e) {
+        var $hash = '#' + $(this).attr('href').split('#')[1];
+        if ($($hash).length) {
+            e.preventDefault();
+            var $header_sticky = $('#header').outerHeight();
+            var $attr_sticky = $('.is_single article .attr-sticky').outerHeight();
+            if ($attr_sticky) {
+                $("html, body").stop().animate({ scrollTop: $($hash).offset().top - $header_sticky - $attr_sticky - 20 }, 500);
+            } else {
+                $("html, body").stop().animate({ scrollTop: $($hash).offset().top - $header_sticky - 20 }, 500);
+            }
+            $($hash).addClass('focus');
+            setTimeout(function() {
+                $($hash).removeClass('focus');
+            }, 2000);
+        }
+    });
+
+    $(document).on('click', '.loadmore-btn', function(e) {
+        e.preventDefault();
+        let nextLink = $(this).attr('href');
+        let loadmoreBtn = $('#blog-pager .loadmore-btn');
+        let loadmore_txt = $('#blog-pager .loadmore-btn').text();
+        if (nextLink) {
+            $.ajax({
+                url: nextLink,
+                beforeSend: function() {
+                    loadmoreBtn.addClass('loading');
+                },
+                complete: function() {
+                    loadmoreBtn.removeClass('loading');
+                },
+                success: function(html) {
+                    let rslt = $(html).find('.is_loop').html();
+                    let nextPage = $(html).find('.loadmore-btn').attr('href');
+                    $('.is_loop').append(rslt);
+                    loadmoreBtn.show();
+                    lazyload();
+                    timeago();
+
+                    if (nextPage) {
+                        loadmoreBtn.attr('href', nextPage);
+                    } else {
+                        loadmoreBtn.fadeOut();
+                    }
+                }
+            });
+        }
+    });
+
+    if ($_config['url']['view'] == 'single') {
+
+        var olderLink_text = $('a.blog-pager-older-link').text();
+        var olderLink = $('a.blog-pager-older-link').attr('href');
+        $('a.blog-pager-older-link').load(olderLink + ' article h1', function() {
+            var olderLinkTitle = $('a.blog-pager-older-link').text();
+            $('a.blog-pager-older-link').html('<figure class="loading"></figure><div class="flex left"><div class="wrap"><small><b>' + olderLink_text + '</b></small><h3>' + olderLinkTitle + '</h3></div></div>');
+            $('a.blog-pager-older-link > figure').load(olderLink + ' article .post-body img:first-of-type', function() {
+                var img = $(this).html();
+                var src = img.split('src="')[1];
+                var url = src.split('"')[0];
+                var resize = url.split('=')[0] + '=w100-h100-c';
+                $('a.blog-pager-older-link > figure').html('<img src="' + resize + '"/>').removeClass('loading');
+            });
+        });
+
+        var newerLink_text = $('a.blog-pager-newer-link').text();
+        var newerLink = $('a.blog-pager-newer-link').attr('href');
+        $('a.blog-pager-newer-link').load(newerLink + ' article h1', function() {
+            var newerLinkTitle = $('a.blog-pager-newer-link').text();
+            $('a.blog-pager-newer-link').html('<figure class="loading"></figure><div class="flex right"><div class="wrap"><small><b>' + newerLink_text + '</b></small><h3>' + newerLinkTitle + '</h3></div></div>');
+            $('a.blog-pager-newer-link > figure').load(newerLink + ' article .post-body img:first-of-type', function() {
+                var img = $(this).html();
+                var src = img.split('src="')[1];
+                var url = src.split('"')[0];
+                var resize = url.split('=')[0] + '=w100-h100-c';
+                $('a.blog-pager-newer-link > figure').html('<img src="' + resize + '"/>').removeClass('loading');
+            });
+        });
+    }
+}
+
+function timeago() {
+    function get_timeago(t) {
+        var e = new Date(t),
+            a = 36e5,
+            o = 24 * a,
+            s = 30 * o,
+            i = 365 * o,
+            n = "yang lalu",
+            l = new Date - e;
+        return l < 6e4 ? Math.round(l / 1e3) + " detik " + n : l < a ? Math.round(l / 6e4) + " menit " + n : l < o ? Math.round(l / a) + " jam " + n : l < s ? Math.round(l / o) + " hari " + n : l < i ? Math.round(l / s) + " bulan " + n : Math.round(l / i) + " tahun " + n
+    }
+    $('[datetime]:not(.timeago)').each(function() {
+        var $this = $(this);
+        var data_timeago = $this.attr('datetime');
+        $this.addClass('timeago');
+        if (!$this.attr('title')) {
+            $this.attr('title', data_timeago);
+        }
+        $this.text(get_timeago(data_timeago));
+        // setInterval(function(){
+        //     $this.text(get_timeago(data_timeago));
+        // }, 1000);
+    });
+    $('#comments .datetime a:not(.timeago)').each(function() {
+        var $this = $(this);
+        var data_timeago = $this.text();
+        $this.attr('datetime', data_timeago);
+
+        var datetime = $this.attr('datetime');
+
+        $this.addClass('timeago');
+        $this.attr('title', datetime);
+
+        $this.text(get_timeago(datetime));
+        // setInterval(function(){
+        //     $this.text(get_timeago(datetime));
+        // }, 1000);
+    });
+}
+
+function separator(angka, symbol = '') {
+    var separator = '';
+    var angkarev = angka.toString().split('').reverse().join('');
+    for (var i = 0; i < angkarev.length; i++)
+        if (i % 3 == 0) separator += angkarev.substr(i, 3) + '.';
+    if (symbol) {
+        return symbol + ' ' + separator.split('', separator.length - 1).reverse().join('');
+    } else {
+        return separator.split('', separator.length - 1).reverse().join('');
+    }
+}
+
+function pop() {
+    if ($('[target=pop-video]').length) {
+        $pop_video_html = '\
+        <div id="pop-video" data-pop-title="Video" data-pop-width="960">\
+            <div class="video">\
+                <iframe allowfullscreen="true"></iframe>\
+            </div>\
+        </div>\
+        ';
+        $($pop_video_html).appendTo('body');
+    }
+    $('[id*="pop-"]:not(".pop-loaded")').each(function() {
+        var $this = $(this),
+            $id = $this.attr('id'),
+            $pop_title = $this.attr('data-pop-title'),
+            $pop_width = $this.attr('data-pop-width'),
+            $pop_height = $this.attr('data-pop-height');
+        $this.wrap('<div class="pop"></div>');
+        $this.wrap('<div class="pop-wrap"></div>');
+        $this.addClass('pop-content pop-loaded');
+        var header = '\
+            <header class="pop-header">\
+                <div class="pop-title">\
+                    <h3>\
+                        ' + $pop_title + '\
+                    </h3>\
+                </div>\
+                <div class="pop-close">\
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"/></svg>\
+                </div>\
+            </header>\
+        ';
+        $this.closest('.pop-wrap').prepend(header);
+        if ($pop_width) {
+            $this.closest('.pop-wrap').css('width', $pop_width);
+        }
+    });
+    $('.pop-close').on('click', function() {
+        $(this).closest('.pop').removeClass('open');
+        $('body').removeClass('pop-open');
+        if ($('[id=pop-video] iframe').length) {
+            $('[id=pop-video] iframe').attr('src', '');
+        }
+    });
+    $(document).on('click', '[target*="pop-"]', function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            pop_id = $this.attr('target'),
+            pop_title = ($this.attr('data-pop-title') ? $this.attr('data-pop-title') : $('#' + pop_id).attr('data-pop-title')),
+            pop_width = $this.attr('data-pop-width'),
+            pop_height = $this.attr('data-pop-height');
+
+
+        $this.closest('.pop').removeClass('open');
+        $('body').removeClass('pop-open');
+
+
+        if ($('#' + pop_id).length) {
+
+            $('body').addClass('pop-open');
+            $('#' + pop_id).closest('.pop').addClass('open');
+            if ($this.closest('.pop-content').length) {
+                $back_id = $this.closest('.pop-content').attr('id');
+                pop_title = '<a target="' + $back_id + '"><i class="pop-back"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"/></svg></i></a>' + pop_title;
+            }
+            if (pop_title) {
+                $('#' + pop_id).closest('.pop').find('.pop-title h3').html(pop_title);
+            }
+            $('[data-src]').each(function() {
+                var data_src = $(this).attr('data-src');
+                $(this).attr('src', data_src).removeAttr('data-src');
+            });
+        }
+
+        /* custom */
+
+        if (pop_id == 'pop-video') {
+            $href = $(this).attr('href');
+
+            var youtube_id = $href.split('/')[3];
+
+            if ($href.indexOf('https://www.youtube.com/watch?v=') >= 0) {
+                youtube_id = get_url_parameter('v', $href);
+            }
+
+            $('[id=pop-video] iframe').attr('src', 'https://www.youtube.com/embed/' + youtube_id + '?autoplay=1&showinfo=0');
+
+        }
+
+    });
+    $(document).on('click', '.pop.open', function() {
+        $(this).find('.pop-close').trigger('click');
+    });
+    $(document).on('click', '.pop-wrap', function(e) {
+        e.stopPropagation();
+    });
+}
+
+function lightbox() {
+    if ($('.lightbox-auto').length) {
+        $('.lightbox-auto').each(function() {
+            $('img', this).closest('a').each(function() {
+                $(this).addClass('lightbox');
+            })
+        });
+    }
+    if ($('.lightbox').length) {
+        var $html = '\
+   <div id="lightbox">\
+    <figure></figure>\
+   </div>\
+  ';
+        $('body').append($html);
+
+        $(document).on('click', '.lightbox', function(e) {
+            e.preventDefault();
+
+            var $href = $(this).attr('href');
+
+            $('#lightbox').addClass('open');
+            $('#lightbox figure').addClass('loading');
+            $('#lightbox figure').html('<img src="' + $href + '"/>');
+            $('#lightbox figure img').on('load', function() {
+                $('#lightbox figure').removeClass('loading');
+                $(this).addClass('open');
+            });
+        });
+
+        $(document).on('click', '#lightbox', function(e) {
+            $('#lightbox').removeClass('open');
+            $('#lightbox img').remove();
+        });
+        $(window).on('scroll', function() {
+            $('#lightbox').removeClass('open');
+            $('#lightbox img').remove();
+        });
+    }
+}
+
+function lazyload() {
+
+    $('[data-bg]').each(function() {
+        var $this = $(this);
+        var url = $this.attr('data-bg');
+        $this.css('background-image', 'url(' + url + ')').removeAttr('data-bg');
+    });
+
+    $('[data-src]:not([lazy="true"])').each(function() {
+
+        var $this = $(this);
+
+        var window_height = $(window).height();
+        var scroll_top = $(window).scrollTop();
+        var window_bottom = scroll_top + window_height;
+
+        var $this_top = $this.offset().top;
+
+        $this.attr('data-offset-top', $this_top);
+
+        var url = $this.attr('data-src');
+            url = url.replace('1.bp.blogspot.com','lh3.googleusercontent.com');
+            url = url.replace('2.bp.blogspot.com','lh3.googleusercontent.com');
+            url = url.replace('3.bp.blogspot.com','lh3.googleusercontent.com');
+            url = url.replace('4.bp.blogspot.com','lh3.googleusercontent.com');
+
+        var tag_name = $this.prop('tagName').toLowerCase();
+        if ($this_top <= window_bottom) {
+            if (tag_name == 'img') {
+                $this.attr('src', url).removeAttr('data-src');
+				$this.attr('lazy','true');
+                // $this.attr('src', url).on('load', function() {
+                //     $this.removeAttr('data-src');
+                // });
+            } else if (tag_name == 'iframe') {
+                $this.attr('src', url).removeAttr('data-src');
+				$this.attr('lazy','true');
+            }
+        }
+
+    });
+
+    $(window).on('scroll', function() {
+
+        var window_height = $(window).height();
+        var scroll_top = $(window).scrollTop();
+        var window_bottom = scroll_top + window_height;
+
+        $('[data-src]:not([lazy="true"])').each(function() {
+
+            var $this = $(this);
+
+            var window_height = $(window).height();
+            var $this_top = $this.offset().top;
+
+            var url = $this.attr('data-src');
+                url = url.replace('1.bp.blogspot.com','lh3.googleusercontent.com');
+                url = url.replace('2.bp.blogspot.com','lh3.googleusercontent.com');
+                url = url.replace('3.bp.blogspot.com','lh3.googleusercontent.com');
+                url = url.replace('4.bp.blogspot.com','lh3.googleusercontent.com');
+
+            var tag_name = $this.prop('tagName').toLowerCase();
+            if ($this_top <= window_bottom) {
+                if (tag_name == 'img') {
+                    $this.attr('src', url).removeAttr('data-src');
+					$this.attr('lazy','true');
+                    // $this.attr('src', url).on('load', function() {
+                    //     $this.removeAttr('data-src');
+                    // });
+                } else if (tag_name == 'iframe') {
+                    $this.attr('src', url).removeAttr('data-src');
+					$this.attr('lazy','true');
+                }
+            }
+        });
+
+    });
+
+}
+
+function titleCase(str) {
+    str = str.split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    str = str.join(' ');
+    return str;
+}
+
+function get_url_parameter(name, url) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+ //]]>
+
+    </script>
+    <!--
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1434883710-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY4hcKNFElItrFCc28KMPOx8ur-OGg:1640955283001';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d754786223723890500','//www.kangrian.net/','754786223723890500');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '754786223723890500', 'title': 'Kang Rian', 'url': 'https://www.kangrian.net/', 'canonicalUrl': 'https://www.kangrian.net/', 'homepageUrl': 'https://www.kangrian.net/', 'searchUrl': 'https://www.kangrian.net/search', 'canonicalHomepageUrl': 'https://www.kangrian.net/', 'blogspotFaviconUrl': 'https://www.kangrian.net/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-58940768-1', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': true, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Kang Rian - RSS\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/754786223723890500/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/20752fd4df382411', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Dapatkan link', 'key': 'link', 'shareMessage': 'Dapatkan link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Baca selengkapnya', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Kang Rian', 'metaDescription': 'Digital Creator, Bandung - Indonesia'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Kang Rian', 'description': 'Digital Creator, Bandung - Indonesia', 'url': 'https://www.kangrian.net/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}, {'name': 'widgets', 'data': [{'title': 'Konfigurasi', 'type': 'HTML', 'sectionId': 'config', 'id': 'HTML1'}, {'title': 'Kang Rian (Header)', 'type': 'Header', 'sectionId': 'header-widget', 'id': 'Header1'}, {'title': 'Search \x26amp; Label...', 'type': 'Label', 'sectionId': 'header-widget', 'id': 'Label1'}, {'title': 'Notifikasi Komentar', 'type': 'HTML', 'sectionId': 'header-widget', 'id': 'HTML2'}, {'title': 'Artikel Pilihan', 'type': 'FeaturedPost', 'sectionId': 'index', 'id': 'FeaturedPost1', 'postId': '5689669549107090909'}, {'title': 'Postingan Blog', 'type': 'Blog', 'sectionId': 'index', 'id': 'Blog1', 'posts': [{'id': '6697785244634459461', 'title': 'Cara Install \x26 Setting : SimStore\u2122 - Blogger Template', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp\x3dw200-h100', 'showInlineAds': false}, {'id': '333841375986918233', 'title': 'Mengubah Timestamp menjadi Time Ago dengan jQuery', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F\x3dw640-h268', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}]}], 'allBylineItems': [{'name': 'comments', 'label': 'comments'}]}, {'title': 'Tautan', 'type': 'LinkList', 'sectionId': 'footer-widget', 'id': 'LinkList2'}]}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'config', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header-widget', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'header-widget', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'header-widget', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'index', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'index', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'footer-widget', document.getElementById('LinkList2'), {}, 'displayModeFull'));
+</script>
+</body>-->
+  </body>
+</html>
