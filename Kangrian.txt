@@ -8,72 +8,49 @@
   <head>
 
   <script async='true' defer='true' src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<!-- == AHC == -->
-<meta content='yes' name='apple-mobile-web-app-capable'/>
-<meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
-<meta content='#ffffff' name='msapplication-navbutton-color'/>
-<meta content='#ffffff' name='theme-color'/>
-<meta charset='UTF-8'/>
-<meta content='width=device-width, initial-scale=1' name='viewport'/>
-<link href='https://www.kangrian.net/favicon.ico' rel='icon'/>
-<meta content='Kang Rian' property='og:site_name'/>
-<title>
-Kang Rian
-</title>
-<meta content='Kang Rian' itemprop='name'/>
-<meta content='Kang Rian' name='twitter:title'/>
-<meta content='Kang Rian' name='twitter:image:alt'/>
-<meta content='Kang Rian' property='og:image:alt'/>
-<meta content='Kang Rian' property='og:title'/>
-<meta content='Kang Rian' name='keywords'/>
-<meta content='Kang Rian' property='article:tag'/>
-<meta content='Digital Creator, Bandung - Indonesia' name='description'/>
-<meta content='Digital Creator, Bandung - Indonesia' name='twitter:description'/>
-<meta content='Digital Creator, Bandung - Indonesia' itemprop='description'/>
-<link href='https://www.kangrian.net/' rel='canonical'/>
-<link href='https://www.kangrian.net/' hreflang='x-default' rel='alternate'/>
-<meta content='https://www.kangrian.net/' property='og:url'/>
-<meta content='summary_large_image' name='twitter:card'/>
-<meta content='article' property='og:type'/>
-<meta content='@username' name='twitter:site'/>
-<meta content='@username' name='twitter:creator'/>
-<meta content='0LTvUuASxNgZMyBbJ-Cf8PuvYC3_OO6iLJxfTXQ8f8s' name='google-site-verification'/>
-<meta content='CFD64403EA573827C68A8A88B34308B7' name='msvalidate.01'/>
-<meta content='index, follow' name='robots'/>
-<meta content='index, follow' name='googlebot'/>
-<link href='https://www.kangrian.net/feeds/posts/default' rel='alternate' title='Kang Rian - Atom' type='application/atom+xml'/>
-<link href='https://www.kangrian.net/feeds/posts/default?alt=rss' rel='alternate' title='Kang Rian - RSS' type='application/rss+xml'/>
-<link href='https://www.blogger.com/feeds/754786223723890500/posts/default' rel='service.post' title='Kang Rian - Atom' type='application/atom+xml'/>
-<link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
-<link href='https://www.kangrian.net/' rel='openid.delegate'/>
-<!-- == / AHC == -->
-<include expiration='7d' path='*.css'></include>
-<include expiration='7d' path='*.js'></include>
-<include expiration='3d' path='*.gif'></include>
-<include expiration='3d' path='*.jpeg'></include>
-<include expiration='3d' path='*.jpg'></include>
-<include expiration='3d' path='*.png'></include>
-<include expiration='3d' path='*.webp'></include>
-<include expiration='3d' path='*.ico'></include>
-<meta content='sat, 02 jun 2021 00:00:00 GMT' http-equiv='expires'/>
-<meta content='public' http-equiv='Cache-control'/>
-<link href='//ajax.googleapis.com' rel='dns-prefetch'/>
-<link href='//www.google-analytics.com' rel='dns-prefetch'/>
-<link href='//www.googletagservices.com' rel='dns-prefetch'/>
-<link href='//resources.blogblog.com' rel='dns-prefetch'/>
-<link href='//www.blogger.com' rel='dns-prefetch'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes' name='viewport'/>
+<!-- DNS Prefetch -->
+<link href='//fonts.googleapis.com' rel='dns-prefetch'/>
+<link href='//fonts.gstatic.com' rel='dns-prefetch'/>
+<link href='//dnjs.cloudflare.com' rel='dns-prefetch'/>
 <link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
 <link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
 <link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
 <link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
 <link href='//lh3.googleusercontent.com' rel='dns-prefetch'/>
 <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
-<link href='//www.youtube.com' rel='dns-prefetch'/>
-<link href='//img.youtube.com' rel='dns-prefetch'/>
-<link href='//github.com' rel='dns-prefetch'/>
-<link href='//cdn.rawgit.com' rel='dns-prefetch'/>
-<link href='//cdn.jsdelivr.net' rel='dns-prefetch'/>
-<link href='//dummyimage.com' rel='dns-prefetch'/>
+<link href='//www.blogger.com' rel='dns-prefetch'/>
+<!-- Site Info -->
+<meta content='blogger' name='generator'/>
+<title>Kang Rian</title>
+<meta content='Digital Creator, Bandung - Indonesia' name='description'/>
+<link href='https://www.kangrian.net/' rel='canonical'/>
+<link href='https://www.kangrian.net/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='#ffffff' name='theme-color'/>
+<!-- Open Graph Meta Tags -->
+<meta content='id' property='og:locale'/>
+<meta content='website' property='og:type'/>
+<meta content='Kang Rian' property='og:title'/>
+<meta content='Kang Rian' property='og:site_name'/>
+<meta content='Digital Creator, Bandung - Indonesia' property='og:description'/>
+<meta content='https://www.kangrian.net/' property='og:url'/>
+<meta content='https://lh3.googleusercontent.com/-g196fmk1BKQ/Yd9kGtRTQ5I/AAAAAAAAA3k/2SfCWIsA_Howwu7BrnrakvRb7WtcYGIGwCNcBGAsYHQ/w1600/image.png' property='og:image'/>
+<!-- Twitter Meta Tags -->
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='Kang Rian' name='twitter:title'/>
+<meta content='Digital Creator, Bandung - Indonesia' name='twitter:description'/>
+<meta content='https://www.kangrian.net/' name='twitter:domain'/>
+<meta content='https://lh3.googleusercontent.com/-g196fmk1BKQ/Yd9kGtRTQ5I/AAAAAAAAA3k/2SfCWIsA_Howwu7BrnrakvRb7WtcYGIGwCNcBGAsYHQ/w1600/image.png' property='twitter:image'/>
+<!-- Feed Links -->
+<link rel="alternate" type="application/atom+xml" title="Kang Rian - Atom" href="https://www.kangrian.net/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Kang Rian - RSS" href="https://www.kangrian.net/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Kang Rian - Atom" href="https://www.blogger.com/feeds/754786223723890500/posts/default" />
+<!-- Styles and Scripts -->
+
 
   <style type="text/css"><!-- /*<style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');}</style>
 <style id='template-skin-1' type='text/css'><!--
@@ -156,7 +133,7 @@ body { font-size: 16px; line-height: 1.6; }
 #header-widget #search .search-form { position: relative; }
 #header-widget #search .search-form form { position: relative; }
 #header-widget #search .search-form form [type=submit] { background: transparent; position: absolute; top: 50%; left: 20px; transform: translateY(-50%); padding: 0; border: 0; }
-#header-widget #search .search-form form input { background: var(--silver); color: var(--black); display: block; width: 100%; border: 1px solid transparent; padding: 10px 20px; padding-left: 54px; border-radius: 100px; font-size: 90%; }
+#header-widget #search .search-form form input { background: var(--silver); color: var(--black); display: block; width: 100%; border: 1px solid transparent; padding: 10px 20px; padding-left: 54px; border-radius: var(--radius); font-size: 90%; }
 #header-widget #search .search-form form input:focus { background: transparent; border: 1px solid var(--border); }
 #header-widget #search .search-form form nav ul { background: var(--white); box-shadow: var(--card_shadow); border-radius: var(--radius); position: absolute; top: 100%; width: 100%; right: 0; max-height: 50vh; overflow-y: auto; visibility: hidden; opacity: 0; transition: .1s; transform-origin: top center; }
 #header-widget #search .search-form form nav ul li, #header-widget #search .search-form form nav ul li a { display: block; }
@@ -167,22 +144,21 @@ body { font-size: 16px; line-height: 1.6; }
 #header-widget #search .search-form form input:focus~nav ul, #header-widget #search .search-form form nav ul:hover { visibility: visible; opacity: 1; }
 #header-widget #pop-komentar .all { display: grid; grid-template-columns: 1fr auto; padding: 20px; text-align: center; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 20px; color: var(--gray); }
 #header-widget #pop-komentar .all svg { fill: var(--key); stroke: var(--key); }
-#featured-post { position: relative; margin-bottom: 80px; }
+#featured-post { box-shadow: var(--card_shadow); border-radius: var(--radius); overflow:hidden; margin-bottom: 40px; }
 #featured-post .img { display: block; }
 #featured-post .img img { display: block; width: 100%; border-radius: var(--radius); }
-#featured-post .text { position: absolute; bottom: -40px; left: 40px; width: calc(100% - 80px); padding: 40px; box-shadow: var(--card_shadow); border-radius: var(--radius); overflow: hidden; }
-#featured-post .text:before { content: ''; background: var(--white); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .95; }
-#featured-post .text>* { position: relative; }
+#featured-post .text { padding: 40px; }
 #featured-post .text small { color: var(--gray); display: block; margin-bottom: 5px; }
 #featured-post .text h3 { font-size: 150%; line-height: 1.4; color: var(--black); transition: .1s; }
 #featured-post:hover .text h3 { color: var(--key); }
 @media only screen and (max-width: 768px) {
-#featured-post { margin: -20px -20px 80px; }
-#featured-post .img img { border-radius: 0; }
-#featured-post .text { padding: 20px; left: 20px; width: calc(100% - 40px); }
-#featured-post .text h3 { font-size: 100%; }
+#featured-post { margin: -20px -20px 40px; } #featured-post .img img { border-radius: 0; } #featured-post .text { padding: 20px; left: 20px; width: calc(100% - 40px); } #featured-post .text h3 { font-size: 100%; }
 }
 #main { min-height:calc(100vh - var(--header_height) - var(--footer_height));display: flex; padding: 20px 0 40px; }
+#main #pop-subscribe form { display:grid; grid-template-columns: 1fr auto; grid-gap:20px; }
+#main #pop-subscribe form > * { border:1px solid var(--border); padding:0 20px; height:60px; border-radius:var(--radius); background:transparent; color:var(--black); }
+#main #pop-subscribe form button { cursor:pointer; background:var(--black); color:var(--white); }
+#main #pop-subscribe form button svg { fill:var(--white); }
 #main header.page-title { position: sticky; top: calc(var(--header_height) - 1px); z-index: 99; margin: 0 -20px; display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; padding: 15px 20px; border-radius: 0 0 var(--radius2) var(--radius2); box-shadow: var(--card_shadow); overflow: hidden; background:var(--white); }
 #main header.page-title>* { display: flex; align-items: center; min-width: 0; }
 #main header.page-title h2 { display: inline-block; letter-spacing: 1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
@@ -222,10 +198,11 @@ body { font-size: 16px; line-height: 1.6; }
 #main .is_single article .update { display: block; padding: 15px 20px; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 40px; font-size: 80%; }
 #main .is_single article .post-body { margin-top: 40px; font-size: 90%; }
 #main .is_single article .post-body table.field { display: none; }
+#main .is_single article .post-body p { margin:10px 0; }
 #main .is_single article .post-body a { color: var(--key); margin: auto !important; text-decoration: underline; }
 #main .is_single article .post-body .tr-caption-container { color: var(--gray); }
 #main .is_single article .post-body img { display: block; margin: 10px auto; border-radius: var(--radius); box-shadow: var(--card_shadow); border: 1px solid var(--border); }
-#main .is_single article .post-body blockquote { background: var(--silver); padding: 30px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 105%; margin-top: 20px; }
+#main .is_single article .post-body blockquote { background: var(--silver); padding: 30px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 105%; margin: 10px 0; }
 #main .is_single article .post-body blockquote mark { display: inline-block; background: var(--key); color: var(--white); border-radius: 2px; padding: 0 2px; }
 #main .is_single article .post-body code { font-family: monospace, monospace; }
 #main .is_single article .post-body pre { overflow: hidden; box-shadow: inset 0 0 0 1px var(--black), 0 0 0 1px var(--black); border-radius: var(--radius); font-size: 90%; margin: 10px 0; }
@@ -233,10 +210,10 @@ body { font-size: 16px; line-height: 1.6; }
 #main .is_single article .post-body pre header { display: block; background: var(--black); color: var(--white); padding: 10px 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 #main .is_single article .post-body pre code mark { display: inline-block; background: var(--key); color: var(--white); border-radius: 2px; padding: 0 2px; }
 #main .is_single article .post-body h2 { font-size: 200%; font-weight: 600; border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 10px; margin: 20px 0; }
-#main .is_single article .post-body h3 { font-size: 150%; font-weight: 600; margin-top: 20px; }
-#main .is_single article .post-body ol, #main .is_single article .post-body ul { margin-left: 2em; padding: 20px 0; }
+#main .is_single article .post-body h3 { font-size: 150%; font-weight: 600; margin: 15px 0; }
+#main .is_single article .post-body ol, #main .is_single article .post-body ul { margin: 10px 0;margin-left: 2em; }
 #main .is_single article .post-body ol li, #main .is_single article .post-body ul li { padding: 10px 0; }
-#main .is_single article .post-body .table { border: 1px solid var(--border); max-width: 100%; overflow-x: auto; border-radius: var(--radius); margin-top: 20px; }
+#main .is_single article .post-body .table { border: 1px solid var(--border); max-width: 100%; overflow-x: auto; border-radius: var(--radius); margin: 10px 0; }
 #main .is_single article .post-body .table table { width: 100%; border-collapse: collapse; }
 #main .is_single article .post-body .table table thead th { border-bottom: 1px solid var(--border); }
 #main .is_single article .post-body .table table th, #main .is_single article .post-body table td { padding: 10px; text-align: center; vertical-align: middle; }
@@ -286,6 +263,7 @@ body { font-size: 16px; line-height: 1.6; }
 #main .is_single article #blog-pager a small { color: var(--gray); }
 #main .is_single article #blog-pager a h3 { line-height: 1.4; }
 #main .is_single article #related { margin-top: 40px; }
+#main .is_single article #related .is_loop { margin:0; }
 #main .is_single article #related .header { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; }
 @media only screen and (max-width: 768px) {
 #main .is_single article #related .is_loop { display: flex; grid-gap: 20px; overflow-x: auto; margin: 0 -20px -20px; padding: 0 20px 20px; }
@@ -371,6 +349,26 @@ body.pop-open { overflow-y: hidden; }
 
 --></style>
 <script>
+    const $_config = {
+    'page' : {
+    'title': 'Kang Rian',
+    'name': '',
+    },
+    'url' : {
+    'canonical': 'https://www.kangrian.net/',
+    'home': 'https://www.kangrian.net/',
+    
+      
+        'view': 'home',
+        
+      
+    },
+    };
+    //<![CDATA[
+              console.log($_config);
+            //]]>
+  </script>
+<script>
     //<![CDATA[
   function darkmode_head() {
             if (localStorage.getItem("darkmode") == 1) {
@@ -393,30 +391,14 @@ body.pop-open { overflow-y: hidden; }
 </head>-->
   </head>
 
-  <body id='top' itemscope='' itemtype='https://schema.org/WebPage'>
-<div class='config section' id='config' name='#config'><div class='widget HTML' data-version='3' id='HTML1'>
-<script>
-            const $_config = {
-            "page" : {
-            "title": "Kang Rian",
-            "name": "",
-            },
-            "url" : {
-            "canonical": "https://www.kangrian.net/",
-            "home": "https://www.kangrian.net/",
-            },
-            };
-            //<![CDATA[
-              console.log($_config);
-            //]]>
-          </script>
-</div></div>
+  <body class='is-home is-multiple is-mobile' id='top' itemscope='' itemtype='https://schema.org/WebPage'>
+<div class='config no-items section' id='config' name='#config'></div>
 <header id='header'>
 <div class='wrapper'>
 <div class='header-widget section' id='header-widget' name='#header-widget'><div class='widget Header' data-version='2' id='Header1'>
 <div id='logo'>
 <a href='https://www.kangrian.net/' title='Kang Rian'>
-<img alt='Kang Rian' data-src='https://lh3.googleusercontent.com/-QUTJuckOGQw/Yazw2hUZUjI/AAAAAAAAAgk/IUP2mZ3TwQ4Egj3i8jmK8uq7b-hf0ECqACNcBGAsYHQ/w100-h100-p-k-no-nu/logo.png' height='40' width='40'/>
+<img alt='Kang Rian' data-src='https://2.bp.blogspot.com/-9RuYsSVa9FA/YeWVBuJoLlI/AAAAAAAAA5M/cZ8hvyzJsFgjwoxj-GA7pDJeLw1GYMzQwCNcBGAsYHQ/w100-h100-p-k-no-nu/pp.png' height='40' width='40'/>
 <hgroup>
 <h1>
 Kang Rian
@@ -438,6 +420,7 @@ Digital Creator, Bandung - Indonesia
 </button>
 <input autocomplete='off' class='text' itemprop='query-input' name='q' placeholder='Cari di Kang Rian..' required='' type='search' value=''/>
 <input name='max-results' type='hidden' value='4'/>
+<input name='name' type='hidden' value='Kang Rian'/>
 <nav itemscope='' itemtype='http://schema.org/SiteNavigationElement'>
 <ul>
 <li>
@@ -485,7 +468,7 @@ Template
 <span itemprop='name'>
 Tutorial
 </span>
-<small>4</small>
+<small>6</small>
 </a>
 </li>
 </ul>
@@ -511,20 +494,34 @@ Tutorial
 <div class='wrapper'>
 <div class='index section' id='index' name='#index'><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
 <div id='featured-post'>
-<a class='img' href='https://www.kangrian.net/2021/12/cara-install-template-blogger-terbaru.html'>
-<img data-src='https://blogger.googleusercontent.com/img/a/AVvXsEjQh14VQOiS3X4GBHrja1_IwRvSBgBiBZ8APW47PRnJ3qDHjeqmuv3_jHm_RrPTIOkVJ7GECdaepbRNl39haMV1oF8XrD-FgEY2TQ6kdqhljCcuBY4qcA2YlG8HEu7PL01F1MltceAwfs322Z2lsXViTZZhLad4tLmgYHI9W9pzlGTdHT0VScrasvPh=w400-h200-p-k-no-nu' height='200' width='400'/>
+<a class='img' href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
+<img data-src='https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp=w400-h200-p-k-no-nu' height='200' width='400'/>
 </a>
 <div class='text'>
 <small>
 <i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M317.5 210.3c1.7-1.8 1.8-4.7 0-6.5l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4l-66.5 69.1 26.4 27.1 66.3-68.7zM123.8 253.1c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 13.4-13.8-76.5-78.6z'></path><path d='M414.7 182.4l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4L250.7 304.1l-50.1-51.6c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 151-156.1c1.7-1.7 1.7-4.6 0-6.4z'></path></svg></i>
 Artikel Pilihan
 </small>
-<a href='https://www.kangrian.net/2021/12/cara-install-template-blogger-terbaru.html'>
+<a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
 <h3>
-Cara Install Template Blogger Terbaru 2021
+Cara Install &amp; Setting : SimStore&#8482; - Blogger Template
 </h3>
 </a>
 </div>
+</div>
+</div><div class='widget HTML' data-version='3' id='HTML3'>
+<div data-pop-title='Berlangganan' id='pop-subscribe'>
+<form action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("https://feedburner.google.com/fb/a/mailverify", "popupwindow", "scrollbars=yes,width=550,height=520");return true' target='popupwindow'>
+<input name='uri' type='hidden' value='kangriandotnet'/>
+<input name='loc' type='hidden' value='id_ID'/>
+<input autocomplete='username' name='email' placeholder='Alamat E-mail..' required='' type='email'/>
+<button type='submit'>
+<i class='icon left'>
+<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><circle cx='416' cy='152' r='48'></circle><path d='M416 218.5c-5.4 0-10.6-.7-15.6-1.9L353 264.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 305c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 155.3c-1.3-1.3-3.4-.4-3.4 1.4V376c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V198c-12.1 12.6-29.1 20.5-48 20.5z'></path><path d='M349.5 152c0-11.6 3-22.5 8.2-32H79.9c-7.5 0-14.4 2.6-19.8 7L217 286.7c10.4 10.6 24.3 16.4 39.1 16.4s28.7-5.8 39.1-16.4l80.5-81.9c-16-12.2-26.2-31.3-26.2-52.8z'></path></svg>
+</i>
+Berlangganan
+</button>
+</form>
 </div>
 </div><div class='widget Blog' data-version='3' id='Blog1'>
 <header class='page-title'>
@@ -536,18 +533,69 @@ Cara Install Template Blogger Terbaru 2021
 </h2>
 </div>
 <div class='right'>
-<a class='btn' target='pop-langganan'>
-						Berlangganan?
-                      </a>
+<a class='btn' target='pop-subscribe'>
+<small>
+<i class='icon left'>
+<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><circle cx='416' cy='152' r='48'></circle><path d='M416 218.5c-5.4 0-10.6-.7-15.6-1.9L353 264.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 305c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 155.3c-1.3-1.3-3.4-.4-3.4 1.4V376c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V198c-12.1 12.6-29.1 20.5-48 20.5z'></path><path d='M349.5 152c0-11.6 3-22.5 8.2-32H79.9c-7.5 0-14.4 2.6-19.8 7L217 286.7c10.4 10.6 24.3 16.4 39.1 16.4s28.7-5.8 39.1-16.4l80.5-81.9c-16-12.2-26.2-31.3-26.2-52.8z'></path></svg>
+</i>
+                          Berlangganan
+                        </small>
+</a>
 </div>
 </header>
 <div class='is_loop'>
+<article id='p-2667442320272754768' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
+<meta content='https://www.kangrian.net/' itemprop='url'/>
+<meta content='                                            Gambar Utama                             ' itemprop='description'/>
+<meta content='2022-01-13T06:40:00+07:00' itemprop='datePublished'/>
+<meta content='2022-01-17T23:46:53+07:00' itemprop='dateModified'/>
+<figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+<a href='https://www.kangrian.net/2022/01/cara-install-google-task-di-desktop.html'>
+<img alt='Cara Install Google Task di Desktop!' data-src='https://lh3.googleusercontent.com/-g196fmk1BKQ/Yd9kGtRTQ5I/AAAAAAAAA3k/2SfCWIsA_Howwu7BrnrakvRb7WtcYGIGwCNcBGAsYHQ/w400-h200-p-k-no-nu/image.png' height='200' width='400'/>
+<meta content='https://lh3.googleusercontent.com/-g196fmk1BKQ/Yd9kGtRTQ5I/AAAAAAAAA3k/2SfCWIsA_Howwu7BrnrakvRb7WtcYGIGwCNcBGAsYHQ/w400-h200-p-k-no-nu/image.png' itemprop='url contentUrl'/>
+</a>
+<meta content='400' itemprop='width'/>
+<meta content='200' itemprop='height'/>
+<figcaption itemprop='caption' style='display:none;'>Cara Install Google Task di Desktop!</figcaption>
+<a class='label' href='https://www.kangrian.net/search/label/Tutorial?max-results=4' rel='tag'>
+Tutorial
+</a>
+</figure>
+<a href='https://www.kangrian.net/2022/01/cara-install-google-task-di-desktop.html'>
+<h2 itemprop='name headline'>
+Cara Install Google Task di Desktop!
+</h2>
+</a>
+<div class='attr'>
+<span class='left'>
+<span class='wrap'>
+                          Oleh.
+                          <span itemprop='author' itemscope='' itemtype='http://schema.org/Person'>
+<a href='https://www.blogger.com/profile/04561992165094851363' itemprop='url' target='_popwin'>
+<b itemprop='name'>Kang Rian</b>
+</a>
+</span>
+                          &nbsp;
+                          <time class='waktu' datetime='2022-01-13T06:40:00+07:00' title='1/13/2022 06:40:00 AM'>1/13/2022 06:40:00 AM</time>
+</span>
+</span>
+<span class='right'>
+<span class='wrap'>
+<a href='https://www.kangrian.net/2022/01/cara-install-google-task-di-desktop.html'>
+<i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
+1
+</a>
+</span>
+</span>
+</div>
+</article>
 <article id='p-6697785244634459461' itemscope='' itemtype='http://schema.org/BlogPosting'>
 <meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
 <meta content='https://www.kangrian.net/' itemprop='url'/>
-<meta content='Pada postingan kali ini saya akan menjelaskan tentang  Cara Install &amp; Setting  pada  SimStore™ - Blogger Template  secara lengkap &amp; ...' itemprop='description'/>
+<meta content=' ' itemprop='description'/>
 <meta content='2021-12-26T23:18:00+07:00' itemprop='datePublished'/>
-<meta content='2021-12-30T15:51:38+07:00' itemprop='dateModified'/>
+<meta content='2022-01-17T23:08:11+07:00' itemprop='dateModified'/>
 <figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
 <a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
 <img alt='Cara Install & Setting : SimStore™ - Blogger Template' data-src='https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp=w400-h200-p-k-no-nu' height='200' width='400'/>
@@ -582,7 +630,7 @@ Cara Install & Setting : SimStore&#8482; - Blogger Template
 <span class='wrap'>
 <a href='https://www.kangrian.net/2021/12/dokumentasi-simstore-blogger-template.html'>
 <i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
-2
+11
 </a>
 </span>
 </span>
@@ -591,9 +639,9 @@ Cara Install & Setting : SimStore&#8482; - Blogger Template
 <article id='p-333841375986918233' itemscope='' itemtype='http://schema.org/BlogPosting'>
 <meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
 <meta content='https://www.kangrian.net/' itemprop='url'/>
-<meta content='                                            Gambar Utama                             Mungkin teman-teman yang sering main socmed sering meli...' itemprop='description'/>
+<meta content='                                            Gambar Utama                             ' itemprop='description'/>
 <meta content='2021-12-11T12:47:00+07:00' itemprop='datePublished'/>
-<meta content='2021-12-13T14:10:20+07:00' itemprop='dateModified'/>
+<meta content='2022-01-17T23:08:11+07:00' itemprop='dateModified'/>
 <figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
 <a href='https://www.kangrian.net/2021/12/mengubah-timestamp-menjadi-time-ago.html'>
 <img alt='Mengubah Timestamp menjadi Time Ago dengan jQuery' data-src='https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F=w400-h200-p-k-no-nu' height='200' width='400'/>
@@ -628,7 +676,55 @@ Mengubah Timestamp menjadi Time Ago dengan jQuery
 <span class='wrap'>
 <a href='https://www.kangrian.net/2021/12/mengubah-timestamp-menjadi-time-ago.html'>
 <i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
-1
+2
+</a>
+</span>
+</span>
+</div>
+</article>
+<article id='p-7743332035761653316' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://www.kangrian.net/' itemprop='mainEntityOfPage'/>
+<meta content='https://www.kangrian.net/' itemprop='url'/>
+<meta content=' ' itemprop='description'/>
+<meta content='2021-12-09T12:21:00+07:00' itemprop='datePublished'/>
+<meta content='2022-01-17T22:43:48+07:00' itemprop='dateModified'/>
+<figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+<a href='https://www.kangrian.net/2021/12/Source-Code-Schema-untuk-Artikel-Blogger-Microdata.html'>
+<img alt='Source Code : Schema untuk Artikel Blogger ( Microdata )' data-src='https://blogger.googleusercontent.com/img/a/AVvXsEiv3ZDc_LJ2eUFgoimiqPYVq2PvaG37iq6Ry-QJTXgwne1kAdPjAVw3JECmFMNYH5If0kBfqNfswKPOBW548VR99WPiAID8h2muXknArXzoSxMzZob8IWRDHbkQrV8iKd4BLUI3pqZBbvnHmN_lMhNEfXijz9TjNQJUfrkMwjVVbFubPR6IRtGRcity=w400-h200-p-k-no-nu' height='200' width='400'/>
+<meta content='https://blogger.googleusercontent.com/img/a/AVvXsEiv3ZDc_LJ2eUFgoimiqPYVq2PvaG37iq6Ry-QJTXgwne1kAdPjAVw3JECmFMNYH5If0kBfqNfswKPOBW548VR99WPiAID8h2muXknArXzoSxMzZob8IWRDHbkQrV8iKd4BLUI3pqZBbvnHmN_lMhNEfXijz9TjNQJUfrkMwjVVbFubPR6IRtGRcity=w400-h200-p-k-no-nu' itemprop='url contentUrl'/>
+</a>
+<meta content='400' itemprop='width'/>
+<meta content='200' itemprop='height'/>
+<figcaption itemprop='caption' style='display:none;'>Source Code : Schema untuk Artikel Blogger ( Microdata )</figcaption>
+<a class='label' href='https://www.kangrian.net/search/label/Blogger?max-results=4' rel='tag'>
+Blogger
+</a>
+</figure>
+<a href='https://www.kangrian.net/2021/12/Source-Code-Schema-untuk-Artikel-Blogger-Microdata.html'>
+<h2 itemprop='name headline'>
+Source Code : Schema untuk Artikel Blogger ( Microdata )
+</h2>
+</a>
+<div class='attr'>
+<span class='left'>
+<span class='wrap'>
+                          Oleh.
+                          <span itemprop='author' itemscope='' itemtype='http://schema.org/Person'>
+<a href='https://www.blogger.com/profile/04561992165094851363' itemprop='url' target='_popwin'>
+<b itemprop='name'>Kang Rian</b>
+</a>
+</span>
+                          &nbsp;
+                          <time class='waktu' datetime='2021-12-09T12:21:00+07:00' title='12/09/2021 12:21:00 PM'>12/09/2021 12:21:00 PM</time>
+</span>
+</span>
+<span class='right'>
+<span class='wrap'>
+<a href='https://www.kangrian.net/2021/12/Source-Code-Schema-untuk-Artikel-Blogger-Microdata.html'>
+<i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'></path></svg></i>
+
+                                +
+                              
 </a>
 </span>
 </span>
@@ -636,7 +732,7 @@ Mengubah Timestamp menjadi Time Ago dengan jQuery
 </article>
 </div>
 <div class='loadmore' id='blog-pager'>
-<a class='loadmore-btn' href='https://www.kangrian.net/search?updated-max=2021-12-11T12:47:00%2B07:00&max-results=2'>
+<a class='loadmore-btn' href='https://www.kangrian.net/search?updated-max=2021-12-09T12:21:00%2B07:00&max-results=4'>
 <i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z'></path></svg></i>
                         Lainnya
                       </a>
@@ -671,11 +767,6 @@ Mengubah Timestamp menjadi Time Ago dengan jQuery
 </div>
 </footer>
 <!-- conditional <b:if cond='data:view.isHomepage'/> <b:if cond='data:view.isMultipleItems'/> <b:if cond='data:view.isSingleItem'/> <b:if cond='data:view.isPost'/> <b:if cond='data:view.isPage'/> <b:if cond='data:view.isLabelSearch'/> <b:if cond='data:view.isSearch and !data:view.isLabelSearch'/> <b:if cond='data:view.isSearch'/> <b:if cond='data:view.isArchive'/> <b:if cond='data:view.isError'/> <b:if cond='data:view.isPreview'/> <b:if cond='data:view.url == "<URL POST atau PAGE/>"'/> <b:if cond='data:view.isLayoutMode'/> <b:if cond='data:view.isPost or data:view.isMultipleItems'/> <b:if cond='data:view.isPost'/> -->
-<script type='text/javascript'>
-          //<![CDATA[
-              $_config['url']['view'] = 'home';
-          //]]>
-        </script>
 <script>
       //<![CDATA[
 
@@ -906,7 +997,7 @@ function etc() {
         }
     });
 
-    if ($_config['url']['view'] == 'single') {
+    if ($_config.url.view == 'single') {
 
         var olderLink_text = $('a.blog-pager-older-link').text();
         var olderLink = $('a.blog-pager-older-link').attr('href');
@@ -914,11 +1005,16 @@ function etc() {
             var olderLinkTitle = $('a.blog-pager-older-link').text();
             $('a.blog-pager-older-link').html('<figure class="loading"></figure><div class="flex left"><div class="wrap"><small><b>' + olderLink_text + '</b></small><h3>' + olderLinkTitle + '</h3></div></div>');
             $('a.blog-pager-older-link > figure').load(olderLink + ' article .post-body img:first-of-type', function() {
-                var img = $(this).html();
-                var src = img.split('src="')[1];
-                var url = src.split('"')[0];
-                var resize = url.split('=')[0] + '=w100-h100-c';
-                $('a.blog-pager-older-link > figure').html('<img src="' + resize + '"/>').removeClass('loading');
+                var $img = $(this).html();
+                var $src = $img.split('src="')[1];
+                var $url = $src.split('"')[0];
+                if ($url.indexOf('blogger.googleusercontent.com') >= 0) {
+                    $resize = $url.split('=')[0] + '=w100-h100-c';
+                } else {
+                    var $url_size = $url.split('/')[7];
+                    $resize = $url.replace('1.bp.','2.bp.').replace($url_size, 'w100-h100-c');
+                }
+                $('a.blog-pager-older-link > figure').html('<img src="' + $resize + '"/>').removeClass('loading');
             });
         });
 
@@ -928,11 +1024,16 @@ function etc() {
             var newerLinkTitle = $('a.blog-pager-newer-link').text();
             $('a.blog-pager-newer-link').html('<figure class="loading"></figure><div class="flex right"><div class="wrap"><small><b>' + newerLink_text + '</b></small><h3>' + newerLinkTitle + '</h3></div></div>');
             $('a.blog-pager-newer-link > figure').load(newerLink + ' article .post-body img:first-of-type', function() {
-                var img = $(this).html();
-                var src = img.split('src="')[1];
-                var url = src.split('"')[0];
-                var resize = url.split('=')[0] + '=w100-h100-c';
-                $('a.blog-pager-newer-link > figure').html('<img src="' + resize + '"/>').removeClass('loading');
+                var $img = $(this).html();
+                var $src = $img.split('src="')[1];
+                var $url = $src.split('"')[0];
+                if ($url.indexOf('blogger.googleusercontent.com') >= 0) {
+                    $resize = $url.split('=')[0] + '=w100-h100-c';
+                } else {
+                    var $url_size = $url.split('/')[7];
+                    $resize = $url.replace('1.bp.','2.bp.').replace($url_size, 'w100-h100-c');
+                }
+                $('a.blog-pager-newer-link > figure').html('<img src="' + $resize + '"/>').removeClass('loading');
             });
         });
     }
@@ -1159,13 +1260,13 @@ function lazyload() {
         if ($this_top <= window_bottom) {
             if (tag_name == 'img') {
                 $this.attr('src', url).removeAttr('data-src');
-				$this.attr('lazy','true');
+    $this.attr('lazy','true');
                 // $this.attr('src', url).on('load', function() {
                 //     $this.removeAttr('data-src');
                 // });
             } else if (tag_name == 'iframe') {
                 $this.attr('src', url).removeAttr('data-src');
-				$this.attr('lazy','true');
+    $this.attr('lazy','true');
             }
         }
 
@@ -1194,13 +1295,13 @@ function lazyload() {
             if ($this_top <= window_bottom) {
                 if (tag_name == 'img') {
                     $this.attr('src', url).removeAttr('data-src');
-					$this.attr('lazy','true');
+     $this.attr('lazy','true');
                     // $this.attr('src', url).on('load', function() {
                     //     $this.removeAttr('data-src');
                     // });
                 } else if (tag_name == 'iframe') {
                     $this.attr('src', url).removeAttr('data-src');
-					$this.attr('lazy','true');
+     $this.attr('lazy','true');
                 }
             }
         });
@@ -1231,15 +1332,15 @@ function get_url_parameter(name, url) {
 
     </script>
     <!--
-<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1434883710-widgets.js"></script>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2922743057-widgets.js"></script>
 <script type='text/javascript'>
-window['__wavt'] = 'AOuZoY4hcKNFElItrFCc28KMPOx8ur-OGg:1640955283001';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d754786223723890500','//www.kangrian.net/','754786223723890500');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '754786223723890500', 'title': 'Kang Rian', 'url': 'https://www.kangrian.net/', 'canonicalUrl': 'https://www.kangrian.net/', 'homepageUrl': 'https://www.kangrian.net/', 'searchUrl': 'https://www.kangrian.net/search', 'canonicalHomepageUrl': 'https://www.kangrian.net/', 'blogspotFaviconUrl': 'https://www.kangrian.net/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-58940768-1', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': true, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Kang Rian - RSS\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/754786223723890500/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/20752fd4df382411', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Dapatkan link', 'key': 'link', 'shareMessage': 'Dapatkan link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Baca selengkapnya', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Kang Rian', 'metaDescription': 'Digital Creator, Bandung - Indonesia'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Kang Rian', 'description': 'Digital Creator, Bandung - Indonesia', 'url': 'https://www.kangrian.net/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}, {'name': 'widgets', 'data': [{'title': 'Konfigurasi', 'type': 'HTML', 'sectionId': 'config', 'id': 'HTML1'}, {'title': 'Kang Rian (Header)', 'type': 'Header', 'sectionId': 'header-widget', 'id': 'Header1'}, {'title': 'Search \x26amp; Label...', 'type': 'Label', 'sectionId': 'header-widget', 'id': 'Label1'}, {'title': 'Notifikasi Komentar', 'type': 'HTML', 'sectionId': 'header-widget', 'id': 'HTML2'}, {'title': 'Artikel Pilihan', 'type': 'FeaturedPost', 'sectionId': 'index', 'id': 'FeaturedPost1', 'postId': '5689669549107090909'}, {'title': 'Postingan Blog', 'type': 'Blog', 'sectionId': 'index', 'id': 'Blog1', 'posts': [{'id': '6697785244634459461', 'title': 'Cara Install \x26 Setting : SimStore\u2122 - Blogger Template', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp\x3dw200-h100', 'showInlineAds': false}, {'id': '333841375986918233', 'title': 'Mengubah Timestamp menjadi Time Ago dengan jQuery', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F\x3dw640-h268', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}]}], 'allBylineItems': [{'name': 'comments', 'label': 'comments'}]}, {'title': 'Tautan', 'type': 'LinkList', 'sectionId': 'footer-widget', 'id': 'LinkList2'}]}]);
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'config', document.getElementById('HTML1'), {}, 'displayModeFull'));
+window['__wavt'] = 'AOuZoY4ijxSnwNOO_vP_gFUEjq_mlFZKRw:1642455528225';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d754786223723890500','//www.kangrian.net/','754786223723890500');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '754786223723890500', 'title': 'Kang Rian', 'url': 'https://www.kangrian.net/', 'canonicalUrl': 'https://www.kangrian.net/', 'homepageUrl': 'https://www.kangrian.net/', 'searchUrl': 'https://www.kangrian.net/search', 'canonicalHomepageUrl': 'https://www.kangrian.net/', 'blogspotFaviconUrl': 'https://www.kangrian.net/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-58940768-1', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': true, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Kang Rian - RSS\x22 href\x3d\x22https://www.kangrian.net/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Kang Rian - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/754786223723890500/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/6cf92b65f3afa120', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Dapatkan link', 'key': 'link', 'shareMessage': 'Dapatkan link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Baca selengkapnya', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Kang Rian', 'metaDescription': 'Digital Creator, Bandung - Indonesia'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Kang Rian', 'description': 'Digital Creator, Bandung - Indonesia', 'url': 'https://www.kangrian.net/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}, {'name': 'widgets', 'data': [{'title': 'Kang Rian (Header)', 'type': 'Header', 'sectionId': 'header-widget', 'id': 'Header1'}, {'title': 'Search \x26amp; Label...', 'type': 'Label', 'sectionId': 'header-widget', 'id': 'Label1'}, {'title': 'Notifikasi Komentar', 'type': 'HTML', 'sectionId': 'header-widget', 'id': 'HTML2'}, {'title': 'Artikel Pilihan', 'type': 'FeaturedPost', 'sectionId': 'index', 'id': 'FeaturedPost1', 'postId': '6697785244634459461'}, {'title': 'Berlangganan', 'type': 'HTML', 'sectionId': 'index', 'id': 'HTML3'}, {'title': 'Postingan Blog', 'type': 'Blog', 'sectionId': 'index', 'id': 'Blog1', 'posts': [{'id': '2667442320272754768', 'title': 'Cara Install Google Task di Desktop!', 'featuredImage': 'https://lh3.googleusercontent.com/-g196fmk1BKQ/Yd9kGtRTQ5I/AAAAAAAAA3k/2SfCWIsA_Howwu7BrnrakvRb7WtcYGIGwCNcBGAsYHQ/w640-h621/image.png', 'showInlineAds': false}, {'id': '6697785244634459461', 'title': 'Cara Install \x26 Setting : SimStore\u2122 - Blogger Template', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEga5kDpv_87dFEINbiLMulprKJl2fZ0g5qmPjSK1yxlwbt1sQaow7-Z9yT8qjNCGCmJiL7NAhp8aR2ddjh41k82zNjYF-AxGMRRi_jJ6-XhUpkHmwoJDpJHCESZDEivMNgATkLV0H4YHQbUMn4lMRWMdMB9qX1Yi_fF1LKSdNUsMKd-aTmsYjQxpwGp\x3dw200-h100', 'showInlineAds': false}, {'id': '333841375986918233', 'title': 'Mengubah Timestamp menjadi Time Ago dengan jQuery', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEg7k3xVNmmzN64Hnc42sJFxrPtK1nl6gmxICsM2vjo8_iLMhNZ1kPkcJ0wrOa4MJ2JhXwoeBmWBgUX1R0BxCWIWul_bBfi804XHvofPmjAoWUrUIlpKlEIujwstJgkGueLEhI34TN8HVknEYrVWmWrkU9qnTfsQbhlf6e1cPB6oMHsBCziOZ-Fyc20F\x3dw640-h268', 'showInlineAds': false}, {'id': '7743332035761653316', 'title': 'Source Code : Schema untuk Artikel Blogger ( Microdata )', 'featuredImage': 'https://blogger.googleusercontent.com/img/a/AVvXsEiv3ZDc_LJ2eUFgoimiqPYVq2PvaG37iq6Ry-QJTXgwne1kAdPjAVw3JECmFMNYH5If0kBfqNfswKPOBW548VR99WPiAID8h2muXknArXzoSxMzZob8IWRDHbkQrV8iKd4BLUI3pqZBbvnHmN_lMhNEfXijz9TjNQJUfrkMwjVVbFubPR6IRtGRcity\x3dw200-h100', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}]}], 'allBylineItems': [{'name': 'comments', 'label': 'comments'}]}, {'title': 'Tautan', 'type': 'LinkList', 'sectionId': 'footer-widget', 'id': 'LinkList2'}]}]);
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header-widget', document.getElementById('Header1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'header-widget', document.getElementById('Label1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'header-widget', document.getElementById('HTML2'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'index', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'index', document.getElementById('HTML3'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'index', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'footer-widget', document.getElementById('LinkList2'), {}, 'displayModeFull'));
 </script>
