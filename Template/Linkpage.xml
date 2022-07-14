@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='true' b:defaultwidgetversion='3' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <b:attr name='xmlns' value=''/>
+  <b:attr name='xmlns:b' value=''/>
+  <b:attr name='xmlns:expr' value=''/>
+  <b:attr name='xmlns:data' value=''/>
+
+  <!-- (c)2022 | LinkPage - Blogger Template ============ -->
+  <!-- Creator : Kang Rian - WEB & UI/UX Designer ======= -->
+  <!-- Website : https://kangrian.net =================== -->
+
+  &lt;!--<head>--&gt;
+  &lt;head&gt;
+
+  <script async='async' src='//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'/>
+
+  <!-- == AHC == -->
+
+  <meta content='yes' name='apple-mobile-web-app-capable'/>
+  <meta expr:content='data:skin.vars.keycolor' name='apple-mobile-web-app-status-bar-style'/>
+  <meta expr:content='data:skin.vars.keycolor' name='msapplication-navbutton-color'/>
+  <meta expr:content='data:skin.vars.keycolor' name='theme-color'/>
+
+  <meta expr:charset='data:blog.encoding'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <link expr:href='data:blog.canonicalHomepageUrl + &quot;favicon.ico&quot;' rel='icon'/>
+
+  <title>
+    <data:blog.title/>
+  </title>
+
+  <meta expr:content='data:blog.metaDescription' name='description'/>
+  <meta expr:content='data:blog.metaDescription' itemprop='description'/>
+
+  <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+  <link expr:href='data:blog.canonicalUrl' hreflang='x-default' rel='alternate'/>
+  <meta content='index, follow' name='robots'/>
+  <meta content='index, follow' name='googlebot'/>
+
+  <include expiration='7d' path='*.css'/>
+  <include expiration='7d' path='*.js'/>
+  <include expiration='3d' path='*.gif'/>
+  <include expiration='3d' path='*.jpeg'/>
+  <include expiration='3d' path='*.jpg'/>
+  <include expiration='3d' path='*.png'/>
+  <include expiration='3d' path='*.webp'/>
+  <include expiration='3d' path='*.ico'/>
+  <meta content='sat, 02 jun 3021 00:00:00 GMT' http-equiv='expires'/>
+  <meta content='public' http-equiv='Cache-control'/>
+
+  <link href='//ajax.googleapis.com' rel='dns-prefetch'/>
+  <link href='//www.google-analytics.com' rel='dns-prefetch'/>
+  <link href='//www.googletagservices.com' rel='dns-prefetch'/>
+  <link href='//resources.blogblog.com' rel='dns-prefetch'/>
+
+  <link href='//www.blogger.com' rel='dns-prefetch'/>
+  <link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//lh3.googleusercontent.com' rel='dns-prefetch'/>
+  <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
+
+  <link href='//www.youtube.com' rel='dns-prefetch'/>
+  <link href='//img.youtube.com' rel='dns-prefetch'/>
+  <link href='//t0.gstatic.com' rel='dns-prefetch'/>
+  <link href='//www.google.com' rel='dns-prefetch'/>
+
+  <!-- == / AHC == -->
+
+  <b:skin><![CDATA[
+/*
+
+<!-- VARIABLE -->
+
+<Variable name="keycolor" description="Main Color" type="color" default="#55626f" value="#55626f"/>
+
+<Group description="Utama">
+
+    <Variable name="border" description="Color - Border / Outline "
+    type="color"
+    default="#dedede"
+    value="#dedede"/>
+
+    <Variable name="text" description="Color - Text"
+    type="color"
+    default="#232323"
+    value="#3a3a3a"/>
+
+    <Variable name="bg" description="Background - Body"
+    type="color"
+    default="#f6f6f6"
+    value="#f7f7f7"/>
+
+    <Variable name="bgBtn" description="Background - Button"
+    type="color"
+    default="#ffffff"
+    value="#ffffff"/>
+
+    <Variable name="radius" description="Radius - Border"
+    type="length"
+    min="4px"
+    max="12px"
+    default="4px"
+    value="8px"/>
+
+</Group>
+
+
+*/
+
+@charset "UTF-8";
+
+:root {
+
+--key: $(keycolor);
+--bg: $(bg);
+--bg_btn: $(bgBtn);
+--text: $(text);
+--border: $(border);
+
+--radius: $(radius);
+
+--card_shadow : 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+--inset_shadow : inset 0 -1px 0 0 rgba(0 0 0 / 10%);
+}
+
+*, *:before, *:after { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; -webkit-font-smoothing: subpixel-antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: 100%; box-sizing: border-box; word-wrap: break-word; outline: 0; padding: 0; margin: 0; } @media only screen and (max-width: 768px) { * { cursor: default !important; } } input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } input[type=number] { -moz-appearance: textfield; /* Firefox */ } body { display: flex; min-height: 100vh; background: var(--key); color: var(--text); font-size: 14px; line-height: 1.4; padding: 60px; } @media only screen and (max-width: 768px) { body { font-size: 14px; line-height: 1.4; padding: 0; } } a { text-decoration: none; color: var(--text); } h1, h2, h3, h4, h5, h6 { font-weight: 400; } hr { border: 0; border-top: 1px solid var(--border); } img { display: block; max-width: 100%; visibility: visible; opacity: 1; transition: .1s; } img[data-src] { visibility: hidden; opacity: 0; } b { font-weight: 500; } .wrapper { margin: auto; width: 480px; max-width: 100%; padding: 60px 30px 30px; border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(0 0 0 / 10%), 0 5px 25px rgba(0 0 0 / 10%); background: var(--bg); } @media only screen and (max-width: 768px) { .wrapper { width: 768px; border: none; border-radius: 0; } } header { text-align: center; } header figure { display: block; padding-top: 50%; width: calc(100% + 60px); background: var(--key) no-repeat center center; background-size: cover; margin-top: -60px; margin-left: -30px; margin-bottom: -50px; box-shadow: inset 0 -5px 0 0 rgba(0 0 0 / 5%); } header img { position: relative; margin: auto; width: 100px; height: 100px; border-radius: 100px; box-shadow: 0 0 0 5px rgba(0 0 0 / 5%); object-fit: cover; margin-bottom: 30px; } header h1 { margin-bottom: 10px; font-weight: 500; font-size: 180%; } main { display: grid; grid-gap: 30px; padding: 30px 0; } main #content-button { display: grid; grid-gap: 30px; } main nav#socmed { margin: auto; width: calc(100% + 60px); margin-left: -30px; padding: 0 30px; padding-top: 30px; border-top: 1px solid var(--border); } main nav#socmed ul { display: flex; grid-gap: 10px; margin: auto; } main nav#socmed ul li { width: 100%; } main nav#socmed ul li, main nav#socmed ul li a { display: block; } main nav#socmed ul li a { box-shadow: inset 0 -1px 0 0 var(--border); display: grid; grid-template-columns: 1fr auto; border: 1px solid var(--border); padding: 10px; white-space: nowrap; width: 100%; border-radius: var(--radius); background: var(--bg_btn); } main nav#socmed ul li a:active { box-shadow: none; } main nav#socmed ul li a img { margin: auto; max-width: 20px; } main nav#highlight { margin: auto; width: calc(100% + 60px); margin-left: -30px; padding: 0 30px; padding-bottom: 15px; margin-bottom: -15px; overflow: auto; } main nav#highlight .section { display: block; white-space: nowrap; } main nav#highlight .section .widget { display: inline-block; width: 85%; margin-right: 10px; } main nav#highlight .section .widget:last-of-type { margin-right: 30px; } main nav#highlight .section .widget a { display: block; background: var(--bg_btn); border: 1px solid var(--border); box-shadow: inset 0 -1px 0 0 var(--border); border-radius: var(--radius); overflow: hidden; } main nav#highlight .section .widget a img { width: 100%; height:auto; border-radius: var(--radius) var(--radius) 0 0; } main nav#highlight .section .widget a:active { box-shadow: none; } main nav#highlight .section .widget a span { display: block; border-top: .5px solid var(--border); padding: 20px; } main nav#highlight .section .widget a span .title, main nav#highlight .section .widget a span .caption { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } main nav#custom { margin: auto; } main nav#custom ul { display: grid; grid-gap: 20px; } main nav#custom ul li, main nav#custom ul li a { display: block; } main nav#custom ul li a { box-shadow: inset 0 -1px 0 0 var(--border); display: grid; grid-template-columns: 32px 1fr; border: 1px solid var(--border); padding: 20px; grid-gap: 20px; border-radius: var(--radius); font-weight: 500; background: var(--bg_btn); } main nav#custom ul li a:active { box-shadow: none; } main nav#custom ul li a figure { display: flex; } main nav#custom ul li a figure img { margin: auto; margin-top: 0; width: 32px; height: 32px; } main nav#custom ul li a b { display: flex; } main nav#custom ul li a b span { display: block; margin: auto; } footer { text-align: center; font-size: 90%; letter-spacing: 1px; color: var(--gray); }
+
+]]></b:skin>
+  
+  <b:if cond='data:view.isLayoutMode'>
+    <b:template-skin><![CDATA[
+
+body#layout:before{content:'LinkPage - Blogger Template';}
+body#layout:after{content:'Made in Lapak.KangRian.NET'; }
+
+body#layout { max-width: 43.5vw!important; } html,body#layout #outer-wrapper,body#layout .row { width:auto;padding:0 } body#layout { position:relative;width:auto;max-width:100%;background-color:#fff;padding:95px 5px 0;margin:0 0 0 1px;border-width:1px 0 0;border-color:#eceff1 } body#layout:before { position:absolute;top:0;left:5px;right:5px;height:95px;font-family:Roboto,sans-serif;font-size:23px;color:#263238;line-height:95px;text-align:center } body#layout div.section { display:block;background-color:#eceff1!important;margin:0 5px 10px!important;padding:16px 16px 18px!important;border:0; border-radius:5px; } body#layout .no-items.section { display:block } body#layout .section h4 { font-size:14px;color:#263238;text-transform:uppercase;margin:0 } body#layout .section h4:after { text-transform:initial;color:#757575;font-weight:400 } body#layout .add_widget a { color:#f57c00!important } body#layout .widget-wrap3 { overflow:hidden } body#layout .widget-content { width:auto;max-width:none;max-height:none;margin:0;border:1px solid #e7e7e8;border-left:0 } body#layout .locked-widget .widget-content { border-left:4px solid #f57c00 } body#layout .locked-widget .widget-content:hover { border-left-color:#009688 } body#layout div.layout-title { color:#757575 } body#layout .widget .widget-content a.editlink { border-radius:2px } body#layout .visibility .editlink { background:#f57c00 url(https://2.bp.blogspot.com/--z1wepFalfQ/YOObl8avCFI/AAAAAAAAAE8/Z-iC0j0LLpo7u2ZpHvW0hGaHhBOvVYYaQCLcBGAsYHQ/s48/edit.png) no-repeat center!important;background-size:20px!important } body#layout .visibility .editlink:hover { background-color:#009688!important } body#layout .draggable-widget .widget-wrap2 { background:#f57c00 url(https://1.bp.blogspot.com/-ciJD7MVmo10/YORQlzt9a1I/AAAAAAAAAFk/L4fK5cgelFoWX9rZvGFKZdr1d_RM9kfjACLcBGAsYHQ/s68/drag.png) no-repeat 4px 50%!important;background-size:4px auto!important } body#layout .draggable-widget .widget-wrap1:hover .widget-wrap2 { background-color:#33a453!important } body#layout .visibility .layout-widget-state.visible { background-image:url(https://lh3.googleusercontent.com/-kFYUsFDo2jA/YgoSn6K2zUI/AAAAAAAABBM/iveMBUF-oZgfwOQqPgqF3-f5G9yOdRIwgCNcBGAsYHQ/s0/visibility_on.png)!important;background-size:24px!important } body#layout div.layout-widget-description { display:none;font-size:11px;line-height:1.2em } body#layout .section > h4:after { font-size:12px } body#layout:after { display:block;font-family:Roboto,sans-serif;font-size:14px;color:rgba(0,0,0,0.54);line-height:1;text-align:center;visibility:visible;padding:20px 0 30px } body#layout #hidden-widgets { display:none!important}
+
+]]></b:template-skin>
+  </b:if>
+  &lt;!--</head>--&gt;
+  &lt;/head&gt;
+  <body itemscope='' itemtype='https://schema.org/WebPage'>
+    <b:section class='config' id='config' name='Setting / Konfigurasi' showaddelement='false' version='3'>
+      <b:widget id='HTML11' locked='true' title='Kode Lisensi ( Premium )' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>const $license_key = &#39;<data:content/>&#39;;</script>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <div class='wrapper'>
+      <header>
+        <b:section class='header' id='header' name='Header' showaddelement='false' version='3'>
+          <b:widget id='Image11' locked='true' title='Cover' type='Image' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgWIR0EgPnQzwe3ihqQVxIJc0QJxkwyHsGbHR5ObxwGZi9Bxl1EKAxtnwtgyWTkcSf0peCsu_U-eu5_g0s4ubEeXzhrjIu5PsGWsWTEm09R7SM-c0ww1YrG-TFGlSQ0s9mWk35QsblBLFMDJeWDWcvE64Pg_VxqbD2_8CFZ0sr11hWSmG0bZV0PRwZE=s1600</b:widget-setting>
+              <b:widget-setting name='displayHeight'>900</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='displayWidth'>1600</b:widget-setting>
+              <b:widget-setting name='link'/>
+              <b:widget-setting name='caption'/>
+            </b:widget-settings>
+            <b:includable id='main'>
+                <b:if cond='data:link'>
+                    <a expr:href='data:link' expr:title='data:title' target='_blank'>
+                      <b:if cond='data:blog.isMobileRequest'>
+                        <figure expr:data-bg='resizeImage(data:sourceUrl, 480, &quot;2:1&quot;)' expr:title='data:title'/>
+                        <b:else/>
+                        <figure expr:data-bg='resizeImage(data:sourceUrl, 768, &quot;2:1&quot;)' expr:title='data:title'/>
+                      </b:if>
+                    </a>
+                    <b:else/>
+                    <b:if cond='data:blog.isMobileRequest'>
+                    <figure expr:data-bg='resizeImage(data:sourceUrl, 480, &quot;2:1&quot;)' expr:title='data:title'/>
+                    <b:else/>
+                    <figure expr:data-bg='resizeImage(data:sourceUrl, 768, &quot;2:1&quot;)' expr:title='data:title'/>
+                  </b:if>
+                </b:if>
+            </b:includable>
+            <b:includable id='content'/>
+          </b:widget>
+          <b:widget id='Header11' locked='true' title='LINK • KangRian.NET (Header)' type='Header' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgtGu9jTXdPGXDZeyJ8rPMsj6-X-nEssIA-n90gWLnD63u7uQW_M7AjOC10h26cf7-HvHxmVFHvgpJz3wg5PzQmfp948yFnww9C8Y7vFYzZo6gl42dGSGdcXr0Se_wvqRlWXXr6pdnWDvCfKRPbobfYv7t2rYO4Jc5mh0u2OadPN4VAMCkFo44N17Nk=s200</b:widget-setting>
+              <b:widget-setting name='displayHeight'>200</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+              <b:widget-setting name='useImage'>true</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+              <b:widget-setting name='displayWidth'>200</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='this'>
+              <img alt='data:title' expr:data-src='resizeImage(data:image, 100, &quot;1:1&quot;)' height='100' width='100'/>
+              <h1>
+                <data:title/>
+              </h1>
+              <p><data:this.description/></p>
+            </b:includable>
+            <b:includable id='behindImageStyle'>
+            </b:includable>
+            <b:includable id='description'>
+            </b:includable>
+            <b:includable id='image'>
+            </b:includable>
+            <b:includable id='title'>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </header>
+      <main>
+        <nav id='highlight'>
+          <b:section class='content-card' id='content-card' name='Content - Card' showaddelement='false' version='3'>
+            <b:widget id='Image21' locked='true' title='Promo Rilis! Toko WA+' type='Image' version='3' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgpnYzU_WZRyCcnVA_QXT08Pt5tgjZIhXEjeQM-iaeXxqURyAO7i3zobcfkEpeMBJxTFcXQWxtggHozOdZ38rJ_amAOn-qgDQvu8gIj7lKzmPYHB2e861YmTpLNiBUJoLaI1CjYnAiSbakSywOrOb2KnBbkeYxfIn4_nOcsqLwgC3tOSXx7R09dKRGp=s800</b:widget-setting>
+                <b:widget-setting name='displayHeight'>800</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>703</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>800</b:widget-setting>
+                <b:widget-setting name='link'><![CDATA[https://lapak.kangrian.net/order?item=toko-wa-plus-blogger-template&license=personal]]></b:widget-setting>
+                <b:widget-setting name='caption'><![CDATA["TWPLUSRILIS2022" berlaku s/d. 30 Juni 2022]]></b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image22' locked='true' title='🔥 NEW!! DAILY // RIDEBAG 1.1' type='Image' version='3' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7lQ7UigIa4_24mSC0a_4voejVJjVwaGgR1igT8VBjyXdZM8pFMHIEFa5gcxIVOmJWT7PrGMEIPe1KHu-ZtXx5VsGrguN0Rn3Ks2fXPzMchWGiSBEOmIpRXzXlfPjQhK9bsJjs4MC-ZoHnpHBcTrgaswPDakvaj60fKCtb_p0TbUcWJoXgLrtnFRNt/s1600/1.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>1600</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                <b:widget-setting name='link'>https://item.kangrian.net/2022/05/daily-ridebag-11-3-in-1-tas-multifungsi.html</b:widget-setting>
+                <b:widget-setting name='caption'><![CDATA[<s>249.000</s> <b>149.000</b>]]></b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image23' locked='true' title='Card Title 3' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>900</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>900</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image24' locked='true' title='Card Title 4' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image25' locked='true' title='Card Title 5' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image26' locked='true' title='Card Title 6' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image27' locked='true' title='Card Title 7' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image28' locked='true' title='Card Title 8' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image29' locked='true' title='Card Title 9' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+            <b:widget id='Image30' locked='true' title='Card Title 10' type='Image' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/80b0146d-7a0b-4db9-bcbe-539fa32c519a.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>768</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>768</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>768</b:widget-setting>
+                <b:widget-setting name='link'>https://lapak.kangrian.net</b:widget-setting>
+                <b:widget-setting name='caption'>Test</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a expr:href='data:link' expr:title='data:link' target='_blank'>
+                  <b:if cond='data:blog.isMobileRequest'>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 480, &quot;1:1&quot;)' height='480' width='480'/>
+                  <b:else/>
+                    <img expr:alt='data:title' expr:data-src='resizeImage(data:sourceUrl, 768, &quot;1:1&quot;)' height='768' width='768'/>
+                  </b:if>
+                  <span>
+                    <b class='title'><data:title/></b>
+                    <small class='caption'>
+                      <data:caption/>
+                    </small>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+          </b:section>
+        </nav>
+        <b:section class='content-button' id='content-button' name='Content - Button' showaddelement='false' version='3'>
+          <b:widget id='LinkList11' locked='true' title='Link - Text' type='LinkList' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='link-3'>https://www.bukalapak.com/u/kangrian</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-4'>https://www.youtube.com/kangrian</b:widget-setting>
+              <b:widget-setting name='text-1'>Shopee / Kang Rian</b:widget-setting>
+              <b:widget-setting name='link-1'>https://shopee.co.id/kangrian</b:widget-setting>
+              <b:widget-setting name='text-0'>Lapak &#8226; KangRian.NET</b:widget-setting>
+              <b:widget-setting name='link-2'>https://tokopedia.com/kangrian</b:widget-setting>
+              <b:widget-setting name='text-3'>BukaLapak / Kang Rian</b:widget-setting>
+              <b:widget-setting name='link-0'>https://lapak.kangrian.net/</b:widget-setting>
+              <b:widget-setting name='text-2'>Tokopedia / Kang Rian</b:widget-setting>
+              <b:widget-setting name='text-4'>YouTube / Kang Rian</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:include name='content'>
+                <nav id='custom'>
+                  <ul>
+                    <b:loop values='data:links' var='link'>
+                      <li>
+                        <a expr:href='data:link.target' expr:title='data:link.target' target='_blank'>
+                        <figure>
+                          <img expr:alt='data:link.name' src=''/>
+                        </figure>
+                        <b>
+                          <span>
+                            <data:link.name/>
+                          </span>
+                        </b>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </nav>
+              </b:include>
+            </b:includable>
+            <b:includable id='content'>
+            </b:includable>
+          </b:widget>
+          <b:widget id='LinkList12' locked='true' title='Link - Icon' type='LinkList' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='link-3'>https://api.whatsapp.com/send/?phone=6289618885066</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-4'>https://www.tiktok.com/@kangriannn</b:widget-setting>
+              <b:widget-setting name='text-1'>Instagram</b:widget-setting>
+              <b:widget-setting name='link-1'>https://instagram.com/kangriannn</b:widget-setting>
+              <b:widget-setting name='text-0'>Telegram</b:widget-setting>
+              <b:widget-setting name='link-2'>https://facebook.com/kangriandotnet</b:widget-setting>
+              <b:widget-setting name='text-3'>WhatsApp</b:widget-setting>
+              <b:widget-setting name='link-0'>https://t.me/lapak_kangrian</b:widget-setting>
+              <b:widget-setting name='text-2'>Facebook</b:widget-setting>
+              <b:widget-setting name='text-4'>TikTok</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:include name='content'>
+                <nav id='socmed'>
+                  <ul>
+                    <b:loop values='data:links' var='link'>
+                      <li>
+                        <a expr:href='data:link.target' expr:title='data:link.name' target='_blank'>
+                          <img expr:alt='data:link.name' src=''/>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </nav>
+              </b:include>
+            </b:includable>
+            <b:includable id='content'>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </main>
+      <footer>
+        <b:section class='footer' id='footer' name='Footer' showaddelement='true' version='3'>
+          <b:widget id='HTML21' locked='true' title='Copyright' type='HTML' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'>&#169;2022 - <data:blog.title/></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <p id='copyright'>
+                <data:content/>
+              </p>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </footer>
+    </div>
+<script>//<![CDATA[
+/* main.js */
+window.onload = function() {
+    $('[data-src]').each(function() {
+        var $this = $(this);
+        var $url = $(this).attr('data-src');
+		$this.attr('src', $url);
+        $('<img src="'+$url+'"/>').on('load', function(){
+            $this.removeAttr('data-src');
+    	});
+    });
+    $('[data-bg]').each(function() {
+        var $url = $(this).attr('data-bg');
+        $(this).css('background-image', 'url('+$url+')').removeAttr('data-bg');
+    });
+    $('#socmed a, #custom a').each(function() {
+        var $domain = '//' + $(this).attr('href').split('/')[2];
+		$domain = $domain.replace('//www.','').replace('//m.','').replace('//api.','').replace('//web.','').replace('//','');
+        $('img', this).attr('src', 'https://www.google.com/s2/favicons?domain=' + $domain + '&sz=32');
+    });
+    $('#highlight').each(function() {
+        var amount = 120;
+        $(this).bind("DOMMouseScroll mousewheel", function(event) {
+            var oEvent = event.originalEvent,
+                direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+                position = $(this).scrollLeft();
+            position += direction > 0 ? -amount : amount;
+            $(this).scrollLeft(position);
+            event.preventDefault();
+        });
+    });
+}
+ //]]></script>
+
+    &lt;!--</body>--&gt;
+  &lt;/body&gt;
+</html> 
