@@ -1,0 +1,3149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html b:css="false" b:js="true" b:defaultwidgetversion="2" b:layoutsVersion="3" expr:dir="data:blog.languageDirection" expr:lang="data:blog.locale">
+  <head>
+    <title><data:view.title.escaped/></title>
+    <b:include name="head:content"></b:include>
+    <b:if cond="!data:view.isLayoutMode">
+    <script src=""></script>
+
+    <script>var elcreativeConfig={dataView:{isSingleItem:"false"}};</script>
+      <b:skin><![CDATA[
+        /*!
+         * Name      : TailFox
+         * Version   : 1.0.0
+         * Author    : nooushad
+         * License   : GNU General Public License v2 or later
+         *//* 
+
+        Personalizar
+        =====================
+        <Group description="Backgrounds" selector="body">
+          <Variable name="body.background" description="Background" type="background" default="$(color) none repeat scroll top center" color="$(body.background.color)" value="$(color) none repeat scroll top center"/>
+          <Variable name="body.background.color" description="Body background color" type="color" default="#f8fafc" value="#f8fafc"/>
+          <Variable name="bg.page" description="Page Background Color" type="color" default="#fff" value="#fff"/>
+          <Variable name="bg.post" description="Post background color" type="color" default="#f1f5f9" value="#f1f5f9"/>
+          <Variable name="bg.header" description="Header Background" type="color" default="#0f172a" value="#0f172a"/>
+        </Group>
+
+        <Group description="Color">
+          <Variable name="color.text" description="Text color" type="color" default="#334155" value="#334155"/>
+          <Variable name="color.border" description="Border color" type="color" default="#e2e8f0" value="#e2e8f0"/>
+          <Variable name="color.header" description="Header color" type="color" default="#fff" value="#fff"/>
+        </Group>Personalizar comentarios
+        =====================
+        <Variable name="posts.text.color" description="Content color" type="color" default="#666" value="#666" hideEditor="true"/>
+        <Variable name="posts.link.color" description="posts.link.color" type="string" value="#666"/>
+        <Variable name="posts.text.font" description="posts.text.font" type="string" value="15px Roboto"/>
+        <Variable name="posts.background.color" description="posts.background.color" type="string" value="transparent"/>
+        <Variable name="posts.title.color" description="posts.title.color" type="string" value="false"/>
+        <Variable name="body.link.color" description="body.link.color" type="string" value="false"/>
+        <Variable name="body.text.font" description="body.text.font" type="string" value="false"/>/*! skin.css */
+
+/* Footer */
+/* My Modify */
+
+:root {
+--colorKey: #1e7eaa;
+--colorBackground: #FFFFFF;
+--colorBackgroundTrans: #FFFFFFCF;
+--colorBackgroundTrans1: #FFFFFF1F;
+--colorText: #202124;
+--colorTextTrans1: #2021241F;
+--colorTextTrans2: #2021242E;
+--colorMeta: #5F6368;
+--colorBorder: #DADCE4;
+--colorDarkKey: #ff80f7;
+--colorDarkBackground: #202124;
+--colorDarkBackgroundTrans: #202124CF;
+--colorDarkBackgroundTrans1: #2021241F;
+--colorDarkText: #E4E6E9;
+--colorDarkTextTrans1: #E4E6E91F;
+--colorDarkTextTrans1: #E4E6E92E;
+--colorDarkMeta: #9AA0A6;
+--colorDarkBorder: #5F6368;
+--bg-grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' stroke='black' stroke-opacity='0.08' fill='none'%3E%3Cpath d='M0 .5H31.5V32' /%3E%3C/svg%3E");
+--bg-grid-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' stroke='white' stroke-opacity='0.08' fill='none'%3E%3Cpath d='M0 .5H31.5V32' /%3E%3C/svg%3E");
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nMrXyi0A.woff2) format("woff2");
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nFrXyi0A.woff2) format("woff2");
+	unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nDrXyi0A.woff2) format("woff2");
+	unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nPrXyi0A.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nBrXw.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nMrXyi0A.woff2) format("woff2");
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nFrXyi0A.woff2) format("woff2");
+	unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nDrXyi0A.woff2) format("woff2");
+	unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nPrXyi0A.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nBrXw.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nMrXyi0A.woff2) format("woff2");
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nFrXyi0A.woff2) format("woff2");
+	unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nDrXyi0A.woff2) format("woff2");
+	unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nPrXyi0A.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/rubik/v21/iJWKBXyIfDnIV7nBrXw.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+}
+
+@charset "UTF-8";
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0 solid #e5e7eb
+}
+
+:after,
+:before {
+	--elcreative-content: ""
+}
+
+html {
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	font-family: Rubik, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+}
+
+body {
+	margin: 0;
+	line-height: inherit
+}
+
+hr {
+	height: 0;
+	color: inherit;
+	border-top-width: 1px
+}
+
+abbr:where([title]) {
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit
+}
+
+b,
+strong {
+	font-weight: bolder
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+	font-size: 1em
+}
+
+small {
+	font-size: 80%
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: initial
+}
+
+sub {
+	bottom: -.25em
+}
+
+sup {
+	top: -.5em
+}
+
+table {
+	text-indent: 0;
+	border-color: inherit;
+	border-collapse: collapse
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0
+}
+
+button,
+select {
+	text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+	-webkit-appearance: button;
+	background-color: initial;
+	background-image: none
+}
+
+:-moz-focusring {
+	outline: auto
+}
+
+:-moz-ui-invalid {
+	box-shadow: none
+}
+
+progress {
+	vertical-align: initial
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto
+}
+
+[type=search] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit
+}
+
+summary {
+	display: list-item
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+	margin: 0
+}
+
+fieldset {
+	margin: 0
+}
+
+fieldset,
+legend {
+	padding: 0
+}
+
+menu,
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+textarea {
+	resize: vertical
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	opacity: 1;
+	color: #9ca3af
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	opacity: 1;
+	color: #9ca3af
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	opacity: 1;
+	color: #9ca3af
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	opacity: 1;
+	color: #9ca3af
+}
+
+input::placeholder,
+textarea::placeholder {
+	opacity: 1;
+	color: #9ca3af
+}
+
+[role=button],
+button {
+	cursor: pointer
+}
+
+:disabled {
+	cursor: default
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+	display: block;
+	vertical-align: middle
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto
+}
+
+*,
+:after,
+:before {
+	--elcreative-border-spacing-x: 0;
+	--elcreative-border-spacing-y: 0;
+	--elcreative-translate-x: 0;
+	--elcreative-translate-y: 0;
+	--elcreative-rotate: 0;
+	--elcreative-skew-x: 0;
+	--elcreative-skew-y: 0;
+	--elcreative-scale-x: 1;
+	--elcreative-scale-y: 1;
+	--elcreative-scroll-snap-strictness: proximity;
+	--elcreative-ring-offset-width: 0px;
+	--elcreative-ring-offset-color: #fff;
+	--elcreative-ring-color: #3b82f680;
+	--elcreative-ring-offset-shadow: 0 0 #0000;
+	--elcreative-ring-shadow: 0 0 #0000;
+	--elcreative-shadow: 0 0 #0000;
+	--elcreative-shadow-colored: 0 0 #0000
+}
+
+::-webkit-backdrop {
+	--elcreative-border-spacing-x: 0;
+	--elcreative-border-spacing-y: 0;
+	--elcreative-translate-x: 0;
+	--elcreative-translate-y: 0;
+	--elcreative-rotate: 0;
+	--elcreative-skew-x: 0;
+	--elcreative-skew-y: 0;
+	--elcreative-scale-x: 1;
+	--elcreative-scale-y: 1;
+	--elcreative-scroll-snap-strictness: proximity;
+	--elcreative-ring-offset-width: 0px;
+	--elcreative-ring-offset-color: #fff;
+	--elcreative-ring-color: #3b82f680;
+	--elcreative-ring-offset-shadow: 0 0 #0000;
+	--elcreative-ring-shadow: 0 0 #0000;
+	--elcreative-shadow: 0 0 #0000;
+	--elcreative-shadow-colored: 0 0 #0000
+}
+
+::backdrop {
+	--elcreative-border-spacing-x: 0;
+	--elcreative-border-spacing-y: 0;
+	--elcreative-translate-x: 0;
+	--elcreative-translate-y: 0;
+	--elcreative-rotate: 0;
+	--elcreative-skew-x: 0;
+	--elcreative-skew-y: 0;
+	--elcreative-scale-x: 1;
+	--elcreative-scale-y: 1;
+	--elcreative-scroll-snap-strictness: proximity;
+	--elcreative-ring-offset-width: 0px;
+	--elcreative-ring-offset-color: #fff;
+	--elcreative-ring-color: #3b82f680;
+	--elcreative-ring-offset-shadow: 0 0 #0000;
+	--elcreative-ring-shadow: 0 0 #0000;
+	--elcreative-shadow: 0 0 #0000;
+	--elcreative-shadow-colored: 0 0 #0000
+}
+
+.container {
+	width: 100%
+}
+
+@media (min-width:640px) {
+	.container {
+		max-width: 640px
+	}
+}
+
+@media (min-width:768px) {
+	.container {
+		max-width: 768px
+	}
+}
+
+@media (min-width:1024px) {
+	.container {
+		max-width: 1024px
+	}
+}
+
+@media (min-width:1280px) {
+	.container {
+		max-width: 1280px
+	}
+}
+
+@media (min-width:1536px) {
+	.container {
+		max-width: 1536px
+	}
+}
+
+.prose {
+	color: var(--elcreative-prose-body);
+	max-width: 65ch
+}
+
+.prose :where([class~=lead]):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-lead);
+	font-size: 1.25em;
+	line-height: 1.6;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em
+}
+
+.prose :where(a):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-links);
+	text-decoration: underline;
+	font-weight: 500
+}
+
+.prose :where(strong):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-bold);
+	font-weight: 600
+}
+
+.prose :where(astrong):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(blockquotestrong):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(theadthstrong):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(ol):not(:where([class~=not-prose]*)) {
+	list-style-type: decimal;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	padding-left: 1.625em
+}
+
+.prose :where(ol[type=A]):not(:where([class~=not-prose]*)) {
+	list-style-type: upper-alpha
+}
+
+.prose :where(ol[type=a]):not(:where([class~=not-prose]*)) {
+	list-style-type: lower-alpha
+}
+
+.prose :where(ol[type=As]):not(:where([class~=not-prose]*)) {
+	list-style-type: upper-alpha
+}
+
+.prose :where(ol[type=as]):not(:where([class~=not-prose]*)) {
+	list-style-type: lower-alpha
+}
+
+.prose :where(ol[type=I]):not(:where([class~=not-prose]*)) {
+	list-style-type: upper-roman
+}
+
+.prose :where(ol[type=i]):not(:where([class~=not-prose]*)) {
+	list-style-type: lower-roman
+}
+
+.prose :where(ol[type=Is]):not(:where([class~=not-prose]*)) {
+	list-style-type: upper-roman
+}
+
+.prose :where(ol[type=is]):not(:where([class~=not-prose]*)) {
+	list-style-type: lower-roman
+}
+
+.prose :where(ol[type="1"]):not(:where([class~=not-prose]*)) {
+	list-style-type: decimal
+}
+
+.prose :where(ul):not(:where([class~=not-prose]*)) {
+	list-style-type: disc;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	padding-left: 1.625em
+}
+
+.prose :where(ol>li):not(:where([class~=not-prose]*))::marker {
+	font-weight: 400;
+	color: var(--elcreative-prose-counters)
+}
+
+.prose :where(ul>li):not(:where([class~=not-prose]*))::marker {
+	color: var(--elcreative-prose-bullets)
+}
+
+.prose :where(hr):not(:where([class~=not-prose]*)) {
+	border-color: var(--elcreative-prose-hr);
+	border-top-width: 1px;
+	margin-top: 3em;
+	margin-bottom: 3em
+}
+
+.prose :where(blockquote):not(:where([class~=not-prose]*)) {
+	font-weight: 500;
+	font-style: italic;
+	color: var(--elcreative-prose-quotes);
+	border-left-width: .25rem;
+	border-left-color: var(--elcreative-prose-quote-borders);
+	quotes: "“""”""‘""’";
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+	padding-left: 1em
+}
+
+.prose :where(blockquotep:first-of-type):not(:where([class~=not-prose]*)):before {
+	content: open-quote
+}
+
+.prose :where(blockquotep:last-of-type):not(:where([class~=not-prose]*)):after {
+	content: close-quote
+}
+
+.prose :where(h1):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-headings);
+	font-weight: 800;
+	font-size: 2.25em;
+	margin-top: 0;
+	margin-bottom: .8888889em;
+	line-height: 1.1111111
+}
+
+.prose :where(h1strong):not(:where([class~=not-prose]*)) {
+	font-weight: 900;
+	color: inherit
+}
+
+.prose :where(h2):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-headings);
+	font-weight: 700;
+	font-size: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	line-height: 1.3333333
+}
+
+.prose :where(h2strong):not(:where([class~=not-prose]*)) {
+	font-weight: 800;
+	color: inherit
+}
+
+.prose :where(h3):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-headings);
+	font-weight: 600;
+	font-size: 1.25em;
+	margin-top: 1.6em;
+	margin-bottom: .6em;
+	line-height: 1.6
+}
+
+.prose :where(h3strong):not(:where([class~=not-prose]*)) {
+	font-weight: 700;
+	color: inherit
+}
+
+.prose :where(h4):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-headings);
+	font-weight: 600;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+	line-height: 1.5
+}
+
+.prose :where(h4strong):not(:where([class~=not-prose]*)) {
+	font-weight: 700;
+	color: inherit
+}
+
+.prose :where(img):not(:where([class~=not-prose]*)) {
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+
+.prose :where(figure>*):not(:where([class~=not-prose]*)) {
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.prose :where(figcaption):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-captions);
+	font-size: .875em;
+	line-height: 1.4285714;
+	margin-top: .8571429em
+}
+
+.prose :where(code):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-code);
+	font-weight: 600;
+	font-size: .875em
+}
+
+.prose :where(code):not(:where([class~=not-prose]*)):before {
+	content: "`"
+}
+
+.prose :where(code):not(:where([class~=not-prose]*)):after {
+	content: "`"
+}
+
+.prose :where(acode):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(h1code):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(h2code):not(:where([class~=not-prose]*)) {
+	color: inherit;
+	font-size: .875em
+}
+
+.prose :where(h3code):not(:where([class~=not-prose]*)) {
+	color: inherit;
+	font-size: .9em
+}
+
+.prose :where(h4code):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(blockquotecode):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(theadthcode):not(:where([class~=not-prose]*)) {
+	color: inherit
+}
+
+.prose :where(pre):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-pre-code);
+	background-color: var(--elcreative-prose-pre-bg);
+	overflow-x: auto;
+	font-weight: 400;
+	font-size: .875em;
+	line-height: 1.7142857;
+	margin-top: 1.7142857em;
+	margin-bottom: 1.7142857em;
+	border-radius: .375rem;
+	padding: .8571429em 1.1428571em
+}
+
+.prose :where(precode):not(:where([class~=not-prose]*)) {
+	background-color: initial;
+	border-width: 0;
+	border-radius: 0;
+	padding: 0;
+	font-weight: inherit;
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit
+}
+
+.prose :where(precode):not(:where([class~=not-prose]*)):before {
+	content: none
+}
+
+.prose :where(precode):not(:where([class~=not-prose]*)):after {
+	content: none
+}
+
+.prose :where(table):not(:where([class~=not-prose]*)) {
+	width: 100%;
+	table-layout: auto;
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-size: .875em;
+	line-height: 1.7142857
+}
+
+.prose :where(thead):not(:where([class~=not-prose]*)) {
+	border-bottom-width: 1px;
+	border-bottom-color: var(--elcreative-prose-th-borders)
+}
+
+.prose :where(theadth):not(:where([class~=not-prose]*)) {
+	color: var(--elcreative-prose-headings);
+	font-weight: 600;
+	vertical-align: bottom;
+	padding-right: .5714286em;
+	padding-bottom: .5714286em;
+	padding-left: .5714286em
+}
+
+.prose :where(tbodytr):not(:where([class~=not-prose]*)) {
+	border-bottom-width: 1px;
+	border-bottom-color: var(--elcreative-prose-td-borders)
+}
+
+.prose :where(tbodytr:last-child):not(:where([class~=not-prose]*)) {
+	border-bottom-width: 0
+}
+
+.prose :where(tbodytd):not(:where([class~=not-prose]*)) {
+	vertical-align: initial
+}
+
+.prose :where(tfoot):not(:where([class~=not-prose]*)) {
+	border-top-width: 1px;
+	border-top-color: var(--elcreative-prose-th-borders)
+}
+
+.prose :where(tfoottd):not(:where([class~=not-prose]*)) {
+	vertical-align: top
+}
+
+.prose {
+	--elcreative-prose-body: #374151;
+	--elcreative-prose-headings: #111827;
+	--elcreative-prose-lead: #4b5563;
+	--elcreative-prose-links: #111827;
+	--elcreative-prose-bold: #111827;
+	--elcreative-prose-counters: #6b7280;
+	--elcreative-prose-bullets: #d1d5db;
+	--elcreative-prose-hr: #e5e7eb;
+	--elcreative-prose-quotes: #111827;
+	--elcreative-prose-quote-borders: #e5e7eb;
+	--elcreative-prose-captions: #6b7280;
+	--elcreative-prose-code: #111827;
+	--elcreative-prose-pre-code: #e5e7eb;
+	--elcreative-prose-pre-bg: #1f2937;
+	--elcreative-prose-th-borders: #d1d5db;
+	--elcreative-prose-td-borders: #e5e7eb;
+	--elcreative-prose-invert-body: #d1d5db;
+	--elcreative-prose-invert-headings: #fff;
+	--elcreative-prose-invert-lead: #9ca3af;
+	--elcreative-prose-invert-links: #fff;
+	--elcreative-prose-invert-bold: #fff;
+	--elcreative-prose-invert-counters: #9ca3af;
+	--elcreative-prose-invert-bullets: #4b5563;
+	--elcreative-prose-invert-hr: #374151;
+	--elcreative-prose-invert-quotes: #f3f4f6;
+	--elcreative-prose-invert-quote-borders: #374151;
+	--elcreative-prose-invert-captions: #9ca3af;
+	--elcreative-prose-invert-code: #fff;
+	--elcreative-prose-invert-pre-code: #d1d5db;
+	--elcreative-prose-invert-pre-bg: #00000080;
+	--elcreative-prose-invert-th-borders: #4b5563;
+	--elcreative-prose-invert-td-borders: #374151;
+	font-size: 1rem;
+	line-height: 1.75
+}
+
+.prose :where(p):not(:where([class~=not-prose]*)) {
+	margin-top: 1.25em;
+	margin-bottom: 1.25em
+}
+
+.prose :where(video):not(:where([class~=not-prose]*)) {
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+
+.prose :where(figure):not(:where([class~=not-prose]*)) {
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+
+.prose :where(li):not(:where([class~=not-prose]*)) {
+	margin-top: .5em;
+	margin-bottom: .5em
+}
+
+.prose :where(ol>li):not(:where([class~=not-prose]*)) {
+	padding-left: .375em
+}
+
+.prose :where(ul>li):not(:where([class~=not-prose]*)) {
+	padding-left: .375em
+}
+
+.prose :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .75em;
+	margin-bottom: .75em
+}
+
+.prose :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.25em
+}
+
+.prose :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.25em
+}
+
+.prose :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.25em
+}
+
+.prose :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.25em
+}
+
+.prose :where(ulul, ulol, olul, olol):not(:where([class~=not-prose]*)) {
+	margin-top: .75em;
+	margin-bottom: .75em
+}
+
+.prose :where(hr+*):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose :where(h2+*):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose :where(h3+*):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose :where(h4+*):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose :where(theadth:first-child):not(:where([class~=not-prose]*)) {
+	padding-left: 0
+}
+
+.prose :where(theadth:last-child):not(:where([class~=not-prose]*)) {
+	padding-right: 0
+}
+
+.prose :where(tbodytd, tfoottd):not(:where([class~=not-prose]*)) {
+	padding: .5714286em
+}
+
+.prose :where(tbodytd:first-child, tfoottd:first-child):not(:where([class~=not-prose]*)) {
+	padding-left: 0
+}
+
+.prose :where(tbodytd:last-child, tfoottd:last-child):not(:where([class~=not-prose]*)) {
+	padding-right: 0
+}
+
+.prose :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.prose-sm :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .5714286em;
+	margin-bottom: .5714286em
+}
+
+.prose-sm :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.1428571em
+}
+
+.prose-sm :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.1428571em
+}
+
+.prose-sm :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.1428571em
+}
+
+.prose-sm :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.1428571em
+}
+
+.prose-sm :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose-sm :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.prose-base :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .75em;
+	margin-bottom: .75em
+}
+
+.prose-base :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.25em
+}
+
+.prose-base :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.25em
+}
+
+.prose-base :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.25em
+}
+
+.prose-base :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.25em
+}
+
+.prose-base :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose-base :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.prose-lg :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .8888889em;
+	margin-bottom: .8888889em
+}
+
+.prose-lg :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.3333333em
+}
+
+.prose-lg :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.3333333em
+}
+
+.prose-lg :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.3333333em
+}
+
+.prose-lg :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.3333333em
+}
+
+.prose-lg :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose-lg :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.prose-xl :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .8em;
+	margin-bottom: .8em
+}
+
+.prose-xl :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.2em
+}
+
+.prose-xl :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.2em
+}
+
+.prose-xl :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.2em
+}
+
+.prose-xl :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.2em
+}
+
+.prose-xl :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose-xl :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.prose-2xl :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+	margin-top: .8333333em;
+	margin-bottom: .8333333em
+}
+
+.prose-2xl :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.3333333em
+}
+
+.prose-2xl :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.3333333em
+}
+
+.prose-2xl :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 1.3333333em
+}
+
+.prose-2xl :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 1.3333333em
+}
+
+.prose-2xl :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+	margin-top: 0
+}
+
+.prose-2xl :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+	margin-bottom: 0
+}
+
+.pointer-events-none {
+	pointer-events: none
+}
+
+.visible {
+	visibility: visible
+}
+
+.invisible {
+	visibility: hidden
+}
+
+.static {
+	position: static
+}
+
+.absolute {
+	position: absolute
+}
+
+.relative {
+	position: relative
+}
+
+.sticky {
+	position: sticky
+}
+
+.inset-0 {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0
+}
+
+.top-0 {
+	top: 0
+}
+
+.top-full {
+	top: 100%
+}
+
+.z-50 {
+	z-index: 50
+}
+
+.z-20 {
+	z-index: 20
+}
+
+.z-auto {
+	z-index: auto
+}
+
+.z-10 {
+	z-index: 10
+}
+
+.col-span-3 {
+	grid-column: span 3/span 3
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.my-4 {
+	margin-top: 1rem;
+	margin-bottom: 1rem
+}
+
+.mt-1 {
+	margin-top: .25rem
+}
+
+.mt-4 {
+	margin-top: 1rem
+}
+
+.mb-3 {
+	margin-bottom: .75rem
+}
+
+.mb-4 {
+	margin-bottom: 1rem
+}
+
+.mb-2 {
+	margin-bottom: .5rem
+}
+
+.mt-8 {
+	margin-top: 2rem
+}
+
+.mt-16 {
+	margin-top: 4rem
+}
+
+.mt-2 {
+	margin-top: .5rem
+}
+
+.mb-16 {
+	margin-bottom: 4rem
+}
+
+.mb-8 {
+	margin-bottom: 2rem
+}
+
+.mb-10 {
+	margin-bottom: 2.5rem
+}
+
+.mt-6 {
+	margin-top: 1.5rem
+}
+
+.mt-14 {
+	margin-top: 3.5rem
+}
+
+.mt-3 {
+	margin-top: .75rem
+}
+
+.box-border {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.box-content {
+	-webkit-box-sizing: content-box;
+	box-sizing: initial
+}
+
+.block {
+	display: block
+}
+
+.inline {
+	display: inline
+}
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.inline-flex {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex
+}
+
+.grid {
+	display: grid
+}
+
+.hidden {
+	display: none
+}
+
+.aspect-\[16\/9\] {
+	aspect-ratio: 16/9
+}
+
+.h-6 {
+	height: 1.5rem
+}
+
+.h-\[2px\] {
+	height: 2px
+}
+
+.h-full {
+	height: 100%
+}
+
+.h-11 {
+	height: 2.75rem
+}
+
+.min-h-\[56px\] {
+	min-height: 56px
+}
+
+.w-full {
+	width: 100%
+}
+
+.w-6 {
+	width: 1.5rem
+}
+
+.w-40 {
+	width: 10rem
+}
+
+.w-11 {
+	width: 2.75rem
+}
+
+.min-w-full {
+	min-width: 100%
+}
+
+.max-w-5xl {
+	max-width: 64rem
+}
+
+.max-w-md {
+	max-width: 28rem
+}
+
+.max-w-2xl {
+	max-width: 42rem
+}
+
+.flex-none {
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none
+}
+
+.flex-shrink-0 {
+	-ms-flex-negative: 0;
+	flex-shrink: 0
+}
+
+.flex-grow-0 {
+	-webkit-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0
+}
+
+.rotate-180 {
+	--elcreative-rotate: 180deg;
+	-webkit-transform: translate(var(--elcreative-translate-x), var(--elcreative-translate-y)) rotate(var(--elcreative-rotate)) skewX(var(--elcreative-skew-x)) skewY(var(--elcreative-skew-y)) scaleX(var(--elcreative-scale-x)) scaleY(var(--elcreative-scale-y));
+	transform: translate(var(--elcreative-translate-x), var(--elcreative-translate-y)) rotate(var(--elcreative-rotate)) skewX(var(--elcreative-skew-x)) skewY(var(--elcreative-skew-y)) scaleX(var(--elcreative-scale-x)) scaleY(var(--elcreative-scale-y))
+}
+
+.select-none {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.grid-cols-1 {
+	grid-template-columns: repeat(1, minmax(0, 1fr))
+}
+
+.flex-row {
+	-webkit-box-orient: horizontal;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.flex-col,
+.flex-row {
+	-webkit-box-direction: normal
+}
+
+.flex-col {
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.flex-col-reverse {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse
+}
+
+.flex-wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.items-start {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.items-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.justify-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+
+.justify-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+
+.justify-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.justify-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.gap-2 {
+	gap: .5rem
+}
+
+.gap-4 {
+	gap: 1rem
+}
+
+.gap-8 {
+	gap: 2rem
+}
+
+.gap-y-6 {
+	row-gap: 1.5rem
+}
+
+.gap-x-8 {
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
+	column-gap: 2rem
+}
+
+.overflow-hidden {
+	overflow: hidden
+}
+
+.text-ellipsis {
+	text-overflow: ellipsis
+}
+
+.break-words {
+	overflow-wrap: break-word
+}
+
+.rounded-full {
+	border-radius: 9999px
+}
+
+.rounded-lg {
+	border-radius: .5rem
+}
+
+.rounded-md {
+	border-radius: .375rem
+}
+
+.border {
+	border-width: 1px
+}
+
+.border-b {
+	border-bottom-width: 1px
+}
+
+.border-t {
+	border-top-width: 1px
+}
+
+.border-colorBorder {
+	border-color: var(--colorBorder)
+}
+
+.border-colorKey {
+	border-color: var(--colorKey)
+}
+
+.bg-colorBackground {
+	background-color: var(--colorBackground)
+}
+
+.bg-colorBackgroundTrans {
+	background-color: var(--colorBackgroundTrans)
+}
+
+.bg-colorDarkBackground {
+	background-color: var(--colorDarkBackground)
+}
+
+.bg-\[\#f0f0f0\] {
+	--elcreative-bg-opacity: 1;
+	background-color: rgb(240 240 240/var(--elcreative-bg-opacity))
+}
+
+.bg-bgGrid {
+	background-image: var(--bg-grid)
+}
+
+.bg-cover {
+	background-size: cover
+}
+
+.bg-top {
+	background-position: top
+}
+
+.bg-no-repeat {
+	background-repeat: no-repeat
+}
+
+.p-2 {
+	padding: .5rem
+}
+
+.p-4 {
+	padding: 1rem
+}
+
+.p-3 {
+	padding: .75rem
+}
+
+.p-6 {
+	padding: 1.5rem
+}
+
+.py-2 {
+	padding-top: .5rem;
+	padding-bottom: .5rem
+}
+
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem
+}
+
+.px-3 {
+	padding-left: .75rem;
+	padding-right: .75rem
+}
+
+.py-1 {
+	padding-top: .25rem;
+	padding-bottom: .25rem
+}
+
+.py-16 {
+	padding-top: 4rem;
+	padding-bottom: 4rem
+}
+
+.py-6 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem
+}
+
+.py-8 {
+	padding-top: 2rem;
+	padding-bottom: 2rem
+}
+
+.py-10 {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem
+}
+
+.pb-4 {
+	padding-bottom: 1rem
+}
+
+.pb-10 {
+	padding-bottom: 2.5rem
+}
+
+.pb-16 {
+	padding-bottom: 4rem
+}
+
+.pt-8 {
+	padding-top: 2rem
+}
+
+.pb-3 {
+	padding-bottom: .75rem
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem
+}
+
+.text-sm {
+	font-size: .875rem;
+	line-height: 1.25rem
+}
+
+.text-5xl {
+	font-size: 3rem;
+	line-height: 1
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem
+}
+
+.text-xs {
+	font-size: .75rem;
+	line-height: 1rem
+}
+
+.text-\[15px\] {
+	font-size: 15px
+}
+
+.font-bold {
+	font-weight: 700
+}
+
+.font-semibold {
+	font-weight: 600
+}
+
+.font-extrabold {
+	font-weight: 800
+}
+
+.font-medium {
+	font-weight: 500
+}
+
+.leading-4 {
+	line-height: 1rem
+}
+
+.leading-6 {
+	line-height: 1.5rem
+}
+
+.-tracking-wider {
+	letter-spacing: -.05em
+}
+
+.tracking-tight {
+	letter-spacing: -.025em
+}
+
+.text-colorText {
+	color: var(--colorText)
+}
+
+.text-colorMeta {
+	color: var(--colorMeta)
+}
+
+.text-colorKey {
+	color: var(--colorKey)
+}
+
+.text-colorBackground {
+	color: var(--colorBackground)
+}
+
+.opacity-50 {
+	opacity: .5
+}
+
+.shadow {
+	--elcreative-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+	--elcreative-shadow-colored: 0 1px 3px 0 var(--elcreative-shadow-color), 0 1px 2px -1px var(--elcreative-shadow-color)
+}
+
+.shadow,
+.shadow-sm {
+	-webkit-box-shadow: var(--elcreative-ring-offset-shadow, 0 0 transparent), var(--elcreative-ring-shadow, 0 0 transparent), var(--elcreative-shadow);
+	box-shadow: var(--elcreative-ring-offset-shadow, 0 0 transparent), var(--elcreative-ring-shadow, 0 0 transparent), var(--elcreative-shadow)
+}
+
+.shadow-sm {
+	--elcreative-shadow: 0 1px 2px 0 #0000000d;
+	--elcreative-shadow-colored: 0 1px 2px 0 var(--elcreative-shadow-color)
+}
+
+.shadow-colorKey {
+	--elcreative-shadow-color: var(--colorKey);
+	--elcreative-shadow: var(--elcreative-shadow-colored)
+}
+
+.outline-none {
+	outline: 2px solid transparent;
+	outline-offset: 2px
+}
+
+.filter {
+	-webkit-filter: var(--elcreative-blur) var(--elcreative-brightness) var(--elcreative-contrast) var(--elcreative-grayscale) var(--elcreative-hue-rotate) var(--elcreative-invert) var(--elcreative-saturate) var(--elcreative-sepia) var(--elcreative-drop-shadow);
+	filter: var(--elcreative-blur) var(--elcreative-brightness) var(--elcreative-contrast) var(--elcreative-grayscale) var(--elcreative-hue-rotate) var(--elcreative-invert) var(--elcreative-saturate) var(--elcreative-sepia) var(--elcreative-drop-shadow)
+}
+
+.backdrop-blur {
+	--elcreative-backdrop-blur: blur(8px);
+	-webkit-backdrop-filter: var(--elcreative-backdrop-blur) var(--elcreative-backdrop-brightness) var(--elcreative-backdrop-contrast) var(--elcreative-backdrop-grayscale) var(--elcreative-backdrop-hue-rotate) var(--elcreative-backdrop-invert) var(--elcreative-backdrop-opacity) var(--elcreative-backdrop-saturate) var(--elcreative-backdrop-sepia);
+	backdrop-filter: var(--elcreative-backdrop-blur) var(--elcreative-backdrop-brightness) var(--elcreative-backdrop-contrast) var(--elcreative-backdrop-grayscale) var(--elcreative-backdrop-hue-rotate) var(--elcreative-backdrop-invert) var(--elcreative-backdrop-opacity) var(--elcreative-backdrop-saturate) var(--elcreative-backdrop-sepia)
+}
+
+.transition-\[box-shadow\] {
+	-webkit-transition-property: -webkit-box-shadow;
+	transition-property: -webkit-box-shadow;
+	transition-property: box-shadow;
+	transition-property: box-shadow, -webkit-box-shadow;
+	-webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	-webkit-transition-duration: .15s;
+	transition-duration: .15s
+}
+
+.duration-300 {
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s
+}
+
+.line-clamp-2 {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2
+}
+
+.\[mask-image\:linear-gradient\(0deg\,white\,rgba\(255\,255\,255\,0\)\)\] {
+	-webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+	-webkit-mask-image: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0));
+	mask-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+	mask-image: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0))
+}
+
+.\[background-image\:linear-gradient\(90deg\,transparent\,var\(--colorKey\)\,var\(--colorDarkKey\)\,transparent\)\] {
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(var(--colorKey)), color-stop(var(--colorDarkKey)), to(rgba(0, 0, 0, 0)));
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--colorKey), var(--colorDarkKey), rgba(0, 0, 0, 0))
+}
+
+* {
+	-webkit-tap-highlight-color: transparent
+}
+
+:focus-visible {
+	outline: 0
+}
+
+:target:before {
+	margin: -4rem 0 0;
+	display: block;
+	height: 4rem;
+	--elcreative-content: "";
+	content: var(--elcreative-content)
+}
+
+::-webkit-input-placeholder {
+	color: inherit
+}
+
+::-moz-placeholder {
+	color: inherit
+}
+
+:-ms-input-placeholder {
+	color: inherit
+}
+
+::-ms-input-placeholder {
+	color: inherit
+}
+
+::placeholder {
+	color: inherit
+}
+
+html {
+	overflow-y: auto;
+	overflow-x: hidden;
+	scroll-behavior: smooth
+}
+
+.after\:block:after {
+	content: var(--elcreative-content);
+	display: block
+}
+
+.after\:h-\[2px\]:after {
+	content: var(--elcreative-content);
+	height: 2px
+}
+
+.after\:w-full:after {
+	content: var(--elcreative-content);
+	width: 100%
+}
+
+.after\:content-\[\'\'\]:after {
+	--elcreative-content: "";
+	content: var(--elcreative-content)
+}
+
+.after\:\[background-image\:linear-gradient\(90deg\,transparent\,var\(--colorKey\)\,var\(--colorDarkKey\)\,transparent\)\]:after {
+	content: var(--elcreative-content);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(var(--colorKey)), color-stop(var(--colorDarkKey)), to(rgba(0, 0, 0, 0)));
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), var(--colorKey), var(--colorDarkKey), rgba(0, 0, 0, 0))
+}
+
+.last\:border-b-0:last-child {
+	border-bottom-width: 0
+}
+
+.hover\:bg-colorTextTrans1:hover {
+	background-color: var(--colorTextTrans1)
+}
+
+.hover\:text-colorKey:hover {
+	color: var(--colorKey)
+}
+
+.hover\:text-colorText:hover {
+	color: var(--colorText)
+}
+
+.hover\:underline:hover {
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline
+}
+
+.focus\:bg-colorTextTrans1:focus {
+	background-color: var(--colorTextTrans1)
+}
+
+.active\:bg-colorTextTrans2:active {
+	background-color: var(--colorTextTrans2)
+}
+
+[dir=ltr] .ltr\:right-0 {
+	right: 0
+}
+
+[dir=ltr] .ltr\:mr-2 {
+	margin-right: .5rem
+}
+
+[dir=ltr] .ltr\:ml-2 {
+	margin-left: .5rem
+}
+
+[dir=ltr] .ltr\:ml-6 {
+	margin-left: 1.5rem
+}
+
+[dir=ltr] .ltr\:mr-6 {
+	margin-right: 1.5rem
+}
+
+[dir=ltr] .ltr\:ml-2\.5 {
+	margin-left: .625rem
+}
+
+[dir=ltr] .ltr\:ml-4 {
+	margin-left: 1rem
+}
+
+[dir=ltr] .ltr\:mr-3 {
+	margin-right: .75rem
+}
+
+[dir=ltr] .ltr\:mr-1 {
+	margin-right: .25rem
+}
+
+[dir=ltr] .ltr\:border-l-4 {
+	border-left-width: 4px
+}
+
+[dir=ltr] .ltr\:pl-6 {
+	padding-left: 1.5rem
+}
+
+[dir=rtl] .rtl\:left-0 {
+	left: 0
+}
+
+[dir=rtl] .rtl\:ml-2 {
+	margin-left: .5rem
+}
+
+[dir=rtl] .rtl\:mr-2 {
+	margin-right: .5rem
+}
+
+[dir=rtl] .rtl\:mr-6 {
+	margin-right: 1.5rem
+}
+
+[dir=rtl] .rtl\:ml-6 {
+	margin-left: 1.5rem
+}
+
+[dir=rtl] .rtl\:mr-2\.5 {
+	margin-right: .625rem
+}
+
+[dir=rtl] .rtl\:mr-4 {
+	margin-right: 1rem
+}
+
+[dir=rtl] .rtl\:ml-3 {
+	margin-left: .75rem
+}
+
+[dir=rtl] .rtl\:ml-1 {
+	margin-left: .25rem
+}
+
+[dir=rtl] .rtl\:border-r-4 {
+	border-right-width: 4px
+}
+
+[dir=rtl] .rtl\:pr-6 {
+	padding-right: 1.5rem
+}
+
+.dark .dark\:block {
+	display: block
+}
+
+.dark .dark\:hidden {
+	display: none
+}
+
+.dark .dark\:border-colorDarkBorder {
+	border-color: var(--colorDarkBorder)
+}
+
+.dark .dark\:border-colorDarkKey {
+	border-color: var(--colorDarkKey)
+}
+
+.dark .dark\:bg-colorDarkBackground {
+	background-color: var(--colorDarkBackground)
+}
+
+.dark .dark\:bg-colorDarkBackgroundTrans {
+	background-color: var(--colorDarkBackgroundTrans)
+}
+
+.dark .dark\:bg-colorBackground {
+	background-color: var(--colorBackground)
+}
+
+.dark .dark\:bg-bgGridDark {
+	background-image: var(--bg-grid-dark)
+}
+
+.dark .dark\:text-colorDarkText {
+	color: var(--colorDarkText)
+}
+
+.dark .dark\:text-colorDarkKey {
+	color: var(--colorDarkKey)
+}
+
+.dark .dark\:text-colorDarkMeta {
+	color: var(--colorDarkMeta)
+}
+
+.dark .dark\:text-colorDarkBackground {
+	color: var(--colorDarkBackground)
+}
+
+.dark .dark\:shadow-colorDarkText {
+	--elcreative-shadow-color: var(--colorDarkText);
+	--elcreative-shadow: var(--elcreative-shadow-colored)
+}
+
+.dark .dark\:shadow-colorDarkKey {
+	--elcreative-shadow-color: var(--colorDarkKey);
+	--elcreative-shadow: var(--elcreative-shadow-colored)
+}
+
+.dark .dark\:hover\:bg-colorDarkTextTrans1:hover {
+	background-color: var(--colorDarkTextTrans1)
+}
+
+.dark .dark\:hover\:text-colorDarkKey:hover {
+	color: var(--colorDarkKey)
+}
+
+.dark .dark\:hover\:text-colorDarkText:hover {
+	color: var(--colorDarkText)
+}
+
+.dark .dark\:active\:bg-colorDarkTextTrans1:active,
+.dark .dark\:focus\:bg-colorDarkTextTrans1:focus {
+	background-color: var(--colorDarkTextTrans1)
+}
+
+@media (min-width:640px) {
+	.sm\:mb-0 {
+		margin-bottom: 0
+	}
+
+	.sm\:mt-0 {
+		margin-top: 0
+	}
+
+	.sm\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr))
+	}
+
+	.sm\:gap-4 {
+		gap: 1rem
+	}
+
+	.sm\:gap-y-10 {
+		row-gap: 2.5rem
+	}
+
+	.sm\:rounded-lg {
+		border-radius: .5rem
+	}
+
+	.sm\:rounded-none {
+		border-radius: 0
+	}
+
+	.sm\:border {
+		border-width: 1px
+	}
+
+	.sm\:border-0 {
+		border-width: 0
+	}
+
+	.sm\:border-colorBorder {
+		border-color: var(--colorBorder)
+	}
+
+	.sm\:py-3 {
+		padding-top: .75rem;
+		padding-bottom: .75rem
+	}
+
+	.sm\:px-4 {
+		padding-left: 1rem;
+		padding-right: 1rem
+	}
+
+	.sm\:text-6xl {
+		font-size: 3.75rem;
+		line-height: 1
+	}
+
+	.sm\:text-4xl {
+		font-size: 2.25rem;
+		line-height: 2.5rem
+	}
+
+	.sm\:text-5xl {
+		font-size: 3rem;
+		line-height: 1
+	}
+
+	.sm\:text-lg {
+		font-size: 1.125rem;
+		line-height: 1.75rem
+	}
+
+	.sm\:leading-\[4rem\] {
+		line-height: 4rem
+	}
+
+	.sm\:hover\:shadow-md:hover {
+		--elcreative-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+		--elcreative-shadow-colored: 0 4px 6px -1px var(--elcreative-shadow-color), 0 2px 4px -2px var(--elcreative-shadow-color);
+		-webkit-box-shadow: var(--elcreative-ring-offset-shadow, 0 0 transparent), var(--elcreative-ring-shadow, 0 0 transparent), var(--elcreative-shadow);
+		box-shadow: var(--elcreative-ring-offset-shadow, 0 0 transparent), var(--elcreative-ring-shadow, 0 0 transparent), var(--elcreative-shadow)
+	}
+}
+
+@media (min-width:1024px) {
+	.lg\:prose-lg {
+		font-size: 1.125rem;
+		line-height: 1.7777778
+	}
+
+	.lg\:prose-lg :where(p):not(:where([class~=not-prose]*)) {
+		margin-top: 1.3333333em;
+		margin-bottom: 1.3333333em
+	}
+
+	.lg\:prose-lg :where([class~=lead]):not(:where([class~=not-prose]*)) {
+		font-size: 1.2222222em;
+		line-height: 1.4545455;
+		margin-top: 1.0909091em;
+		margin-bottom: 1.0909091em
+	}
+
+	.lg\:prose-lg :where(blockquote):not(:where([class~=not-prose]*)) {
+		margin-top: 1.6666667em;
+		margin-bottom: 1.6666667em;
+		padding-left: 1em
+	}
+
+	.lg\:prose-lg :where(h1):not(:where([class~=not-prose]*)) {
+		font-size: 2.6666667em;
+		margin-top: 0;
+		margin-bottom: .8333333em;
+		line-height: 1
+	}
+
+	.lg\:prose-lg :where(h2):not(:where([class~=not-prose]*)) {
+		font-size: 1.6666667em;
+		margin-top: 1.8666667em;
+		margin-bottom: 1.0666667em;
+		line-height: 1.3333333
+	}
+
+	.lg\:prose-lg :where(h3):not(:where([class~=not-prose]*)) {
+		font-size: 1.3333333em;
+		margin-top: 1.6666667em;
+		margin-bottom: .6666667em;
+		line-height: 1.5
+	}
+
+	.lg\:prose-lg :where(h4):not(:where([class~=not-prose]*)) {
+		margin-top: 1.7777778em;
+		margin-bottom: .4444444em;
+		line-height: 1.5555556
+	}
+
+	.lg\:prose-lg :where(img):not(:where([class~=not-prose]*)) {
+		margin-top: 1.7777778em;
+		margin-bottom: 1.7777778em
+	}
+
+	.lg\:prose-lg :where(video):not(:where([class~=not-prose]*)) {
+		margin-top: 1.7777778em;
+		margin-bottom: 1.7777778em
+	}
+
+	.lg\:prose-lg :where(figure):not(:where([class~=not-prose]*)) {
+		margin-top: 1.7777778em;
+		margin-bottom: 1.7777778em
+	}
+
+	.lg\:prose-lg :where(figure>*):not(:where([class~=not-prose]*)) {
+		margin-top: 0;
+		margin-bottom: 0
+	}
+
+	.lg\:prose-lg :where(figcaption):not(:where([class~=not-prose]*)) {
+		font-size: .8888889em;
+		line-height: 1.5;
+		margin-top: 1em
+	}
+
+	.lg\:prose-lg :where(code):not(:where([class~=not-prose]*)) {
+		font-size: .8888889em
+	}
+
+	.lg\:prose-lg :where(h2code):not(:where([class~=not-prose]*)) {
+		font-size: .8666667em
+	}
+
+	.lg\:prose-lg :where(h3code):not(:where([class~=not-prose]*)) {
+		font-size: .875em
+	}
+
+	.lg\:prose-lg :where(pre):not(:where([class~=not-prose]*)) {
+		font-size: .8888889em;
+		line-height: 1.75;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		border-radius: .375rem;
+		padding: 1em 1.5em
+	}
+
+	.lg\:prose-lg :where(ol):not(:where([class~=not-prose]*)) {
+		margin-top: 1.3333333em;
+		margin-bottom: 1.3333333em;
+		padding-left: 1.5555556em
+	}
+
+	.lg\:prose-lg :where(ul):not(:where([class~=not-prose]*)) {
+		margin-top: 1.3333333em;
+		margin-bottom: 1.3333333em;
+		padding-left: 1.5555556em
+	}
+
+	.lg\:prose-lg :where(li):not(:where([class~=not-prose]*)) {
+		margin-top: .6666667em;
+		margin-bottom: .6666667em
+	}
+
+	.lg\:prose-lg :where(ol>li):not(:where([class~=not-prose]*)) {
+		padding-left: .4444444em
+	}
+
+	.lg\:prose-lg :where(ul>li):not(:where([class~=not-prose]*)) {
+		padding-left: .4444444em
+	}
+
+	.lg\:prose-lg :where(.prose>ul>lip):not(:where([class~=not-prose]*)) {
+		margin-top: .8888889em;
+		margin-bottom: .8888889em
+	}
+
+	.lg\:prose-lg :where(.prose>ul>li>:first-child):not(:where([class~=not-prose]*)) {
+		margin-top: 1.3333333em
+	}
+
+	.lg\:prose-lg :where(.prose>ul>li>:last-child):not(:where([class~=not-prose]*)) {
+		margin-bottom: 1.3333333em
+	}
+
+	.lg\:prose-lg :where(.prose>ol>li>:first-child):not(:where([class~=not-prose]*)) {
+		margin-top: 1.3333333em
+	}
+
+	.lg\:prose-lg :where(.prose>ol>li>:last-child):not(:where([class~=not-prose]*)) {
+		margin-bottom: 1.3333333em
+	}
+
+	.lg\:prose-lg :where(ulul, ulol, olul, olol):not(:where([class~=not-prose]*)) {
+		margin-top: .8888889em;
+		margin-bottom: .8888889em
+	}
+
+	.lg\:prose-lg :where(hr):not(:where([class~=not-prose]*)) {
+		margin-top: 3.1111111em;
+		margin-bottom: 3.1111111em
+	}
+
+	.lg\:prose-lg :where(hr+*):not(:where([class~=not-prose]*)) {
+		margin-top: 0
+	}
+
+	.lg\:prose-lg :where(h2+*):not(:where([class~=not-prose]*)) {
+		margin-top: 0
+	}
+
+	.lg\:prose-lg :where(h3+*):not(:where([class~=not-prose]*)) {
+		margin-top: 0
+	}
+
+	.lg\:prose-lg :where(h4+*):not(:where([class~=not-prose]*)) {
+		margin-top: 0
+	}
+
+	.lg\:prose-lg :where(table):not(:where([class~=not-prose]*)) {
+		font-size: .8888889em;
+		line-height: 1.5
+	}
+
+	.lg\:prose-lg :where(theadth):not(:where([class~=not-prose]*)) {
+		padding-right: .75em;
+		padding-bottom: .75em;
+		padding-left: .75em
+	}
+
+	.lg\:prose-lg :where(theadth:first-child):not(:where([class~=not-prose]*)) {
+		padding-left: 0
+	}
+
+	.lg\:prose-lg :where(theadth:last-child):not(:where([class~=not-prose]*)) {
+		padding-right: 0
+	}
+
+	.lg\:prose-lg :where(tbodytd, tfoottd):not(:where([class~=not-prose]*)) {
+		padding: .75em
+	}
+
+	.lg\:prose-lg :where(tbodytd:first-child, tfoottd:first-child):not(:where([class~=not-prose]*)) {
+		padding-left: 0
+	}
+
+	.lg\:prose-lg :where(tbodytd:last-child, tfoottd:last-child):not(:where([class~=not-prose]*)) {
+		padding-right: 0
+	}
+
+	.lg\:prose-lg :where(.prose>:first-child):not(:where([class~=not-prose]*)) {
+		margin-top: 0
+	}
+
+	.lg\:prose-lg :where(.prose>:last-child):not(:where([class~=not-prose]*)) {
+		margin-bottom: 0
+	}
+
+	.lg\:max-w-\[50\%\] {
+		max-width: 50%
+	}
+
+	.lg\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr))
+	}
+
+	.lg\:items-start {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start
+	}
+
+	.lg\:p-10 {
+		padding: 2.5rem
+	}
+
+	.lg\:after\:max-w-\[50\%\]:after {
+		content: var(--elcreative-content);
+		max-width: 50%
+	}
+}
+
+@media (min-width:1280px) {
+	.xl\:min-h-\[64px\] {
+		min-height: 64px
+	}
+
+	.xl\:grid-cols-4 {
+		grid-template-columns: repeat(4, minmax(0, 1fr))
+	}
+}
+}]]>
+      </b:skin>
+      <b:else></b:else>
+      <b:template-skin><![CDATA[]]>
+      </b:template-skin>
+    </b:if>
+    <b:comment>CORE</b:comment>
+    <b:defaultmarkups>
+      <b:defaultmarkup type="All">
+        <b:includable id="main"/>
+        <b:includable id="content"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="AdSense,Blog">
+        <b:includable id="defaultAdUnit"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Blog,PopularPosts,FeaturedPost">
+        <b:includable id="blogThisShare"/>
+        <b:includable id="bylineByName"/>
+        <b:includable id="bylineRegion"/>
+        <b:includable id="commentsLink"/>
+        <b:includable id="commentsLinkIframe"/>
+        <b:includable id="emailPostIcon"/>
+        <b:includable id="facebookShare"/>
+        <b:includable id="footerBylines"/>
+        <b:includable id="headerByline"/>
+        <b:includable id="googlePlusShare"/>
+        <b:includable id="linkShare"/>
+        <b:includable id="otherSharingButton"/>
+        <b:includable id="platformShare"/>
+        <b:includable id="postAuthor"/>
+        <b:includable id="postCommentsLink"/>
+        <b:includable id="postJumpLink"/>
+        <b:includable id="postLabels"/>
+        <b:includable id="postLocation"/>
+        <b:includable id="postReactions"/>
+        <b:includable id="postShareButtons"/>
+        <b:includable id="postTimestamp"/>
+        <b:includable id="sharingButton"/>
+        <b:includable id="sharingButtonContent"/>
+        <b:includable id="sharingButtons"/>
+        <b:includable id="sharingButtonsMenu"/>
+        <b:includable id="sharingPlatformIcon"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="PopularPosts,FeaturedPost">
+        <b:includable id="snippetedPostByline"/>
+        <b:includable id="snippetedPostContent"/>
+        <b:includable id="snippetedPosts"/>
+        <b:includable id="snippetedPostThumbnail"/>
+        <b:includable id="snippetedPostTitle"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Blog">
+        <b:includable id="aboutPostAuthor"/>
+        <b:includable id="addComments"/>
+        <b:includable id="commentAuthorAvatar"/>
+        <b:includable id="commentDeleteIcon"/>
+        <b:includable id="commentForm"/>
+        <b:includable id="commentFormIframeSrc"/>
+        <b:includable id="commentItem"/>
+        <b:includable id="commentList"/>
+        <b:includable id="commentPicker"/>
+        <b:includable id="comments"/>
+        <b:includable id="commentsTitle"/>
+        <b:includable id="feedLinks"/>
+        <b:includable id="feedLinksBody"/>
+        <b:includable id="homePageLink"/>
+        <b:includable id="iframeComments"/>
+        <b:includable id="inlineAd"/>
+        <b:includable id="manageComments"/>
+        <b:includable id="nextPageLink"/>
+        <b:includable id="post"/>
+        <b:includable id="postBody"/>
+        <b:includable id="postBodySnippet"/>
+        <b:includable id="postCommentsAndAd"/>
+        <b:includable id="postFooter"/>
+        <b:includable id="postFooterAuthorProfile"/>
+        <b:includable id="postHeader"/>
+        <b:includable id="postMeta"/>
+        <b:includable id="postMetadataJSONImage"/>
+        <b:includable id="postMetadataJSONPublisher"/>
+        <b:includable id="postPagination"/>
+        <b:includable id="postTitle"/>
+        <b:includable id="previousPageLink"/>
+        <b:includable id="threadedCommentForm"/>
+        <b:includable id="threadedCommentJs"/>
+        <b:includable id="threadedComments"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="BlogArchive">
+        <b:includable id="flat"/>
+        <b:includable id="hierarchy"/>
+        <b:includable id="interval"/>
+        <b:includable id="posts"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="BlogSearch">
+        <b:includable id="searchForm"/>
+        <b:includable id="searchSubmit"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Header">
+        <b:includable id="behindImageStyle"/>
+        <b:includable id="description"/>
+        <b:includable id="image"/>
+        <b:includable id="title"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Label">
+        <b:includable id="cloud"/>
+        <b:includable id="list"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="PageList">
+        <b:includable id="overflowButton"/>
+        <b:includable id="overflowablePageList"/>
+        <b:includable id="pageLink"/>
+        <b:includable id="pageList"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Profile">
+        <b:includable id="authorProfileImage"/>
+        <b:includable id="defaultProfileImage"/>
+        <b:includable id="profileImage"/>
+        <b:includable id="teamProfile"/>
+        <b:includable id="teamProfileLink"/>
+        <b:includable id="userGoogleProfile"/>
+        <b:includable id="userLocation"/>
+        <b:includable id="userProfile"/>
+        <b:includable id="userProfileData"/>
+        <b:includable id="userProfileImage"/>
+        <b:includable id="userProfileInfo"/>
+        <b:includable id="userProfileLink"/>
+        <b:includable id="userProfileText"/>
+        <b:includable id="viewProfileLink"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Subscribe">
+        <b:includable id="feeds"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Common">
+        <b:includable id="@:ads">
+          <b:tag class="adsbygoogle" name="ins" data-full-width-responsive="true">
+            <b:attr name="data-ad-slot" expr:value="data:slot"></b:attr>
+            <b:attr name="data-ad-client" expr:value="data:adClientId ?: data:blog.adsenseClientId"></b:attr>
+            <b:attr name="data-ad-host" expr:value="data:blog.adsenseHostId"></b:attr>
+            <b:attr name="data-ad-format" expr:value="data:layout ? &quot;fluid&quot; : &quot;auto&quot;"></b:attr>
+            <b:attr expr:name="&quot;data-ad-layout&quot; + (data:layout != &quot;in-article&quot; ? &quot;-key&quot; : &quot;&quot;)" expr:value="data:layout"></b:attr>
+            <b:attr name="style" expr:value="data:style ?: &quot;display: block&quot;"></b:attr>
+          </b:tag>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </b:includable>
+        <b:includable id="@:adsense">
+          <b:if cond="data:blog.adsenseHostId and not data:blog.adsenseAutoAds">
+            <b:tag async="async" name="script" cond="data:blog.adsenseClientId and data:blog.adsenseHasAds" expr:src="&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot; params {client: data:blog.adsenseClientId}" crossorigin="anonymous"></b:tag>
+          </b:if>
+        </b:includable>
+        <b:includable id="@:analytics">
+          <b:if cond="data:blog.analyticsAccountNumber">
+            <script async="async" expr:src="params(&quot;https://www.googletagmanager.com/gtag/js&quot;,{id: data:blog.analyticsAccountNumber})"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config','<data:blog.analyticsAccountNumber/>');
+            </script>
+          </b:if>
+        </b:includable>
+        <b:includable id="@:attr">
+          <b:loop values="data:" var="i">
+            <b:attr expr:name="data:i[0] ?: &quot;null&quot;" expr:value="data:i[1]"></b:attr>
+          </b:loop>
+        </b:includable>
+        <b:includable id="@:image">
+          <b:if cond="data:src">
+            <b:with value="data:src.isYoutube ? data:src.youtubeMaxResDefaultUrl : data:src" var="source">
+              <b:with value="(data:resize ? resizeImage(data:src, data:resize, data:ratio) : (data:source))" var="image">
+                <b:tag expr:alt="data:alt ?: data:messages.image" name="img">
+                  <b:attr name="b:whitespace" value="remove"></b:attr>
+                  <b:attr name="id" expr:value="data:id"></b:attr>
+                  <b:attr name="width" expr:value="data:width ?: data:image.width"></b:attr>
+                  <b:attr name="height" expr:value="data:height ?: data:image.height"></b:attr>
+                  <b:attr cond="data:sizes" name="sizes" expr:value="data:sizes"></b:attr>
+                  <b:attr cond="data:loading" name="loading" expr:value="data:loading"></b:attr>
+                  <b:class cond="data:class" expr:name="data:class"></b:class>
+                  <b:with value="&quot;blogger.googleusercontent.com/img/a/&quot;" var="serve">
+                    <b:attr name="src" expr:value="(data:srcset ? resizeImage(data:image, data:srcset.first, data:ratio) : data:image) + ((data:image contains data:serve) and data:params ? (&quot;-&quot; + data:params) : &quot;&quot;)"></b:attr>
+                    <b:if cond="data:srcset">
+                      <b:attr name="srcset" expr:value="sourceSet(data:image, data:srcset, data:ratio)"></b:attr>
+                    </b:if>
+                  </b:with>
+                </b:tag>
+              </b:with>
+            </b:with>
+          </b:if>
+        </b:includable>
+        <b:includable id="@:kind">
+          <b:class cond="data:view.isHomepage" name="is-home"></b:class>
+          <b:class cond="data:view.isMultipleItems" name="is-items"></b:class>
+          <b:class cond="data:view.isPost" name="is-post"></b:class>
+          <b:class cond="data:view.isPage" name="is-page"></b:class>
+          <b:class cond="data:view.isArchive" name="is-archive"></b:class>
+          <b:class cond="data:view.isLabelSearch" name="is-label"></b:class>
+          <b:class cond="data:view.isSearch" name="is-search"></b:class>
+          <b:class cond="data:view.isError" name="is-error"></b:class>
+          <b:class cond="data:view.isPreview" name="is-preview"></b:class>
+          <b:class cond="data:view.isSingleItem" expr:name="&quot;is-single single-id-&quot; + (data:view.postId ?: data:view.pageId)"></b:class>
+        </b:includable>
+        <b:includable id="@:meta">
+          <meta expr:charset="data:blog.encoding"/>
+          <meta content="width=device-width,initial-scale=1" name="viewport"/>
+          <b:if cond="data:favicon">
+            <b:loop values="(data:favSizes ?: [32,96,180,192])" var="size">
+              <link expr:href="resizeImage(data:favicon, data:size, &quot;1:1&quot;)" rel="icon" expr:sizes="data:size + &quot;x&quot; + data:size" type="image/png"/>
+            </b:loop>
+            <b:else></b:else>
+            <link expr:href="data:blog.blogspotFaviconUrl" rel="icon" type="image/x-icon"/>
+          </b:if>
+          <meta expr:content="data:view.description.escaped" name="description"/>
+          <b:with value="data:https ? data:view.url.canonical.https : data:view.url.canonical" var="canonical">
+            <link expr:href="data:canonical" rel="canonical"/>
+            <meta expr:content="data:canonical" property="og:url"/>
+            <meta expr:content="data:canonical" name="twitter:url"/>
+          </b:with>
+          <meta expr:content="data:view.isHomepage or data:view.isSingleItem ? (data:robots ?: &quot;index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1&quot;) : &quot;noindex,follow&quot;" name="robots"/>
+          <meta expr:content="not data:view.isSingleItem ? &quot;article&quot; : &quot;website&quot;" property="og:type"/>
+          <meta expr:content="data:view.title.escaped" property="og:title"/>
+          <meta expr:content="data:view.description.escaped" property="og:description"/>
+          <b:if cond="data:view.featuredImage or data:ogImage or data:widgets.Blog.first.posts.first.featuredImage">
+            <b:with value="resizeImage((data:view.featuredImage ?: (data:ogImage != &quot;&quot; ? data:ogImage : data:widgets.Blog.first.posts.first.featuredImage)), 1200, &quot;1200:630&quot;)" var="image">
+              <meta expr:content="data:image" property="og:image"/>
+              <meta expr:content="data:image" name="twitter:image"/>
+              <b:if cond="data:image.isResizable">
+                <meta expr:content="data:image.width" property="og:image:width"/>
+                <meta expr:content="data:image.height" property="og:image:height"/>
+              </b:if>
+            </b:with>
+          </b:if>
+          <meta expr:content="data:cardType ?: &quot;summary_large_image&quot;" name="twitter:card"/>
+          <meta expr:content="data:view.description.escaped" name="twitter:description"/>
+        </b:includable>
+        <b:includable id="head:content">
+          <b:include name="@:meta"></b:include>
+          <b:include name="@:adsense"></b:include>
+          <b:include name="@:analytics"></b:include>
+        </b:includable>
+        
+        <b:includable id="comment:avatar"> 
+          <div class='relative h-11 w-11 flex-shrink-0 flex-grow-0 rounded-lg ltr:mr-3 rtl:ml-3 blog_author_admin'>
+          <b:with value="{ image: (data:comment.authorAvatarSrc contains &quot;/img/bl&quot; ? (data:avatarImage ?: &quot;https://lh3.googleusercontent.com/a/default-user&quot;) : data:comment.authorAvatarSrc), size: (data:avatarSize ?: 40) }" var="avatar">
+          <img class='lazyload block h-11 w-11 rounded-full' expr:src="resizeImage(data:avatar.image, data:avatar.size, &quot;1:1&quot;)" expr:width="data:avatar.size" expr:height="data:avatar.size" expr:alt="data:comment.author"/>
+          </b:with>
+          </div>
+        </b:includable>
+        
+        <b:includable id="comment:body">
+          <div class='comment_content w-full break-words text-[15px] text-colorMeta dark:text-colorDarkText'>
+            <b:class cond="data:comment.isDeleted" name="comment-deleted"></b:class>
+            <data:comment.body/>
+          </div>
+        </b:includable>
+        
+        <b:includable id="comment:deleteButton">
+        <div class='comment_actions w-full select-none border-t border-colorBorder py-2 px-4 dark:border-colorDarkBorder'>
+        <a class="comment-delete-button" expr:href="data:comment.deleteUrl">
+        <span><b:eval expr="data:deleteText ?: data:messages.deleteComment"></b:eval></span>
+        </a>
+        </div>
+        </b:includable>
+        
+        <b:includable id="comment:replyButton">
+          <b:if cond="data:post.allowNewComments">
+          	<a class="comment-delete-button" expr:href="data:comment.deleteUrl">
+            <div class="comment-reply-button" expr:data-parent-id="data:comment.id">
+              <b:eval expr="data:replyText ?: data:messages.postAComment"></b:eval>
+            </div>
+            </a>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="comment:restore">
+          <button class="comment-restore-button" id="comment-restore">
+            <b:eval expr="data:restoreText ?: data:messages.postAComment"></b:eval>
+          </button>
+        </b:includable>
+        
+        <b:includable id="comment:content">
+          <b:if cond="data:post.comments.any">
+            <div class="comments-content">
+              <b:loop expr:reverse="data:newestFirst ?: false" values="data:post.comments where (c =&gt; ((data:depth &gt; 0) ? not c.inReplyTo : c.id))" var="comment">
+                <b:include name="comment:item" data="comment"></b:include>
+              </b:loop>
+            </div>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="comment:form">
+          <b:if cond="!data:post.allowNewComments">
+            <div class="comment-alert"><data:post.noNewCommentsText/></div>
+            <b:else></b:else>
+            <div id="comment-form">
+              <b:include name="comment:restore">
+                <div class="comment-iframe" id="comment-iframe">
+                  <iframe id="comment-editor" expr:src="data:post.commentFormIframeSrc params { skin: &quot;emporio&quot; }" width="100%" height="66"></iframe>
+                </div>
+              </b:include>
+              <textarea id="cmtfpIframe" readonly="readonly" hidden="hidden"><data:post.cmtfpIframe/></textarea>
+            </div>
+            <b:if cond="data:this.messages.blogComment">
+              <div class="comment-messages"><data:this.messages.blogComment/></div>
+            </b:if>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="comment:header">
+        <div class='flex w-full flex-col items-start justify-center p-4'>
+        <div class='mb-3 flex w-full flex-row items-center justify-start border-b border-colorBorder pb-3 dark:border-colorDarkBorder'>
+
+              <b:include name="comment:avatar"></b:include>
+
+            <div class='flex w-full flex-col items-start justify-center'>
+            <div class='flex w-full flex-row flex-wrap items-center justify-between'>
+	
+              <b:tag class="comment-author" expr:name="data:comment.authorUrl ? &quot;a&quot; : &quot;span&quot;">
+                <b:attr name="href" expr:value="data:comment.authorUrl"></b:attr><strong><data:comment.author/></strong>
+              </b:tag>
+              <div class='inline-flex flex-row items-center justify-center text-colorMeta dark:text-colorDarkMeta'></div>
+              </div>
+              <span class='text-sm text-colorMeta dark:text-colorDarkMeta'><data:comment.timestamp/></span>
+              
+
+            </div>
+            
+            </div>
+          </div>
+        </b:includable>
+        
+        
+        <b:includable id="comment:item" var="comment">
+          <b:with value="(data:currentDepth ?: -1) + 1" var="currentDepth">
+            <div class='comment_holder flex w-full flex-col-reverse items-center justify-center mt-3' id='comment_holder'>
+            <div class='comment_item mb-3 flex w-full flex-col items-start justify-center overflow-hidden rounded-lg border border-colorBorder bg-colorBackground dark:border-colorDarkBorder dark:bg-colorDarkBackground' expr:id="&quot;c&quot; + data:comment.id" expr:data-depth="data:currentDepth">
+              <div class='flex w-full flex-col items-start justify-center p-4'>	
+              	
+                <b:include name="comment:header"></b:include>
+    
+                <b:include name="comment:body"></b:include>
+                
+                <div class="comment-footer">
+                  <b:if cond="(data:depth gt 0) and (data:currentDepth lt data:depth)">
+                    <b:include name="comment:replyButton"></b:include>
+                  </b:if>
+                  <b:include name="comment:deleteButton"></b:include>
+                </div>
+                <b:with value="data:post.comments where (c =&gt; c.inReplyTo == data:comment.id)" var="replies">
+                  <b:if cond="(data:depth gt 0) and (data:currentDepth lt data:depth)">
+                    <div class="comments-replies">
+                      <b:if cond="data:replies.any">
+                        <b:loop expr:reverse="data:newestFirst ?: false" values="data:replies" var="reply">
+                          <b:include name="comment:item" data="reply"></b:include>
+                        </b:loop>
+                      </b:if>
+                    </div>
+                  </b:if>
+                </b:with>
+                
+
+               </div>
+              </div>
+            </div>
+          </b:with>
+        </b:includable>
+        
+        
+        <b:includable id="comment:main">
+          <b:if cond="not data:view.isPreview and data:post.allowComments">
+            <div class="comments-title">
+              <b:message name="messages.numberOfComments">
+                <b:param expr:value="data:post.numberOfComments" name="numComments"></b:param>
+              </b:message>
+            </div>
+            <div class="comments" id="comments">
+              <b:with value="{ min: (data:minDepth ?: 1), max: (data:maxDepth ?: 5) }" var="depth">
+                <b:with value="data:depth.min &gt;= data:depth.max ? data:depth.max : data:depth.min" var="depth">
+                  <b:loop values="(data:formFirst ?: false) ? [&quot;form&quot;,&quot;content&quot;] : [&quot;content&quot;,&quot;form&quot;]" var="order">
+                    <b:include expr:name="&quot;comment:&quot; + data:order"></b:include>
+                  </b:loop>
+                  <b:include cond="data:post.commentPagingRequired" name="comment:pagination"></b:include>
+                </b:with>
+              </b:with>
+            </div>
+          </b:if>
+          <script>/*<![CDATA[*/!function(){
+  const comments = document.getElementById('comments');
+  const restore = document.getElementById('comment-restore');
+  const relay = document.getElementById('cmtfpIframe');
+
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    let script = document.createElement('script')
+    script.src = src
+    script.onload = resolve
+    script.onerror = reject
+    document.head.appendChild(script)
+  })
+
+  const rpc_relay = (() => {
+    if (!relay) {
+      return
+    }
+    src = (relay.value).replace(/<script.*?src='(.*?)'.*?><\/script>/, "$1");
+    loadScript(src)
+      .then(() => {
+        BLOG_CMT_createIframe("https://www.blogger.com/rpc_relay.html");
+      })
+      .catch(console.error)
+    relay.remove()
+  })();
+
+  const replying = (() => {
+    if (!comments) {
+      return
+    }
+
+    let form = document.getElementById("comment-form");
+    let formIframe = document.getElementById("comment-iframe");
+    let buttons = comments.querySelectorAll("[data-parent-id]");
+    let originalSrc = document.getElementById("comment-editor").src;
+
+    let cloneForm = formIframe.cloneNode(true);
+
+    if (!buttons) {
+      return
+    }
+
+    let ACTIVE_CLASS = "is-active";
+    let REPLYING_CLASS = "is-replying";
+
+    function cleanReplyingStatus() {
+      formIframe.remove();
+      buttons.forEach(el => el.classList.remove(ACTIVE_CLASS));
+    }
+
+    buttons.forEach(button => {
+      button.onclick = () => {
+        let parent = button.dataset.parentId;
+        let container = document.querySelector(`#c${parent} .comments-replies`);
+        if(restore) {
+          restore.classList.add(REPLYING_CLASS);
+        }
+        if (!button.classList.contains(ACTIVE_CLASS)) {
+          cleanReplyingStatus()
+          button.classList.add(ACTIVE_CLASS);
+          // Reemplazamos en el clon la ruta de respuesta
+          cloneForm.querySelector("iframe").src =  `${originalSrc}&parentID=${parent}`;
+          // Agregamos el clon modificado
+          container.prepend(cloneForm)
+        }
+      }
+    });
+
+    if (!restore){
+      return
+    }
+
+    restore.onclick = () => {
+      if (restore.classList.contains(REPLYING_CLASS)) {
+        cleanReplyingStatus()
+        restore.classList.remove(REPLYING_CLASS);
+        cloneForm.remove()
+        form.appendChild(formIframe)
+      }
+    }
+
+  })();
+
+}();/*]]>*/
+          </script>
+        </b:includable>
+        <b:includable id="comment:pagination">
+          <div class="comments-paging">
+            <b:if cond="data:post.hasOlderLinks"><a expr:href="data:post.oldestLinkUrl"><data:messages.oldest/></a><a expr:href="data:post.olderLinkUrl"><data:messages.older/></a></b:if><data:post.commentRangeText/>
+            <b:if cond="data:post.hasNewerLinks"><a expr:href="data:post.newerLinkUrl"><data:messages.newer/></a><a expr:href="data:post.newestLinkUrl"><data:messages.newest/></a></b:if>
+          </div>
+        </b:includable>
+        
+        <b:includable id="post:view" var="post">
+          <b:if cond="data:view.isMultipleItems">
+            
+            <div class='mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 max-w-5xl p-4'>
+            <div class='flex w-full flex-col items-center justify-start overflow-hidden transition-[box-shadow] duration-300 dark:border-colorDarkBorder dark:shadow-colorDarkText sm:rounded-lg sm:border sm:border-colorBorder sm:hover:shadow-md'>
+              <div class=''></div>
+              
+                <a expr:href="data:post.url.canonical">
+                	
+                <b:include name="@:image" data="{ class: &quot;aspect-[16/9] w-full rounded-lg bg-cover bg-top bg-no-repeat outline-none sm:rounded-none&quot;, src: data:post.featuredImage  }"></b:include>
+                
+                <div class='mt-4 mb-4 flex w-full flex-col items-start justify-center border-b border-colorBorder pb-4 dark:border-colorDarkBorder sm:mb-0 sm:mt-0 sm:border-0 sm:py-3 sm:px-4'>
+                	
+                <h2 class="mb-2 text-lg font-extrabold leading-6 outline-none hover:text-colorKey dark:hover:text-colorDarkKey"><data:post.title/></h2>
+                
+                <div class='relative hidden text-ellipsis text-sm text-colorMeta line-clamp-2 dark:text-colorDarkMeta'>
+                <b:with value="((data:skin.vars.e_truncate not in [true,false]) and (data:skin.vars.e_truncate + 0) == data:skin.vars.e_truncate) ? (data:skin.vars.e_truncate * 1) : 100" var="truncate">
+                <b:eval expr="data:post.snippets.long snippet { length: data:truncate, links: false, linebreaks: false, ellipsis: true }"/>
+                </b:with>     
+                </div>
+                
+                </div>
+                
+                </a>
+                
+            </div>
+            </div>
+                
+            <b:elseif cond="data:view.isPost"></b:elseif>
+            
+          <div class='mx-auto'>
+            <div class='flex w-full flex-col items-center justify-start overflow-hidden'>
+              <div class='relative mx-auto flex w-full flex-col items-center justify-center border-b border-colorBorder after:block after:h-[2px] after:w-full after:content-[&#39;&#39;] after:[background-image:linear-gradient(90deg,transparent,var(--colorKey),var(--colorDarkKey),transparent)] dark:border-colorDarkBorder lg:after:max-w-[50%]'>
+                <div class='z-10 mx-auto w-full max-w-5xl py-16 px-4'>
+                	
+            	
+              	
+                <div class='text-lg font-semibold text-colorKey dark:text-colorDarkKey'>EL Creative Themes</div>
+                
+                <h1 class='mt-4 text-5xl font-extrabold -tracking-wider sm:text-6xl sm:leading-[4rem]'><data:post.title.escaped/></h1>
+                <div class='mt-4 flex flex-wrap'></div>
+                
+                <div class='mt-4 flex flex-wrap'>
+                	
+                
+                <b:loop index='i' values='data:post.labels' var='label'>
+                <b:if cond='data:i&lt;1'>
+                <a class='flex items-center text-sm font-medium text-colorMeta hover:text-colorText ltr:mr-6 rtl:ml-6 dark:text-colorDarkMeta dark:hover:text-colorDarkText' expr:href='data:label.url' rel='tag'>
+                <svg aria-hidden='true' class='h-6 w-6 flex-none' fill='currentColor' height='24' viewBox='0 0 24 24' width='24'><path d='M12.5 10H10c-.55 0-1-.45-1-1s.45-1 1-1h2.5c.55 0 1 .45 1 1s-.45 1-1 1m2.5 4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1s.45 1 1 1h4c.55 0 1-.45 1-1m7-10v16c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2V4c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2m-4 8s0-1-1-1c-.95.03-1-1-1-1V8c0-1.66-1.34-3-3-3H9C7.34 5 6 6.34 6 8v7c0 1.66 1.34 3 3 3h6c1.66 0 3-1.34 3-3v-3z'></path></svg>
+                <span class='ltr:ml-2.5 rtl:mr-2.5'><data:label.name/></span>
+                </a>
+                </b:if>
+                </b:loop>
+                
+                <time class='flex items-center text-sm font-medium text-colorMeta hover:text-colorText dark:text-colorDarkMeta dark:hover:text-colorDarkText' expr:datetime="data:post.date.iso8601">
+                <svg aria-hidden='true' class='h-6 w-6 flex-none' fill='currentColor' hidden='24' viewBox='0 0 24 24' width='24'><path d='M12 6C9.33 6 7.67 7.33 7 10C8 8.67 9.17 8.17 10.5 8.5C11.26 8.69 11.81 9.24 12.41 9.85C13.39 10.85 14.5 12 17 12C19.67 12 21.33 10.67 22 8C21 9.33 19.83 9.83 18.5 9.5C17.74 9.31 17.2 8.76 16.59 8.15C15.61 7.15 14.5 6 12 6M7 12C4.33 12 2.67 13.33 2 16C3 14.67 4.17 14.17 5.5 14.5C6.26 14.69 6.8 15.24 7.41 15.85C8.39 16.85 9.5 18 12 18C14.67 18 16.33 16.67 17 14C16 15.33 14.83 15.83 13.5 15.5C12.74 15.31 12.2 14.76 11.59 14.15C10.61 13.15 9.5 12 7 12Z'></path></svg>
+                <span class='ltr:ml-2.5 rtl:mr-2.5'><data:post.date/></span>
+                </time>
+               
+
+                
+                
+                </div>
+                
+                <div class='mt-4 flex flex-wrap'></div>
+                
+                <p class='hidden mt-4 text-colorMeta dark:text-colorDarkMeta'>
+                <b:with value="((data:skin.vars.e_truncate not in [true,false]) and (data:skin.vars.e_truncate + 0) == data:skin.vars.e_truncate) ? (data:skin.vars.e_truncate * 1) : 100" var="truncate">
+                <b:eval expr="data:post.snippets.long snippet { length: data:truncate, links: false, linebreaks: false, ellipsis: true }"/>
+                </b:with>
+                </p>
+                
+             
+              
+              <section class='mt-4 text-colorMeta dark:text-colorDarkMeta'>
+              
+              <data:post.body/>
+              </section>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+            
+                            
+              <div class='relative mx-auto flex w-full flex-col items-center justify-center border-b border-colorBorder after:block after:h-[2px] after:w-full after:content-[&#39;&#39;] border-t border-colorBorder bg-[#f0f0f0] dark:border-colorDarkBorder dark:bg-colorDarkBackground'>
+              <section class='elcreative_comment z-10 mx-auto w-full max-w-2xl py-16 px-4'>
+                  <div class='mb-8 w-full text-center'>
+                    <h2 class='text-3xl font-extrabold tracking-tight sm:text-4xl'>Have a Question?</h2>
+                    <p class='mt-4 text-colorMeta dark:text-colorDarkMeta'>Do you have questions or just want to write a review? Feel free to write it down in the comments section below.</p>
+                  </div>
+                <b:include name="comment:main" data="{ minDepth: 2 }"></b:include>
+              </section>
+              <div class='pointer-events-none absolute inset-0 rotate-180 bg-bgGrid bg-top text-colorMeta dark:bg-bgGridDark dark:text-colorDarkText'></div>
+              </div>
+              
+
+            <b:elseif cond="data:view.isPage"></b:elseif>
+            <div class='relative mx-auto flex w-full flex-col items-center justify-center border-b border-colorBorder after:block after:h-[2px] after:w-full after:content-[&#39;&#39;] after:[background-image:linear-gradient(90deg,transparent,var(--colorKey),var(--colorDarkKey),transparent)] dark:border-colorDarkBorder lg:after:max-w-[50%]'>
+            <section class='mx-auto mb-16 w-full max-w-5xl py-16 px-4'>
+              <div class='mb-8 w-full'>
+              	
+              <div class='mb-3 text-md font-semibold text-colorKey dark:text-colorDarkKey'>EL Creative Themes - Webium</div>
+              <h2 class='text-3xl font-extrabold tracking-tight sm:text-4xl'><data:post.title.escaped/></h2>
+              <div class='mt-4 flex flex-wrap'></div>
+              <div class='mt-4 flex flex-wrap'></div>
+              <div class='prose mb-10 w-full min-w-full text-colorMeta dark:text-colorDarkText lg:prose-lg'><data:post.body/></div>
+              
+              </div>
+              
+            </section>
+            </div>
+          </b:if>
+        </b:includable>
+        <b:includable id="post:pagination">
+          <b:tag class="mx-auto my-4 w-full text-center" id="blog-pager" cond="data:newerPageUrl or data:olderPageUrl" name="div">
+            <b:if cond="data:newerPageUrl"><a class='inline-flex justify-center rounded-md bg-colorDarkBackground py-2 px-4 text-sm font-semibold text-colorBackground outline-none dark:bg-colorBackground dark:text-colorDarkBackground' expr:href="data:newerPageUrl"><data:messages.newerPosts/></a></b:if>
+            <b:if cond="data:olderPageUrl"><a class='inline-flex justify-center rounded-md bg-colorDarkBackground py-2 px-4 text-sm font-semibold text-colorBackground outline-none dark:bg-colorBackground dark:text-colorDarkBackground' expr:href="data:olderPageUrl"><data:messages.olderPosts/></a></b:if>
+          </b:tag>
+        </b:includable>
+        <b:includable id="widget:AdSense">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Blog">
+          <b:with value="data:widgets.Blog1.allBylineItems" var="show">
+            <b:tag cond="data:view.isMultipleItems" name="div">
+              <b:loop values="data:posts" var="post">
+                <b:include data="post" name="post:view"></b:include>
+              </b:loop>
+            </b:tag>
+            <b:include cond="data:view.isMultipleItems" name="post:pagination"></b:include>
+          </b:with>
+        </b:includable>
+        <b:includable id="widget:BlogArchive">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:BlogList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:BlogSearch">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:ContactForm">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:FeaturedPost">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Feed">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Header">
+          <b:if cond="data:image"><a expr:href="data:blog.homepageUrl"><img expr:alt="data:title" expr:height="data:height" expr:src="data:image" expr:width="data:width"/></a></b:if>
+          <b:if cond="data:imagePlacement == &quot;BEHIND&quot;"><a expr:href="data:blog.homepageUrl"><data:title/></a></b:if>
+          <b:if cond="data:imagePlacement == &quot;BEHIND&quot;"><data:description/></b:if>
+        </b:includable>
+        <b:includable id="widget:HTML"><data:content/></b:includable>
+        <b:includable id="widget:Image">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Label">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:LinkList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:PageList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:PopularPosts">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Profile">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Text">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:TextList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="All">
+        <b:includable id="main">
+          <b:include name="widget-title"></b:include>
+          <b:include name="content"></b:include>
+        </b:includable>
+        <b:includable id="content">
+          <div class="widget-content">
+            <b:include expr:name="&quot;widget:&quot; + data:widget.type"></b:include>
+          </div>
+        </b:includable>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Header,Blog">
+        <b:includable id="content"></b:includable>
+        <b:includable id="main">
+          <b:include expr:name="&quot;widget:&quot; + data:widget.type"></b:include>
+        </b:includable>
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+    <b:comment>/END CORE</b:comment>
+  </head>
+  <body class='bg-colorBackground text-colorText dark:bg-colorDarkBackground dark:text-colorDarkText'>
+    <b:include name="@:kind"></b:include>
+    <script>/*<![CDATA[*/"dark"===localStorage.theme||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark");/*]]>*/</script>
+    <div class='app bg-colorBackground dark:bg-colorDarkBackground' id='app'>
+     
+     <!-- Header -->
+     <header class='sticky top-0 z-50 flex min-h-[56px] w-full select-none flex-col items-center justify-center border-b border-colorBorder bg-colorBackgroundTrans text-colorText backdrop-blur dark:border-colorDarkBorder dark:bg-colorDarkBackgroundTrans dark:text-colorDarkText xl:min-h-[64px]'>
+<div class='flex w-full max-w-5xl flex-row items-center justify-between py-2 px-4'>
+<div class='flex items-center justify-end ltr:mr-2 rtl:ml-2'>
+<a class='text-colorMeta outline-none dark:text-colorDarkText' href='https://themes.elcreativeacademy.com/?m=1' title='EL Creative Themes'>
+<h1 class='flex flex-col items-start justify-center'>
+<span class='text-lg font-bold leading-4'>TailFox</span>
+<span class='leading-4'>Themes</span>
+</h1>
+</a>
+</div>
+<div class='flex items-center justify-end ltr:ml-2 rtl:mr-2'>
+<div class='flex items-center justify-center ltr:ml-6 ltr:pl-6 rtl:mr-6 rtl:pr-6'>
+<div class='relative ltr:mr-2 rtl:ml-2'>
+<button aria-label='Color Mode' class='box-content h-6 w-6 flex-shrink-0 flex-grow-0 rounded-full p-2 text-colorMeta outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:text-colorDarkText dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-class-on-target='hidden' data-toggle-escape='' data-toggle-outside='' data-toggle-target-next='' id='button_toggle_color_mode' title='Color Mode' type='button'>
+<svg aria-hidden='true' fill='currentColor' height='24' viewBox='0 0 24 24' width='24'>
+<path class='dark:hidden' d='M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z'></path>
+<path class='hidden dark:block' d='M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z'></path>
+</svg>
+</button>
+</div>
+<div class='relative'>
+<button aria-label='Languages' class='box-content h-6 w-6 flex-shrink-0 flex-grow-0 rounded-full p-2 text-colorMeta outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:text-colorDarkText dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-class-on-target='hidden' data-toggle-escape='' data-toggle-outside='' data-toggle-target-next='' title='Languages' type='button'>
+<svg aria-hidden='true' fill='currentColor' height='24' viewBox='0 0 24 24' width='24'><path d='M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z'></path></svg>
+</button>
+<div class='absolute top-full z-20 mt-1 hidden w-40 rounded-lg border border-colorBorder bg-colorBackground py-2 text-sm font-semibold leading-6 text-colorMeta shadow ltr:right-0 rtl:left-0 dark:border-colorDarkBorder dark:bg-colorDarkBackground dark:text-colorDarkText'>
+<a class='block px-3 py-1 outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-trigger-off='' href='?hl=en'>English</a>
+<a class='block px-3 py-1 outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-trigger-off='' href='?hl=bd'>Bengali</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+      
+      <!-- Hero -->
+      <b:if cond='data:blog.canonicalUrl == data:blog.homepageUrl'>
+      <div class='is-home relative mx-auto flex w-full select-none flex-col items-center justify-center border-b border-colorBorder after:block after:h-[2px] after:w-full after:content-[&#39;&#39;] after:[background-image:linear-gradient(90deg,transparent,var(--colorKey),var(--colorDarkKey),transparent)] dark:border-colorDarkBorder dark:bg-colorDarkBackground lg:after:max-w-[50%]'>
+      	
+        <div class='relative mx-auto w-full max-w-5xl py-16 px-4'>
+          <h1 class='text-lg font-semibold text-colorKey dark:text-colorDarkKey'>FairFax BD Themes</h1>
+          <p class='mt-4 text-5xl font-extrabold -tracking-wider sm:text-6xl'>Ready made design for your website or blogs.</p>
+          <p class='my-4 text-colorMeta dark:text-colorDarkMeta'>Visually-stunning, easy to customize. Clean, minimalist, specific, quality and aesthetics!</p>
+          <a class='inline-flex justify-center rounded-md bg-colorDarkBackground py-2 px-4 text-sm font-semibold text-colorBackground outline-none dark:bg-colorBackground dark:text-colorDarkBackground' href='#main'>Browse All Themes</a>
+        </div>
+        <div class='pointer-events-none absolute inset-0 z-auto bg-bgGrid bg-top text-colorMeta [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0))] dark:bg-bgGridDark dark:text-colorDarkText'></div>
+        
+      </div>
+      
+            <div class='mx-auto w-full max-w-5xl px-4 py-6'>
+            <div class='mb-3 text-lg font-semibold text-colorKey dark:text-colorDarkKey'>All Themes</div>
+            <h2 class='text-3xl font-extrabold tracking-tight sm:text-4xl'>Find the theme you like</h2>
+            <p class='mt-4 text-colorMeta dark:text-colorDarkMeta'>Choose and find the theme you want, everything listed is definitely available.</p>
+            </div>
+            
+      </b:if>
+      
+      <main class="main">
+      	
+           
+        <b:section id='main'>
+            
+          <b:widget id="Blog1" type="Blog" version="2" locked="true">
+            <b:widget-settings>
+              <b:widget-setting name="showCommentLink">true</b:widget-setting>
+            </b:widget-settings>
+          </b:widget>
+          
+        </b:section>
+        
+      </main>
+      
+      <footer class='mx-auto w-full max-w-5xl px-4 py-10'>
+      <p class='text-center text-sm text-colorMeta dark:text-colorDarkMeta'>&#169; 2022 <strong>TailFox Organization</strong>. All rights reserved.</p>
+      </footer>
+      
+    </div>
+    <script>/*<![CDATA[*/function _defineProperty(a,b,c){return b in a?Object.defineProperty(a,b,{value:c,enumerable:!0,configurable:!0,writable:!0}):a[b]=c,a}function _toConsumableArray(a){return _arrayWithoutHoles(a)||_iterableToArray(a)||_unsupportedIterableToArray(a)||_nonIterableSpread()}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}function _unsupportedIterableToArray(a,b){if(a){if("string"==typeof a)return _arrayLikeToArray(a,b);var c=Object.prototype.toString.call(a).slice(8,-1);return"Object"===c&&a.constructor&&(c=a.constructor.name),"Map"===c||"Set"===c?Array.from(a):"Arguments"===c||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(c)?_arrayLikeToArray(a,b):void 0}}function _iterableToArray(a){if("undefined"!=typeof Symbol&&null!=a[Symbol.iterator]||null!=a["@@iterator"])return Array.from(a)}function _arrayWithoutHoles(a){if(Array.isArray(a))return _arrayLikeToArray(a)}function _arrayLikeToArray(a,b){(null==b||b>a.length)&&(b=a.length);for(var c=0,d=Array(b);c<b;c++)d[c]=a[c];return d}(function(){"use strict";var a=document.documentElement.getAttribute("data-easy-toggle-state-custom-prefix")||"toggle",b=function(){return a},c=function(a){var c=1<arguments.length&&arguments[1]!==void 0?arguments[1]:b();return["data",c,a].filter(Boolean).join("-")},d=c("arrows"),e=c("class"),f=c("class-on-target"),g=c("class-on-trigger"),h="is-active",i=c("escape"),j=c("event"),k=c("group"),l=c("is-active"),m=c("modal"),n=c("outside"),o=c("outside-event"),p=c("radio-group"),q=c("target"),r=c("target-all"),s=c("target-next"),t=c("target-parent"),u=c("target-previous"),v=c("target-self"),w=c("state"),x=c("trigger-off"),y=new Event("toggleAfter"),z=new Event("toggleBefore"),A=function(a,b){var c=a?"[".concat(a,"]"):"";if(b)return _toConsumableArray(b.querySelectorAll(c));var d=["[".concat(e,"]").concat(c),"[".concat(g,"]").concat(c),"[".concat(f,"][").concat(q,"]").concat(c),"[".concat(f,"][").concat(r,"]").concat(c),"[".concat(f,"][").concat(s,"]").concat(c),"[".concat(f,"][").concat(u,"]").concat(c),"[".concat(f,"][").concat(t,"]").concat(c),"[".concat(f,"][").concat(v,"]").concat(c)].join().trim();return _toConsumableArray(document.querySelectorAll(d))},B=function(a,b){return a.dispatchEvent(b)},C=function(a){return"easyToggleState_".concat(a)},D=function(a){var b,c=1<arguments.length&&arguments[1]!==void 0?arguments[1]:(b={},_defineProperty(b,"aria-checked",a[C("isActive")]),_defineProperty(b,"aria-expanded",a[C("isActive")]),_defineProperty(b,"aria-hidden",!a[C("isActive")]),_defineProperty(b,"aria-pressed",a[C("isActive")]),_defineProperty(b,"aria-selected",a[C("isActive")]),b);return Object.keys(c).forEach(function(b){return a.hasAttribute(b)&&a.setAttribute(b,c[b])})},E=function(a,b){return(a.getAttribute(b)||"").split(" ").filter(Boolean)},F=function(a){if(a.hasAttribute(e)&&a.getAttribute(e)&&(a.hasAttribute(g)||a.hasAttribute(f))){var b=E(a,g),c=E(a,f);E(a,e).forEach(function(a){b.includes(a),c.includes(a)})}var d=[e,g,f].reduce(function(b,c){var d,h,i=E(a,c);return(c===e||c===g)&&(d=b.trigger).push.apply(d,_toConsumableArray(i)),(c===e||c===f)&&(h=b.target).push.apply(h,_toConsumableArray(i)),b},{trigger:[],target:[]});return!d.trigger.length&&(a.hasAttribute(e)||a.hasAttribute(g))&&d.trigger.push(h),!d.target.length&&(a.hasAttribute(e)||a.hasAttribute(f))&&d.target.push(h),d},G=function(a){var b=a.hasAttribute(k)?k:p;return A("".concat(b,"=\"").concat(a.getAttribute(b),"\"")).filter(function(a){return a[C("isActive")]})},H=function(a){},I=function(a,b){if(0===b.length)return[];var c=a.match(/#\w+/gi);return c&&c.forEach(function(a){var c=_toConsumableArray(b).filter(function(b){return b.id===a.slice(1)});1<c.length}),_toConsumableArray(b)},J=function(a){if(a.hasAttribute(q)||a.hasAttribute(r)){var b=a.getAttribute(q)||a.getAttribute(r);return H(b,a.hasAttribute(q)?q:r),I(b,document.querySelectorAll(b))}if(a.hasAttribute(t)){var c=a.getAttribute(t);return H(c,t),I(c,a.parentElement.querySelectorAll(c))}if(a.hasAttribute(v)){var d=a.getAttribute(v);return H(d,v),I(d,a.querySelectorAll(d))}return a.hasAttribute(u)?I("previous",[a.previousElementSibling].filter(Boolean)):a.hasAttribute(s)?I("next",[a.nextElementSibling].filter(Boolean)):[]},K=function(a,b){return b.forEach(function(b){a.classList.toggle(b)})},L={},M=function(a){return document.addEventListener(a.getAttribute(o)||a.getAttribute(j)||"click",N,!1)},N=function b(a){var c=a.target,d=a.type,h=!1;A(n).filter(function(a){return a.getAttribute(o)===d||a.getAttribute(j)===d&&!a.hasAttribute(o)||"click"===d&&!a.hasAttribute(j)&&!a.hasAttribute(o)}).forEach(function(a){var b=c.closest("[".concat(w,"=\"true\"]"));b&&b[C("trigger")]===a&&(h=!0),h||a===c||a.contains(c)||!a[C("isActive")]||(a.hasAttribute(k)||a.hasAttribute(p)?U:T)(a)}),h||document.removeEventListener(d,b,!1);var i=c.closest("[".concat(e,"][").concat(n,"],[").concat(g,"][").concat(n,"],[").concat(f,"][").concat(n,"]"));i&&i[C("isActive")]&&M(c)},O=function b(a){return T(a.currentTarget[C("target")])},P=function b(a){return a.hasAttribute(n)?a.hasAttribute(p)?void 0:a[C("isActive")]?M(a):void 0:void 0},Q=function c(a,b){var d=A(x,a).filter(function(b){return!b.getAttribute(x)||a.matches(b.getAttribute(x))});if(0!==d.length)return b[C("isActive")]?d.forEach(function(a){a[C("target")]||(a[C("target")]=b,a.addEventListener("click",O,!1))}):(d.forEach(function(a){a[C("target")]===b&&(a[C("target")]=null,a.removeEventListener("click",O,!1))}),b.focus())},R=function b(a){return function(b){var c=_toConsumableArray(a.querySelectorAll("a[href], area[href], input:not([type='hidden']):not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, *[tabindex], *[contenteditable]"));if(c.length&&"Tab"===b.key){var d=b.target,e=c[0],f=c[c.length-1];return-1===c.indexOf(d)?(b.preventDefault(),e.focus()):b.shiftKey&&d===e?(b.preventDefault(),f.focus()):b.shiftKey||d!==f?void 0:(b.preventDefault(),e.focus())}}},S=function d(a,b,c){return J(a).forEach(function(d){if(B(d,z),d[C("isActive")]=!d[C("isActive")],D(d),c){var e;(e=d.classList).add.apply(e,_toConsumableArray(b))}else K(d,b);a.hasAttribute(n)&&(d.setAttribute(w,a[C("isActive")]),d[C("trigger")]=a),a.hasAttribute(m)&&(d[C("isActive")]?(L[d]=R(d),document.addEventListener("keydown",L[d],!1)):(document.removeEventListener("keydown",L[d],!1),delete L[d])),B(d,y),Q(d,a)})},T=function b(a){B(a,z);var c=F(a);return K(a,c.trigger),a[C("isActive")]=!a[C("isActive")],D(a),B(a,y),S(a,c.target,!1),P(a)},U=function b(a){var c=G(a);return 0===c.length?T(a):-1===c.indexOf(a)?(c.forEach(T),T(a)):-1===c.indexOf(a)||a.hasAttribute(p)?void 0:T(a)},V=function b(a){return(a[Symbol.iterator]?_toConsumableArray(a):[a]).forEach(function(a){a[C("unbind")]&&a[C("unbind")]()}),a},W=function a(){_toConsumableArray(document.querySelectorAll("[".concat(f,"]:not([").concat(q,"]):not([").concat(r,"]):not([").concat(s,"]):not([").concat(u,"]):not([").concat(t,"]):not([").concat(v,"])"))).forEach(function(a){}),A(l).filter(function(a){return!a[C("isDefaultInitialized")]}).forEach(function(a){(a.hasAttribute(k)||a.hasAttribute(p))&&0<G(a).length||(T(a),a[C("isDefaultInitialized")]=!0)});var b=A().filter(function(a){return!a[C("isInitialized")]});return b.forEach(function(a){var b=function c(b){b.preventDefault(),(a.hasAttribute(k)||a.hasAttribute(p)?U:T)(a)},c=a.getAttribute(j)||"click";a.addEventListener(c,b,!1),a[C("unbind")]=function(){a.removeEventListener(c,b,!1),a[C("isInitialized")]=!1},a[C("isInitialized")]=!0}),0<A(i).length&&!document[C("isEscapeKeyInitialized")]&&(document.addEventListener("keydown",function(a){"Escape"!==a.key&&"Esc"!==a.key||A(i).forEach(function(a){return a[C("isActive")]?a.hasAttribute(p)?void 0:(a.hasAttribute(k)?U:T)(a):void 0})},!1),document[C("isEscapeKeyInitialized")]=!0),0<A(d).length&&!document[C("isArrowKeysInitialized")]&&(document.addEventListener("keydown",function(a){var b=document.activeElement;if(-1!==["ArrowUp","ArrowDown","ArrowLeft","ArrowRight","Home","End"].indexOf(a.key)&&(b.hasAttribute(e)||b.hasAttribute(g)||b.hasAttribute(f))&&b.hasAttribute(d)&&(b.hasAttribute(k)||b.hasAttribute(p))){a.preventDefault();var c=b.hasAttribute(k)?A("".concat(k,"='").concat(b.getAttribute(k),"'")):A("".concat(p,"='").concat(b.getAttribute(p),"'")),h=b;switch(a.key){case"ArrowUp":case"ArrowLeft":h=0<c.indexOf(b)?c[c.indexOf(b)-1]:c[c.length-1];break;case"ArrowDown":case"ArrowRight":h=c.indexOf(b)<c.length-1?c[c.indexOf(b)+1]:c[0];break;case"Home":h=c[0];break;case"End":h=c[c.length-1];}return h.focus(),h.dispatchEvent(new Event(h.getAttribute(j)||"click"))}},!1),document[C("isArrowKeysInitialized")]=!0),b};document.addEventListener("DOMContentLoaded",function a(){W(),document.removeEventListener("DOMContentLoaded",a)}),window.easyToggleState=Object.assign(W,{isActive:function b(a){return!!a[C("isActive")]},unbind:V,unbindAll:function a(){return V(A().filter(function(a){return a[C("isInitialized")]}))}})})();function functionCreateElement(a,b){var c=document.createElement(a);for(var d in b)"class"==d?c.classList.add.apply(c.classList,b[d]):"content"==d?c.innerHTML=b[d]:c[d]=b[d];return c}function functionLoadScript(a){return new Promise(function(b,c){var d=functionCreateElement("script",{src:a,async:!0,defer:!0}),e=!1;d.onload=d.onreadystatechange=function(){e||this.readyState&&"complete"!=this.readyState||(e=!0,b())},d.onerror=function(){c(d,a)};var f=document.getElementsByTagName("script")[0];f.parentNode.insertBefore(d,f)})}if(functionLoadScript("https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js").then(function(){document.addEventListener("lazybeforeunveil",function(a){var b=a.target.getAttribute("data-image");b&&(a.target.style.backgroundImage="url(".concat(b,")"))})}),!function(a){a.buttonToggleColorMode.addEventListener("click",function(a){a.preventDefault(),"light"==localStorage.theme?(document.documentElement.classList.add("dark"),localStorage.theme="dark"):(document.documentElement.classList.remove("dark"),localStorage.theme="light")})}({buttonToggleColorMode:document.getElementById("button_toggle_color_mode")}),"true"==elcreativeConfig.dataView.isSingleItem){var priceCurrencyUSD=document.querySelector(".currency_usd"),priceCurrencyIDR=document.querySelector(".currency_idr"),priceNote=document.querySelector(".noted"),priceGet=document.querySelector(".get_now"),priceIDR=document.querySelector(".price_idr");"0"==config.priceIDR||"FREE"==config.priceIDR?(priceCurrencyIDR&&(priceCurrencyIDR.innerHTML="FREE"),priceNote&&priceNote.remove(),priceGet&&(priceGet.innerHTML="Download",priceGet.setAttribute("href",config.downloadURL))):priceIDR&&(priceIDR.innerHTML=config.priceIDR);var priceUSD=document.querySelector(".price_usd");"0"==config.priceUSD||"FREE"==config.priceUSD?priceCurrencyUSD&&(priceCurrencyUSD.innerHTML="FREE"):priceUSD&&(priceUSD.innerHTML=config.priceUSD);var demoURL=document.querySelector(".demo_url");demoURL.setAttribute("href",config.demoURL),demoURL.setAttribute("target","_blank");var elcreativeComments=document.querySelector(".elcreative_comment"),commentSource=elcreativeComments.getAttribute("data-src"),commentIframe=elcreativeComments.querySelector("#comment-editor"),commentAdd=elcreativeComments.querySelector(".add_comment");if(commentAdd){var commentEnable=commentAdd.getAttribute("data-comments"),commentThread=elcreativeComments.querySelector("#threaded_comment_form");if(commentIframe.setAttribute("src",commentSource),"true"==commentEnable){for(var commentReply=elcreativeComments.getElementsByClassName("reply_to"),commentThreadData=commentThread,index=0;index<commentReply.length;index++)commentReply[index].addEventListener("click",function(){var a=this.getAttribute("data-reply-to");elcreativeComments.querySelector("#c".concat(a)).appendChild(commentThreadData),commentIframe.setAttribute("src","".concat(commentSource,"&parentID=").concat(a)),commentAdd.classList.add("comment-reply"),commentAdd.classList.remove("hidden")});var commentForm=document.getElementsByClassName("comment_form")[0];commentAdd.addEventListener("click",function(){commentForm.appendChild(commentThreadData),commentAdd.classList.add("hidden"),commentIframe.setAttribute("src",commentSource)})}}}/*]]>*/</script>
+  </body>
+</html>
