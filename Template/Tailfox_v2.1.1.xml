@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html b:css="false" b:js="false" b:defaultwidgetversion="2" b:layoutsVersion="3" expr:dir="data:blog.languageDirection" expr:lang="data:blog.locale">
+  <head>
+    <title><data:view.title.escaped/></title>
+    <b:include name="head:content"></b:include>
+    <b:if cond="!data:view.isLayoutMode">
+      <b:skin><![CDATA[
+        /*!
+         * Name      : NightFall
+         * Version   : 1.0.0
+         * Author    : nooushad
+         * License   : GNU Affero General Public License v3.0
+         *//* 
+
+        Personified
+        =====================
+        <Group description="Backgrounds" selector="body">
+          <Variable name="body.background" description="Background" type="background" default="$(color) none repeat scroll top center" color="$(body.background.color)" value="$(color) none repeat scroll top center"/>
+          <Variable name="body.background.color" description="Body background color" type="color" default="#f8fafc" value="#f8fafc"/>
+          <Variable name="bg.page" description="Page Background Color" type="color" default="#fff" value="#fff"/>
+          <Variable name="bg.post" description="Post background color" type="color" default="#f1f5f9" value="#f1f5f9"/>
+          <Variable name="bg.header" description="Header Background" type="color" default="#0f172a" value="#0f172a"/>
+        </Group>
+
+        <Group description="Color">
+          <Variable name="color.text" description="Text color" type="color" default="#334155" value="#334155"/>
+          <Variable name="color.border" description="Border color" type="color" default="#e2e8f0" value="#e2e8f0"/>
+          <Variable name="color.header" description="Header color" type="color" default="#fff" value="#fff"/>
+        </Group>Personalizar comentarios
+        =====================
+        <Variable name="posts.text.color" description="Content color" type="color" default="#666" value="#666" hideEditor="true"/>
+        <Variable name="posts.link.color" description="posts.link.color" type="string" value="#666"/>
+        <Variable name="posts.text.font" description="posts.text.font" type="string" value="15px Roboto"/>
+        <Variable name="posts.background.color" description="posts.background.color" type="string" value="transparent"/>
+        <Variable name="posts.title.color" description="posts.title.color" type="string" value="false"/>
+        <Variable name="body.link.color" description="body.link.color" type="string" value="false"/>
+        <Variable name="body.text.font" description="body.text.font" type="string" value="false"/>/*! skin.css
+
+/* Font */
+@font-face{font-family:Inter var;font-weight:100 900;font-display:block;font-style:normal;font-named-instance:"Regular";src:url(/_next/static/media/Inter-roman-latin.var.18496762.woff2) format("woff2")}@font-face{font-family:Inter var;font-weight:100 900;font-display:block;font-style:italic;font-named-instance:"Italic";src:url(/_next/static/media/Inter-italic-latin.var.884de12f.woff2) format("woff2")}@font-face{font-family:Fira Code VF;font-weight:300 700;font-style:normal;src:url(/_next/static/media/FiraCode-VF.1123e8f0.woff2) format("woff2-variations"),url(/_next/static/media/FiraCode-VF.e0ae54f1.woff) format("woff-variations")}.font-mono{font-variant-ligatures:none}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(/_next/static/media/SourceSansPro-Regular.d5e1a122.otf) format("opentype")}@font-face{font-family:Ubuntu Mono;font-weight:700;font-style:normal;src:url(/_next/static/media/Ubuntu-Mono-bold.37581c03.woff2) format("woff2")}
+/* Main */
+:root {
+--colorKey: #1e7eaa;
+--colorBackground: #FFFFFF;
+--colorBackgroundTrans: #FFFFFFCF;
+--colorBackgroundTrans1: #FFFFFF1F;
+--colorText: #202124;
+--colorTextTrans1: #2021241F;
+--colorTextTrans2: #2021242E;
+--colorMeta: #5F6368;
+--colorBorder: #DADCE4;
+--colorDarkKey: #ff80f7;
+--colorDarkBackground: #202124;
+--colorDarkBackgroundTrans: #202124CF;
+--colorDarkBackgroundTrans1: #2021241F;
+--colorDarkText: #E4E6E9;
+--colorDarkTextTrans1: #E4E6E91F;
+--colorDarkTextTrans1: #E4E6E92E;
+--colorDarkMeta: #9AA0A6;
+--colorDarkBorder: #5F6368;
+--bg-grid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' stroke='black' stroke-opacity='0.08' fill='none'%3E%3Cpath d='M0 .5H31.5V32' /%3E%3C/svg%3E");
+--bg-grid-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' stroke='white' stroke-opacity='0.08' fill='none'%3E%3Cpath d='M0 .5H31.5V32' /%3E%3C/svg%3E");
+}
+.font-inter{font-family:Inter var;}
+/* Post */
+.post-body > * + * { margin-top: 1.5rem }
+/* Comments */
+
+.post-comment { margin-top: 2rem }
+.comments > * + * { margin-top: 2rem }
+
+.comment-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.comments-replies {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--color-border);
+}
+
+.comments-title {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.comment-iframe {
+  padding: 1rem;
+  background-color: var(--bg-post);
+}
+
+.comment-restore-button:not(.is-replying) { display: none }
+.comment-time { display: block }
+.comments-replies > * + * { margin-top: 2rem }
+.comment-footer { margin-top: 1rem }
+/*=> Comment editor */
+#comment-editor {
+border: 0;
+outline: 0;
+width: 100%;
+min-height: 200px;}
+/* Footer */
+
+}]]>
+      </b:skin>
+      <b:else></b:else>
+      <b:template-skin><![CDATA[]]>
+      </b:template-skin>
+    </b:if>
+    <b:comment>CORE</b:comment>
+    <b:defaultmarkups>
+      <b:defaultmarkup type="All">
+        <b:includable id="main"/>
+        <b:includable id="content"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="AdSense,Blog">
+        <b:includable id="defaultAdUnit"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Blog,PopularPosts,FeaturedPost">
+        <b:includable id="blogThisShare"/>
+        <b:includable id="bylineByName"/>
+        <b:includable id="bylineRegion"/>
+        <b:includable id="commentsLink"/>
+        <b:includable id="commentsLinkIframe"/>
+        <b:includable id="emailPostIcon"/>
+        <b:includable id="facebookShare"/>
+        <b:includable id="footerBylines"/>
+        <b:includable id="headerByline"/>
+        <b:includable id="googlePlusShare"/>
+        <b:includable id="linkShare"/>
+        <b:includable id="otherSharingButton"/>
+        <b:includable id="platformShare"/>
+        <b:includable id="postAuthor"/>
+        <b:includable id="postCommentsLink"/>
+        <b:includable id="postJumpLink"/>
+        <b:includable id="postLabels"/>
+        <b:includable id="postLocation"/>
+        <b:includable id="postReactions"/>
+        <b:includable id="postShareButtons"/>
+        <b:includable id="postTimestamp"/>
+        <b:includable id="sharingButton"/>
+        <b:includable id="sharingButtonContent"/>
+        <b:includable id="sharingButtons"/>
+        <b:includable id="sharingButtonsMenu"/>
+        <b:includable id="sharingPlatformIcon"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="PopularPosts,FeaturedPost">
+        <b:includable id="snippetedPostByline"/>
+        <b:includable id="snippetedPostContent"/>
+        <b:includable id="snippetedPosts"/>
+        <b:includable id="snippetedPostThumbnail"/>
+        <b:includable id="snippetedPostTitle"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Blog">
+        <b:includable id="aboutPostAuthor"/>
+        <b:includable id="addComments"/>
+        <b:includable id="commentAuthorAvatar"/>
+        <b:includable id="commentDeleteIcon"/>
+        <b:includable id="commentForm"/>
+        <b:includable id="commentFormIframeSrc"/>
+        <b:includable id="commentItem"/>
+        <b:includable id="commentList"/>
+        <b:includable id="commentPicker"/>
+        <b:includable id="comments"/>
+        <b:includable id="commentsTitle"/>
+        <b:includable id="feedLinks"/>
+        <b:includable id="feedLinksBody"/>
+        <b:includable id="homePageLink"/>
+        <b:includable id="iframeComments"/>
+        <b:includable id="inlineAd"/>
+        <b:includable id="manageComments"/>
+        <b:includable id="nextPageLink"/>
+        <b:includable id="post"/>
+        <b:includable id="postBody"/>
+        <b:includable id="postBodySnippet"/>
+        <b:includable id="postCommentsAndAd"/>
+        <b:includable id="postFooter"/>
+        <b:includable id="postFooterAuthorProfile"/>
+        <b:includable id="postHeader"/>
+        <b:includable id="postMeta"/>
+        <b:includable id="postMetadataJSONImage"/>
+        <b:includable id="postMetadataJSONPublisher"/>
+        <b:includable id="postPagination"/>
+        <b:includable id="postTitle"/>
+        <b:includable id="previousPageLink"/>
+        <b:includable id="threadedCommentForm"/>
+        <b:includable id="threadedCommentJs"/>
+        <b:includable id="threadedComments"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="BlogArchive">
+        <b:includable id="flat"/>
+        <b:includable id="hierarchy"/>
+        <b:includable id="interval"/>
+        <b:includable id="posts"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="BlogSearch">
+        <b:includable id="searchForm"/>
+        <b:includable id="searchSubmit"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Header">
+        <b:includable id="behindImageStyle"/>
+        <b:includable id="description"/>
+        <b:includable id="image"/>
+        <b:includable id="title"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Label">
+        <b:includable id="cloud"/>
+        <b:includable id="list"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="PageList">
+        <b:includable id="overflowButton"/>
+        <b:includable id="overflowablePageList"/>
+        <b:includable id="pageLink"/>
+        <b:includable id="pageList"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Profile">
+        <b:includable id="authorProfileImage"/>
+        <b:includable id="defaultProfileImage"/>
+        <b:includable id="profileImage"/>
+        <b:includable id="teamProfile"/>
+        <b:includable id="teamProfileLink"/>
+        <b:includable id="userGoogleProfile"/>
+        <b:includable id="userLocation"/>
+        <b:includable id="userProfile"/>
+        <b:includable id="userProfileData"/>
+        <b:includable id="userProfileImage"/>
+        <b:includable id="userProfileInfo"/>
+        <b:includable id="userProfileLink"/>
+        <b:includable id="userProfileText"/>
+        <b:includable id="viewProfileLink"/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Subscribe">
+        <b:includable id="feeds"/>
+      </b:defaultmarkup>
+      
+      <b:defaultmarkup type="Common">
+        <b:includable id="@:ads">
+          <b:tag class="adsbygoogle" name="ins" data-full-width-responsive="true">
+            <b:attr name="data-ad-slot" expr:value="data:slot"></b:attr>
+            <b:attr name="data-ad-client" expr:value="data:adClientId ?: data:blog.adsenseClientId"></b:attr>
+            <b:attr name="data-ad-host" expr:value="data:blog.adsenseHostId"></b:attr>
+            <b:attr name="data-ad-format" expr:value="data:layout ? &quot;fluid&quot; : &quot;auto&quot;"></b:attr>
+            <b:attr expr:name="&quot;data-ad-layout&quot; + (data:layout != &quot;in-article&quot; ? &quot;-key&quot; : &quot;&quot;)" expr:value="data:layout"></b:attr>
+            <b:attr name="style" expr:value="data:style ?: &quot;display: block&quot;"></b:attr>
+          </b:tag>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </b:includable>
+        
+        <b:includable id="@:adsense">
+          <b:if cond="data:blog.adsenseHostId and not data:blog.adsenseAutoAds">
+            <b:tag async="async" name="script" cond="data:blog.adsenseClientId and data:blog.adsenseHasAds" expr:src="&quot;//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot; params {client: data:blog.adsenseClientId}" crossorigin="anonymous"></b:tag>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="@:analytics">
+          <b:if cond="data:blog.analyticsAccountNumber">
+            <script async="async" expr:src="params(&quot;https://www.googletagmanager.com/gtag/js&quot;,{id: data:blog.analyticsAccountNumber})"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config','<data:blog.analyticsAccountNumber/>');
+            </script>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="@:attr">
+          <b:loop values="data:" var="i">
+            <b:attr expr:name="data:i[0] ?: &quot;null&quot;" expr:value="data:i[1]"></b:attr>
+          </b:loop>
+        </b:includable>
+        
+        <b:includable id="@:image">
+          <b:if cond="data:src">
+            <b:with value="data:src.isYoutube ? data:src.youtubeMaxResDefaultUrl : data:src" var="source">
+              <b:with value="(data:resize ? resizeImage(data:src, data:resize, data:ratio) : (data:source))" var="image">
+                <b:tag expr:alt="data:alt ?: data:messages.image" name="img">
+                  <b:attr name="b:whitespace" value="remove"></b:attr>
+                  <b:attr name="id" expr:value="data:id"></b:attr>
+                  <b:attr name="width" expr:value="data:width ?: data:image.width"></b:attr>
+                  <b:attr name="height" expr:value="data:height ?: data:image.height"></b:attr>
+                  <b:attr cond="data:sizes" name="sizes" expr:value="data:sizes"></b:attr>
+                  <b:attr cond="data:loading" name="loading" expr:value="data:loading"></b:attr>
+                  <b:class cond="data:class" expr:name="data:class"></b:class>
+                  <b:with value="&quot;blogger.googleusercontent.com/img/a/&quot;" var="serve">
+                    <b:attr name="src" expr:value="(data:srcset ? resizeImage(data:image, data:srcset.first, data:ratio) : data:image) + ((data:image contains data:serve) and data:params ? (&quot;-&quot; + data:params) : &quot;&quot;)"></b:attr>
+                    <b:if cond="data:srcset">
+                      <b:attr name="srcset" expr:value="sourceSet(data:image, data:srcset, data:ratio)"></b:attr>
+                    </b:if>
+                  </b:with>
+                </b:tag>
+              </b:with>
+            </b:with>
+          </b:if>
+        </b:includable>
+        
+        <b:includable id="@:kind">
+          <b:class cond="data:view.isHomepage" name="is-home"></b:class>
+          <b:class cond="data:view.isMultipleItems" name="is-items"></b:class>
+          <b:class cond="data:view.isPost" name="is-post"></b:class>
+          <b:class cond="data:view.isPage" name="is-page"></b:class>
+          <b:class cond="data:view.isArchive" name="is-archive"></b:class>
+          <b:class cond="data:view.isLabelSearch" name="is-label"></b:class>
+          <b:class cond="data:view.isSearch" name="is-search"></b:class>
+          <b:class cond="data:view.isError" name="is-error"></b:class>
+          <b:class cond="data:view.isPreview" name="is-preview"></b:class>
+          <b:class cond="data:view.isSingleItem" expr:name="&quot;is-single single-id-&quot; + (data:view.postId ?: data:view.pageId)"></b:class>
+        </b:includable>
+        
+        <b:includable id="@:meta">
+          <link href="https://cdn.tailwindcss.com/" rel="preconnect" crossorigin="anonymous"/>
+          <link href="https://tailwindcss.com/" rel="dns-prefetch"/>
+          <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous"/>
+          <link href="https://fonts.gstatic.com/" rel="dns-prefetch"/>
+          <meta expr:charset="data:blog.encoding"/>
+          <meta content="width=device-width,initial-scale=1" name="viewport"/>
+          <b:if cond="data:favicon">
+            <b:loop values="(data:favSizes ?: [32,96,180,192])" var="size">
+              <link expr:href="resizeImage(data:favicon, data:size, &quot;1:1&quot;)" rel="icon" expr:sizes="data:size + &quot;x&quot; + data:size" type="image/png"/>
+            </b:loop>
+            <b:else></b:else>
+            <link expr:href="data:blog.blogspotFaviconUrl" rel="icon" type="image/x-icon"/>
+          </b:if>
+          <meta expr:content="data:view.description.escaped" name="description"/>
+          <b:with value="data:https ? data:view.url.canonical.https : data:view.url.canonical" var="canonical">
+            <link expr:href="data:canonical" rel="canonical"/>
+            <meta expr:content="data:canonical" property="og:url"/>
+            <meta expr:content="data:canonical" name="twitter:url"/>
+          </b:with>
+          <meta expr:content="data:view.isHomepage or data:view.isSingleItem ? (data:robots ?: &quot;index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1&quot;) : &quot;noindex,follow&quot;" name="robots"/>
+          <meta expr:content="not data:view.isSingleItem ? &quot;article&quot; : &quot;website&quot;" property="og:type"/>
+          <meta expr:content="data:view.title.escaped" property="og:title"/>
+          <meta expr:content="data:view.description.escaped" property="og:description"/>
+          <b:if cond="data:view.featuredImage or data:ogImage or data:widgets.Blog.first.posts.first.featuredImage">
+            <b:with value="resizeImage((data:view.featuredImage ?: (data:ogImage != &quot;&quot; ? data:ogImage : data:widgets.Blog.first.posts.first.featuredImage)), 1200, &quot;1200:630&quot;)" var="image">
+              <meta expr:content="data:image" property="og:image"/>
+              <meta expr:content="data:image" name="twitter:image"/>
+              <b:if cond="data:image.isResizable">
+                <meta expr:content="data:image.width" property="og:image:width"/>
+                <meta expr:content="data:image.height" property="og:image:height"/>
+              </b:if>
+            </b:with>
+          </b:if>
+          <meta expr:content="data:cardType ?: &quot;summary_large_image&quot;" name="twitter:card"/>
+          <meta expr:content="data:view.description.escaped" name="twitter:description"/>
+        </b:includable>
+        
+        <b:includable id="@:css">
+        	<!-- Style 4.5 -->
+        	<script src="//cdn.tailwindcss.com" type='text/javascript'></script>
+        	<!-- Font 4.5 -->
+        	<link href='' type='text/css'/>
+        	<link href='' rel='stylesheet' type='text/css'/>
+        <style>
+        	
+        </style>
+        </b:includable>
+        
+        <b:includable id="@:js">
+        	<!-- JAVASCRIPT -->
+        	<script src='' type='text/javascript'></script>
+        </b:includable>
+        
+        <b:includable id="head:content">
+          <b:include name="@:meta"></b:include>
+          <b:include name="@:css"></b:include>
+          <b:include name="@:adsense"></b:include>
+          <b:include name="@:analytics"></b:include>
+        </b:includable>
+        
+
+        <b:includable id="comment:avatar">
+          <b:with value="{ image: (data:comment.authorAvatarSrc contains &quot;/img/bl&quot; ? (data:avatarImage ?: &quot;https://lh3.googleusercontent.com/a/default-user&quot;) : data:comment.authorAvatarSrc), size: (data:avatarSize ?: 40) }" var="avatar"><img expr:src="resizeImage(data:avatar.image, data:avatar.size, &quot;1:1&quot;)" expr:width="data:avatar.size" expr:height="data:avatar.size" expr:alt="data:comment.author"/></b:with>
+        </b:includable>
+        <b:includable id="comment:body">
+          <div class="comment-content">
+            <b:class cond="data:comment.isDeleted" name="comment-deleted"></b:class><data:comment.body/>
+          </div>
+        </b:includable>
+        <b:includable id="comment:deleteButton"><span expr:class="data:comment.adminClass"><a class="comment-delete-button" expr:href="data:comment.deleteUrl">
+              <b:eval expr="data:deleteText ?: data:messages.deleteComment"></b:eval></a></span></b:includable>
+        <b:includable id="comment:replyButton">
+          <b:if cond="data:post.allowNewComments">
+            <button class="comment-reply-button" expr:data-parent-id="data:comment.id">
+              <b:eval expr="data:replyText ?: data:messages.postAComment"></b:eval>
+            </button>
+          </b:if>
+        </b:includable>
+        <b:includable id="comment:restore">
+          <button class="comment-restore-button" id="comment-restore">
+            <b:eval expr="data:restoreText ?: data:messages.postAComment"></b:eval>
+          </button>
+        </b:includable>
+        <b:includable id="comment:content">
+          <b:if cond="data:post.comments.any">
+            <div class="comments-content">
+              <b:loop expr:reverse="data:newestFirst ?: false" values="data:post.comments where (c =&gt; ((data:depth &gt; 0) ? not c.inReplyTo : c.id))" var="comment">
+                <b:include name="comment:item" data="comment"></b:include>
+              </b:loop>
+            </div>
+          </b:if>
+        </b:includable>
+        <b:includable id="comment:form">
+          <b:if cond="!data:post.allowNewComments">
+            <div class="comment-alert"><data:post.noNewCommentsText/></div>
+            <b:else></b:else>
+            <div id="comment-form">
+              <b:include name="comment:restore">
+                <div class="comment-iframe" id="comment-iframe">
+                  <iframe id="comment-editor" expr:src="data:post.commentFormIframeSrc params { skin: &quot;emporio&quot; }" width="100%" height="66"></iframe>
+                </div>
+              </b:include>
+              <textarea id="cmtfpIframe" readonly="readonly" hidden="hidden"><data:post.cmtfpIframe/></textarea>
+            </div>
+            <b:if cond="data:this.messages.blogComment">
+              <div class="comment-messages"><data:this.messages.blogComment/></div>
+            </b:if>
+          </b:if>
+        </b:includable>
+        <b:includable id="comment:header">
+          <div class="comment-header">
+            <div class="comment-avatar">
+              <b:include name="comment:avatar"></b:include>
+            </div>
+            <div class="comment-meta">
+              <b:tag class="comment-author" expr:name="data:comment.authorUrl ? &quot;a&quot; : &quot;span&quot;">
+                <b:attr name="href" expr:value="data:comment.authorUrl"></b:attr><data:comment.author/>
+                <b:if cond="data:comment.extraIconClass"><span class="comment-badge">☑️</span></b:if>
+              </b:tag><span class="comment-time"><data:comment.timestamp/></span>
+            </div>
+          </div>
+        </b:includable>
+        <b:includable id="comment:item" var="comment">
+          <b:with value="(data:currentDepth ?: -1) + 1" var="currentDepth">
+            <div class="comment" expr:id="&quot;c&quot; + data:comment.id" expr:data-depth="data:currentDepth">
+              <div class="comment-block">
+                <b:include name="comment:header"></b:include>
+                <b:include name="comment:body"></b:include>
+                <div class="comment-footer">
+                  <b:if cond="(data:depth gt 0) and (data:currentDepth lt data:depth)">
+                    <b:include name="comment:replyButton"></b:include>
+                  </b:if>
+                  <b:include name="comment:deleteButton"></b:include>
+                </div>
+                <b:with value="data:post.comments where (c =&gt; c.inReplyTo == data:comment.id)" var="replies">
+                  <b:if cond="(data:depth gt 0) and (data:currentDepth lt data:depth)">
+                    <div class="comments-replies">
+                      <b:if cond="data:replies.any">
+                        <b:loop expr:reverse="data:newestFirst ?: false" values="data:replies" var="reply">
+                          <b:include name="comment:item" data="reply"></b:include>
+                        </b:loop>
+                      </b:if>
+                    </div>
+                  </b:if>
+                </b:with>
+              </div>
+            </div>
+          </b:with>
+        </b:includable>
+        <b:includable id="comment:main">
+          <b:if cond="not data:view.isPreview and data:post.allowComments">
+            <div class="comments-title">
+              <b:message name="messages.numberOfComments">
+                <b:param expr:value="data:post.numberOfComments" name="numComments"></b:param>
+              </b:message>
+            </div>
+            <div class="comments" id="comments">
+              <b:with value="{ min: (data:minDepth ?: 1), max: (data:maxDepth ?: 5) }" var="depth">
+                <b:with value="data:depth.min &gt;= data:depth.max ? data:depth.max : data:depth.min" var="depth">
+                  <b:loop values="(data:formFirst ?: false) ? [&quot;form&quot;,&quot;content&quot;] : [&quot;content&quot;,&quot;form&quot;]" var="order">
+                    <b:include expr:name="&quot;comment:&quot; + data:order"></b:include>
+                  </b:loop>
+                  <b:include cond="data:post.commentPagingRequired" name="comment:pagination"></b:include>
+                </b:with>
+              </b:with>
+            </div>
+          </b:if>
+          <script>/*<![CDATA[*/!function(){
+  const comments = document.getElementById('comments');
+  const restore = document.getElementById('comment-restore');
+  const relay = document.getElementById('cmtfpIframe');
+
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    let script = document.createElement('script')
+    script.src = src
+    script.onload = resolve
+    script.onerror = reject
+    document.head.appendChild(script)
+  })
+
+  const rpc_relay = (() => {
+    if (!relay) {
+      return
+    }
+    src = (relay.value).replace(/<script.*?src='(.*?)'.*?><\/script>/, "$1");
+    loadScript(src)
+      .then(() => {
+        BLOG_CMT_createIframe("https://www.blogger.com/rpc_relay.html");
+      })
+      .catch(console.error)
+    relay.remove()
+  })();
+
+  const replying = (() => {
+    if (!comments) {
+      return
+    }
+
+    let form = document.getElementById("comment-form");
+    let formIframe = document.getElementById("comment-iframe");
+    let buttons = comments.querySelectorAll("[data-parent-id]");
+    let originalSrc = document.getElementById("comment-editor").src;
+
+    let cloneForm = formIframe.cloneNode(true);
+
+    if (!buttons) {
+      return
+    }
+
+    let ACTIVE_CLASS = "is-active";
+    let REPLYING_CLASS = "is-replying";
+
+    function cleanReplyingStatus() {
+      formIframe.remove();
+      buttons.forEach(el => el.classList.remove(ACTIVE_CLASS));
+    }
+
+    buttons.forEach(button => {
+      button.onclick = () => {
+        let parent = button.dataset.parentId;
+        let container = document.querySelector(`#c${parent} .comments-replies`);
+        if(restore) {
+          restore.classList.add(REPLYING_CLASS);
+        }
+        if (!button.classList.contains(ACTIVE_CLASS)) {
+          cleanReplyingStatus()
+          button.classList.add(ACTIVE_CLASS);
+          // Reemplazamos en el clon la ruta de respuesta
+          cloneForm.querySelector("iframe").src =  `${originalSrc}&parentID=${parent}`;
+          // Agregamos el clon modificado
+          container.prepend(cloneForm)
+        }
+      }
+    });
+
+    if (!restore){
+      return
+    }
+
+    restore.onclick = () => {
+      if (restore.classList.contains(REPLYING_CLASS)) {
+        cleanReplyingStatus()
+        restore.classList.remove(REPLYING_CLASS);
+        cloneForm.remove()
+        form.appendChild(formIframe)
+      }
+    }
+
+  })();
+
+}();/*]]>*/
+          </script>
+        </b:includable>
+        <b:includable id="comment:pagination">
+          <div class="comments-paging">
+            <b:if cond="data:post.hasOlderLinks"><a expr:href="data:post.oldestLinkUrl"><data:messages.oldest/></a><a expr:href="data:post.olderLinkUrl"><data:messages.older/></a></b:if><data:post.commentRangeText/>
+            <b:if cond="data:post.hasNewerLinks"><a expr:href="data:post.newerLinkUrl"><data:messages.newer/></a><a expr:href="data:post.newestLinkUrl"><data:messages.newest/></a></b:if>
+          </div>
+        </b:includable>
+        <b:includable id="post:view" var="post">
+          <b:if cond="data:view.isMultipleItems">
+               <a expr:href="data:post.url.canonical" class="p-4 -mx-4 overflow-hidden duration-300 transform border-2 border-transparent rounded-xl hover:border-blue-400">
+                  <img class="border border-gray-100 rounded-xl" expr:src="data:post.featuredImage" expr:alt="data:post.title"/>
+                  
+                  <div class="flex items-center justify-between mt-4">
+                     <div>
+                        <h2 class="text-lg font-semibold tracking-wide text-gray-800 "><data:post.title/></h2>
+                        <p class="mt-1 text-sm text-gray-500 sm:text-base ">9 components</p>
+                     </div>
+                     <p class="bg-blue-100 px-2 py-0.5 text-blue-600 font-medium text-xs rounded-lg">Application UI</p>
+                  </div>
+               </a>
+            <b:elseif cond="data:view.isPost"></b:elseif>
+            
+          <div class="max-w-3xl mx-auto pb-5">
+          	
+            <article class="relative pt-10">
+            	<h1 class="text-2xl font-extrabold tracking-tight text-black md:text-3xl"><data:post.title.escaped/></h1>
+            	<div class="text-sm leading-6">
+                  <dl>
+                    <dt class="sr-only">Date</dt>
+                    <dd class="absolute top-0 inset-x-0 text-black">
+                      <time expr:datetime="data:post.date.iso8601"><data:post.date/></time>
+                    </dd>
+                  </dl>
+                </div>
+                 <div class="mt-6">
+                  <ul class="flex flex-wrap text-sm leading-6 -mt-6 -mx-5">
+                    <li class="flex items-center font-medium whitespace-nowrap px-5 mt-6">
+                    <b:include name="@:image" data="{ src: (data:post.author.authorPhoto.image ?: data:const.avatar), class: &quot;mr-3 w-9 h-9 rounded-full bg-slate-50 dark:bg-slate-800&quot;, alt: data:post.author.name }"/>
+                      <div class="text-sm leading-4">
+                        <div class="text-black-900"><data:post.author.name/></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+               <div class='mt-2 flex flex-wrap'></div>
+              <div class="mt-12 prose prose-slate dark:prose-dark">
+              <data:post.body/>
+              </div>
+              <div class='mb-8 flex flex-wrap'></div>
+              <div class='pointer-events-none flex h-[2px] w-full flex-none px-4 [background-image:linear-gradient(90deg,transparent,var(--colorKey),var(--colorDarkKey),transparent)] lg:max-w-[50%]'></div> 
+              <div class='mt-4 flex flex-wrap'></div>
+              </article>
+              
+              <section class="post-comment">
+                <b:include name="comment:main" data="{ minDepth: 2 }"></b:include>
+              </section>
+            
+            </div>
+            <b:elseif cond="data:view.isPage"></b:elseif>
+            <article class="post">
+              <h1 class="post-title"><data:post.title.escaped/></h1>
+              <section class="post-body"><data:post.body/></section>
+            </article>
+          </b:if>
+        </b:includable>
+        <b:includable id="post:pagination">
+          <b:tag class="flex flex-col items-center" id="blog-pager" cond="data:newerPageUrl or data:olderPageUrl" name="div">
+            <b:if cond="data:newerPageUrl"><a class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" expr:href="data:newerPageUrl"><svg aria-hidden="true" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg> <data:messages.newerPosts/></a></b:if>
+            <b:if cond="data:olderPageUrl"><a class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" expr:href="data:olderPageUrl"><data:messages.olderPosts/> <svg aria-hidden="true" class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a></b:if>
+          </b:tag>
+        </b:includable>
+        <b:includable id="widget:AdSense">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Blog">
+        	<b:if cond='data:view.isMultipleItems'>
+            <div class="scroll-mt-10" id="application-ui">
+            <h1 class="text-xl font-bold text-gray-800">Application UI</h1>
+            <p class="max-w-2xl mt-4 text-base leading-relaxed text-gray-600">Streamline your web development process with our comprehensive solution. Our form layouts, tables, and modal dialogs are expertly crafted to help you build beautiful and responsive web applications effortlessly.</p>
+            </div>
+            </b:if>
+          <b:with value="data:widgets.Blog1.allBylineItems" var="show">
+            <b:tag class="grid grid-cols-1 gap-2 mt-4 md:gap-8 sm:mt-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4" cond="data:view.isMultipleItems" name="div">
+              <b:loop values="data:posts" var="post">
+                <b:include data="post" name="post:view"></b:include>
+              </b:loop>
+            </b:tag>
+            <b:include cond="data:view.isMultipleItems" name="post:pagination"></b:include>
+          </b:with>
+        </b:includable>
+        <b:includable id="widget:BlogArchive">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:BlogList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:BlogSearch">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:ContactForm">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:FeaturedPost">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Feed">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Header">
+          <b:if cond="data:image"><a expr:href="data:blog.homepageUrl"><img expr:alt="data:title" expr:height="data:height" expr:src="data:image" expr:width="data:width"/></a></b:if>
+          <b:if cond="data:imagePlacement == &quot;BEHIND&quot;"><a expr:href="data:blog.homepageUrl"><data:title/></a></b:if>
+          <b:if cond="data:imagePlacement == &quot;BEHIND&quot;"><data:description/></b:if>
+        </b:includable>
+        <b:includable id="widget:HTML"><data:content/></b:includable>
+        <b:includable id="widget:Image">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Label">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:LinkList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:PageList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:PopularPosts">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Profile">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:Text">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+        <b:includable id="widget:TextList">
+          <b:comment>El código de tu widget Aqui</b:comment>
+        </b:includable>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="All">
+        <b:includable id="main">
+          <b:include name="widget-title"></b:include>
+          <b:include name="content"></b:include>
+        </b:includable>
+        <b:includable id="content">
+          <div class="widget-content">
+            <b:include expr:name="&quot;widget:&quot; + data:widget.type"></b:include>
+          </div>
+        </b:includable>
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Header,Blog">
+        <b:includable id="content"></b:includable>
+        <b:includable id="main">
+          <b:include expr:name="&quot;widget:&quot; + data:widget.type"></b:include>
+        </b:includable>
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+    <b:comment>/END CORE</b:comment>
+   </head>
+   <body class='font-inter'>
+   <b:include name="@:kind"></b:include>
+ 
+     <!-- ===================================
+     HEADER
+     ==================================== -->
+    <header class='sticky top-0 z-50 flex min-h-[56px] w-full select-none flex-col items-center justify-center border-b border-colorBorder bg-colorBackgroundTrans text-colorText backdrop-blur dark:border-colorDarkBorder dark:bg-colorDarkBackgroundTrans dark:text-colorDarkText xl:min-h-[64px]'>
+      <div class='flex w-full max-w-5xl flex-row items-center justify-between py-2 px-4'>
+        <div class='flex items-center justify-end ltr:mr-2 rtl:ml-2'>
+          <a class='text-colorMeta outline-none dark:text-colorDarkText' href='/' title='EL Creative Themes'>
+            <h1 class='flex flex-col items-start justify-center'>
+          <span class='text-lg font-bold leading-4'>NightFall</span>
+         <span class='leading-4'>Development</span>
+        </h1>
+      </a>
+    </div>
+    <div class='flex items-center justify-end ltr:ml-2 rtl:mr-2'>
+      <div class='flex items-center justify-center ltr:ml-6 ltr:pl-6 rtl:mr-6 rtl:pr-6'>
+        <div class='relative ltr:mr-2 rtl:ml-2'>
+          <button aria-label='Color Mode' class='box-content h-6 w-6 flex-shrink-0 flex-grow-0 rounded-full p-2 text-colorMeta outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:text-colorDarkText dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-class-on-target='hidden' data-toggle-escape='' data-toggle-outside='' data-toggle-target-next='' id='button_toggle_color_mode' title='Color Mode' type='button'>
+            <svg aria-hidden='true' fill='currentColor' height='24' viewBox='0 0 24 24' width='24'>
+              <path class='dark:hidden' d='M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z'></path>
+              <path class='hidden dark:block' d='M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z'></path>
+            </svg>
+          </button>
+        </div>
+        <div class='relative'>
+          <button aria-label='Languages' class='box-content h-6 w-6 flex-shrink-0 flex-grow-0 rounded-full p-2 text-colorMeta outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:text-colorDarkText dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-class-on-target='hidden' data-toggle-escape='' data-toggle-outside='' data-toggle-target-next='' title='Languages' type='button'>
+            <svg aria-hidden='true' fill='currentColor' height='24' viewBox='0 0 24 24' width='24'>
+              <path d='M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z'></path>
+            </svg>
+          </button>
+          <div class='absolute top-full z-20 mt-1 hidden w-40 rounded-lg border border-colorBorder bg-colorBackground py-2 text-sm font-semibold leading-6 text-colorMeta shadow ltr:right-0 rtl:left-0 dark:border-colorDarkBorder dark:bg-colorDarkBackground dark:text-colorDarkText'>
+            <a class='block px-3 py-1 outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-trigger-off='' href='?hl=en'>English</a>
+            <a class='block px-3 py-1 outline-none hover:bg-colorTextTrans1 focus:bg-colorTextTrans1 active:bg-colorTextTrans2 dark:hover:bg-colorDarkTextTrans1 dark:focus:bg-colorDarkTextTrans1 dark:active:bg-colorDarkTextTrans1' data-toggle-trigger-off='' href='?hl=bn'>Bengali</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </header>
+            
+     <!-- ===================================
+     MAIN POSTS
+     ==================================== -->
+
+      <main class="bg-white">
+        <b:section class="container px-4 pt-6 pb-16 mx-auto md:pt-10 sm:px-6" id="content">
+          <b:widget id="Blog1" type="Blog" version="2" locked="true">
+            <b:widget-settings>
+              <b:widget-setting name="showCommentLink">true</b:widget-setting>
+            </b:widget-settings>
+          </b:widget>
+        </b:section>
+      </main>
+      
+      <!-- ===================================
+       FOOTER
+      ==================================== -->
+      
+   <footer class="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8">
+  <div class="border-t border-slate-900/5 py-10">
+    <svg class="mx-auto h-5 w-auto text-slate-900" aria-hidden="true" viewBox="0 0 160 24" fill="none">
+      <path d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z" class="fill-sky-400"></path>
+      <path d="M51.285 9.531V6.857h-3.166v-3.6l-2.758.823v2.777h-2.348v2.674h2.348v6.172c0 3.343 1.686 4.526 5.924 4.011V17.22c-2.094.103-3.166.129-3.166-1.517V9.53h3.166zm12.087-2.674v1.826c-.97-1.337-2.476-2.16-4.468-2.16-3.472 0-6.357 2.931-6.357 6.763 0 3.805 2.885 6.763 6.357 6.763 1.992 0 3.498-.823 4.468-2.186v1.851h2.758V6.857h-2.758zM59.338 17.4c-2.297 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115s4.034 1.723 4.034 4.115c0 2.391-1.736 4.114-4.034 4.114zM70.723 4.929c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm5.96 0h2.757V.943h-2.758v18.771zM95.969 6.857l-2.502 8.872-2.655-8.872h-2.63L85.5 15.73l-2.477-8.872h-2.91l4.008 12.857h2.707l2.68-8.665 2.656 8.665h2.706L98.88 6.857h-2.911zm6.32-1.928c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm12.674-13.191c-1.736 0-3.115.643-3.957 1.98V6.857h-2.758v12.857h2.758v-6.891c0-2.623 1.43-3.703 3.242-3.703 1.737 0 2.86 1.029 2.86 2.983v7.611h2.757V11.82c0-3.343-2.042-5.297-4.902-5.297zm17.982-4.809v6.969c-.971-1.337-2.477-2.16-4.468-2.16-3.473 0-6.358 2.931-6.358 6.763 0 3.805 2.885 6.763 6.358 6.763 1.991 0 3.497-.823 4.468-2.186v1.851h2.757v-18h-2.757zM127.532 17.4c-2.298 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115 2.297 0 4.034 1.723 4.034 4.115 0 2.391-1.737 4.114-4.034 4.114z" fill="currentColor"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M145.532 3.429h8.511c.902 0 1.768.36 2.407 1.004.638.643.997 1.515.997 2.424v8.572c0 .909-.359 1.781-.997 2.424a3.394 3.394 0 01-2.407 1.004h-8.511a3.39 3.39 0 01-2.407-1.004 3.438 3.438 0 01-.997-2.424V6.857c0-.91.358-1.781.997-2.424a3.39 3.39 0 012.407-1.004zm-5.106 3.428c0-1.364.538-2.672 1.495-3.636a5.09 5.09 0 013.611-1.507h8.511c1.354 0 2.653.542 3.61 1.507a5.16 5.16 0 011.496 3.636v8.572a5.16 5.16 0 01-1.496 3.636 5.086 5.086 0 01-3.61 1.506h-8.511a5.09 5.09 0 01-3.611-1.506 5.164 5.164 0 01-1.495-3.636V6.857zm10.907 6.251c0 1.812-1.359 2.916-3.193 2.916-1.823 0-3.182-1.104-3.182-2.916v-5.65h1.633v5.52c0 .815.429 1.427 1.549 1.427 1.12 0 1.549-.612 1.549-1.428v-5.52h1.644v5.652zm1.72 2.748V7.457h1.644v8.4h-1.644z" fill="currentColor"></path>
+    </svg>
+    <p class="mt-5 text-center text-sm leading-6 text-slate-500">© 2023 Tailwind Labs Inc. All rights reserved.</p>
+    <div class="mt-16 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700">
+      <a href="/privacy-policy">Privacy policy</a>
+      <div class="h-4 w-px bg-slate-500/20"></div>
+      <a href="/changelog">Changelog</a>
+    </div>
+  </div>
+</footer>
+      
+    <b:include name="@:js"></b:include>
+  </body>
+</html>
