@@ -2863,7 +2863,6 @@ html {
         <b:includable id="post:view" var="post">
           <b:if cond="data:view.isMultipleItems">
             
-            <div class='mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 max-w-5xl p-4'>
             <div class='flex w-full flex-col items-center justify-start overflow-hidden transition-[box-shadow] duration-300 dark:border-colorDarkBorder dark:shadow-colorDarkText sm:rounded-lg sm:border sm:border-colorBorder sm:hover:shadow-md'>
               <div class=''></div>
               
@@ -2886,7 +2885,7 @@ html {
                 </a>
                 
             </div>
-            </div>
+         
                 
             <b:elseif cond="data:view.isPost"></b:elseif>
             
@@ -2985,8 +2984,8 @@ html {
         </b:includable>
         <b:includable id="widget:Blog">
           <b:with value="data:widgets.Blog1.allBylineItems" var="show">
-            <b:tag cond="data:view.isMultipleItems" name="div">
-              <b:loop values="data:posts" var="post">
+            <b:tag class='mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 max-w-5xl p-4' cond="data:view.isMultipleItems" name="div">
+              <b:loop values="data:posts" var="post">                            	
                 <b:include data="post" name="post:view"></b:include>
               </b:loop>
             </b:tag>
